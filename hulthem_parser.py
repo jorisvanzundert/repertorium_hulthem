@@ -453,7 +453,7 @@ handlers = {
 unhandled = set()
 
 def save_as_doc( doc ):
-    with open( 'hulthem_repertorium.html', 'w' ) as html_file:
+    with open( 'resources/hulthem_repertorium.html', 'w' ) as html_file:
         html_file.write( indent( doc.getvalue() ) )
 
 html_boiler_plate = '''<!DOCTYPE HTML>
@@ -497,7 +497,7 @@ def save_as_pages( doc ):
             print(doc)
             print('-------------')
         doc = html_boiler_plate.format( 'Repertorium Hulthem, tekst {}'.format( idx+1 ), next_page, previous_page, doc[0:-1] )
-        with open( 'public/hulthem_repertorium_{}.html'.format(idx+1), 'w' ) as html_file:
+        with open( 'docs/public/hulthem_repertorium_{}.html'.format(idx+1), 'w' ) as html_file:
             html_file.write( doc )
 
 # MAIN
