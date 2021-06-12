@@ -1,0 +1,106 @@
+body {
+  max-width: 700px;
+  margin: 3vw;
+  font-family: 'PT Sans';
+  font-size: 11pt;
+  color: #000;
+}
+
+.column_left {
+  float: left;
+  width: 18%;
+  padding: 0.5em;
+  background-color: #eee;
+}
+
+.column_right {
+  float: left;
+  width: 78%;
+  padding: 5px;
+  font-size: 0; /* prevente whitespace space in lower elements */
+}
+
+.column_right  span {
+  font-size: 11pt;
+}
+
+/* Clear floats after the columns */
+.nr_container, .ops_container, .inc_container, .exp_container, .afr_container,
+.sam_container, .nam_container, .aut_container, .srt_container, .vrm_container,
+.lng_container, .ain_container, .pet_container, .elt_container, .slt_container,
+.vss_container, .zie_container, .ovt_container {
+  width:100%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nr_container, .ops_container, .inc_container, .exp_container, .afr_container,
+.sam_container, .nam_container, .aut_container, .srt_container, .vrm_container,
+.lng_container, .ain_container, .pet_container, .elt_container, .slt_container,
+.vss_container, .zie_container, .ovt_container {
+  border-top: 1px solid rgb(220, 213, 221);
+  background: color: #eee;
+}
+
+.nav_container .column_left {
+  background-color: #fff;
+}
+
+.nav_container .column_right {
+  background-color: #fff;
+  font-size: 12pt;
+}
+
+.pag_container {
+  height: 20pt;
+  background-color: #ccc;
+  padding: 4pt 5pt 6pt 50pt;
+  float: right;
+}
+
+.pag_container a, .pag_container a:hover, .pag_container a:visited, .pag_container a:active {
+  color: #000;
+}
+
+.prev_pag, .next_pag {
+  border: 1px solid #666;
+  background-color: #f9f9f9;
+  width: 20pt;
+  height: 20pt;
+  text-align: center;
+  line-height: 20pt;
+  float: right;
+  margin-left: 4pt;
+}
+
+.ops, .inc, .exp, .afr, .sam, .nam, .aut, .srt, .vrm, .lng, .ain, .pet,
+.elt, div.editie, div.secundaire_lit, div.parallel_variant {
+  /* border: 1px solid red; */
+  display: block;
+}
+
+.ovt_container .secundaire_lit {
+  float: none;
+  display: inline;
+}
+
+div.ref {
+  display: none;
+  padding-left: 5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+}
+
+.editie:hover div.ref, .secundaire_lit:hover div.ref {
+  color: #666;
+  display: block;
+  font-size: 11pt;
+  padding-left: 3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.75em;
+}
+
+.ref.ref {
+  display: none;
+}
