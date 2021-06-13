@@ -1,9 +1,7 @@
 ---
 ---
 
-@import "";
-@import url('https://fonts.googleapis.com/css?family=Chivo|Asul&display=swap');
-
+@import "{{ site.theme }}";
 h1 {
   font-family: "Asul", sans-serif;
   font-size: 24pt;
