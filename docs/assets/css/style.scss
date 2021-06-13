@@ -6,15 +6,18 @@
 body {
   font-size:11pt;
   color: #002048;
-  background-color: #ddd;
+  background-color: #f2f2f2;
 }
 .markdown-body {
   max-width: 50em;
-  background-color: #cecece;
+  background-color: #fefefe;
+}
+.px3 {
+  pading: 2em;
 }
 h1 {
   font-family: "Asul", sans-serif;
-  font-size: 24pt;
+  font-size: 32 pt;
   font-weight: 400;
   line-height: 1;
   color: #000;;
