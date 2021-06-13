@@ -3,6 +3,15 @@
 
 @import "{{ site.theme }}";
 @import url(//fonts.googleapis.com/css?family=Asul|Chivo);
+body {
+  font-size:11pt;
+  color: #002048;
+  background-color: #ddd;
+}
+.container-lg px-3 my-5 markdown-body {
+  max-width: 50em;
+  background-color: #cecece;
+}
 h1 {
   font-family: "Asul", sans-serif;
   font-size: 24pt;
