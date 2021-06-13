@@ -5,6 +5,7 @@ import regex
 # Create the HTML Doc
 doc, tag, text = Doc().tagtext()
 doc.asis('<!DOCTYPE html>')
+contents = []
 
 # Create the data
 hulthem_data = []
@@ -54,10 +55,13 @@ def nr( ididx, line, options, data_iter ):
         label_boilerplate( options )
         with tag( 'div', klass='column_right' ):
             with tag( 'span', klass=options['method'].__name__, prov=ididx ):
-                doc.asis( '{}&nbsp;'.format( re_hulthem_nr.search( line ).groups()[0] ) )
+                hulthem_nummer = re_hulthem_nr.search( line ).groups()[0]
+                contents.append( [ hulthem_nummer ] )
+                doc.asis( '{}&nbsp;'.format( hulthem_nummer ) )
             item = next( data_iter )
             if( item['handle']=='PL.' ):
                 with tag( 'span', klass='pl', prov=item['ididx']):
+                    contents[-1].append( item['line'] )
                     text( '({})'.format( item['line'] ) )
             else:
                 return item
@@ -80,6 +84,7 @@ def ops( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ) ):
         label_boilerplate( options )
         with tag( 'div', klass='column_right' ):
+            contents[-1].append( line )
             span_boilerplate( ididx, line, options )
             item = next( data_iter )
             if( item['handle']=='OPS' ):
@@ -479,6 +484,33 @@ html_boiler_plate = '''<!DOCTYPE HTML>
 </html>
 '''
 
+contents_boiler_plate = '''<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Repertorium Hutlthem - Contents</title>
+    <link rel="stylesheet" type="text/css" href="css/repertorium.css" />
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="contents">
+{}
+    </div>
+  </body>
+</html>
+'''
+
+contents_item_boiler_plate = '''      <div class="con_container">
+        <div class="column_left">
+          <span class="hulthem_nummer_contents">{}</span>
+        </div>
+        <a href="hulthem_repertorium_{}.html">
+            <div class="column_right">
+                <span class="pl_contents">{}&nbsp;</span><span class="ops_contents">{}</span>
+            </div>
+        </a>
+      </div>
+'''
+
 def save_as_pages( doc ):
     html_doc = indent( doc.getvalue() )
     html_doc = html_doc.split( '\n' )
@@ -493,12 +525,21 @@ def save_as_pages( doc ):
         previous_page = '<a href="hulthem_repertorium_{}.html"><div class="prev_pag">&#x25C4;</div></a>'.format( idx )
         if( idx==0 ):
             previous_page = ''
-        if( idx>=max_idx-3 ):
-            print(doc)
-            print('-------------')
         doc = html_boiler_plate.format( 'Repertorium Hulthem, tekst {}'.format( idx+1 ), next_page, previous_page, doc[0:-1] )
         with open( 'docs/public/hulthem_repertorium_{}.html'.format(idx+1), 'w' ) as html_file:
             html_file.write( doc )
+
+def save_contents( contents ):
+    contents_html = ''
+    idx = 1
+    for item in contents:
+        contents_item_html = contents_item_boiler_plate
+        contents_item_html = contents_item_html.format( item[0], idx, item[1], item[2] )
+        contents_html += contents_item_html
+        idx += 1
+    contents_html = contents_boiler_plate.format( contents_html )
+    with open( 'docs/public/hulthem_repertorium_contents.html', 'w' ) as html_file:
+        html_file.write( contents_html )
 
 # MAIN
 hulthem_iter = iter( hulthem_data )   #[0:924] )
@@ -520,4 +561,5 @@ for nohandle in unhandled:
 
 # Postprocessing
 # save_as_doc( doc )
-save_as_pages( doc )
+# save_as_pages( doc )
+save_contents( contents )
