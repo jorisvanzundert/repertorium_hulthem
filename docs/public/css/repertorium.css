@@ -1,16 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo|Asul&display=swap');
 
 body {
-  max-width: 700px;
-  margin: 3vw;
+  margin: 0px;
   font-family: 'PT Sans';
   font-size: 11pt;
-  color: #000;
+  color: #002048;
+  background-color: #f8fbff;
 }
+
+#version {
+  font-size: 70%;
+}
+
+.content_container, .content_container_rep {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  max-width: 50em;
+  background-color: #fefefe;
+  border-top: 0.75px solid #ccc;
+  border-bottom: 0.75px solid #888;
+  padding: 3em;
+}
+
+.content_container {
+  line-height: 170%;
+  max-width: 42em;
+}
+
+.content_container a {
+  color: #0366d6;
+  text-decoration: none;
+}
+.content_container a:hover {
+  text-decoration: underline;
+}
+.content_container a:visited, .content_container a:active {
+  color: #0366d6;
+  text-decoration: none;
+}
+
 
 h1 {
   font-family: "Asul", sans-serif;
   font-size: 24pt;
+  font-weight: 400;
+  line-height: 1;
+}
+
+#online-repertorium-van-teksten-in-het-handschrift-hulthem {
+  font-size: 32pt;
+}
+
+h2 {
+  font-family: "Asul", sans-serif;
+  font-size: 16pt;
   font-weight: 400;
   line-height: 1;
 }
@@ -68,11 +113,16 @@ h1 {
   float: right;
 }
 
-.pag_container a, .pag_container a:hover, .pag_container a:visited, .pag_container a:active {
+.pag_container a, .pag_container a:hover, .pag_container a:visited,
+.pag_container a:active {
+  color: #000;
+}
+.con_container a, .con_container a:hover, .con_container a:visited,
+.con_container a:active {
   color: #000;
 }
 
-.prev_pag, .next_pag {
+.con_pag, .home_pag, .prev_pag, .next_pag {
   border: 1px solid #666;
   background-color: #f9f9f9;
   width: 20pt;
@@ -114,22 +164,54 @@ div.ref {
   display: none;
 }
 
-.contents .column_left {
+.con_container .column_left {
   text-align: right;
 }
 
-.contents .column_right {
+.con_container .column_right {
   padding-top: 8px;
   padding-right: 0px;
   padding-bottom: 9px;
   padding-left: 12px;
 }
 
-.contents a, .contents a:hover,
-.contents a:visited, .contents a:active {
-  color: #000;
-}
-
 .hulthem_nummer_contents {
   padding-right: 1em;
+}
+
+.header {
+  width:100%;
+  height:4em;
+  background-color: #000;
+  padding-top: 0.3em;
+  padding-left: 0.3em;
+}
+
+#logo {
+  height: 3.5em;
+}
+
+.footer {
+  color: #fff;
+  width:100%;
+  background-color: #002048;
+  padding-left: 7em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  line-height: 150%;
+}
+
+.footer .footer_column {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Chivo"  , sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4285714286;
+  letter-spacing: -0.0142857143em;
+  margin-top: 1.7857142857em;
+}
+
+.footer a {
+  color: #fff;
 }

@@ -461,39 +461,112 @@ def save_as_doc( doc ):
     with open( 'resources/hulthem_repertorium.html', 'w' ) as html_file:
         html_file.write( indent( doc.getvalue() ) )
 
-html_boiler_plate = '''<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>{}</title>
-    <link rel="stylesheet" type="text/css" href="css/repertorium.css" />
-    <meta charset="UTF-8">
-  </head>
+html_boiler_plate = '''<!DOCTYPE html>
+<html lang="nl-NL">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    {}
+  </title>
+  <link rel="stylesheet" href="/public/css/repertorium.css">
+
   <body>
-    <div class="nav_container">
-      <div class="column_left">
-      </div>
-      <div class="column_right">
-        <div class="pag_container">
+    <div class="header"><img id="logo" src="https://www.huygens.knaw.nl/wp-content/themes/huygens/img/logo-white.svg"></div>
+    <div class="content_container_rep">
+      <h2>Repertorium Hulthem</h2>
+      <h1>{}</h1>
+      <div class="nav_container">
+        <div class="column_left">
+        </div>
+        <div class="column_right">
+          <div class="pag_container">
             {}
             {}
+            <a href="/public/hulthem_repertorium_contents.html"><div class="con_pag">
+              <svg width="20pt" version="1.1" id="Rectangle_3_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path d="M2,5h2V3H2V5z M6,3v2h8V3H6z M2,9h2V7H2V9z M11,7H6v2h5V7z M2,13h2v-2H2V13z M6,13h7v-2H6V13z"/>
+              </svg></div>
+            </a>
+            <a href="/index.html"><div class="home_pag">
+              <svg width="20pt" version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path d="M7.4,3.5l-4,3.2C3.1,6.9,3,7.2,3,7.5V13h3.5v-2.5C6.5,9.7,7.2,9,8,9h0c0.8,0,1.5,0.7,1.5,1.5V13H13V7.5c0-0.3-0.1-0.6-0.4-0.8l-4-3.2C8.3,3.2,7.7,3.2,7.4,3.5z"/>
+              </svg></div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
     <div class="nr_container">{}
+    </div>
+    <div class="footer">
+      <div class="footer_column">
+        <h2>Contact</h2>
+        <p>Ons bezoekadres:<br>
+        Spinhuis<br>
+        Oudezijds Achterburgwal 185<br>
+        1012 DK AMSTERDAM</p>
+        <p>Ons postadres:<br>
+        Huygens ING<br>
+        Postbus 10855<br>
+        1001 EW AMSTERDAM</p>
+        <p><a href="mailto:info@huygens.knaw.nl">info@huygens.knaw.nl</a><br>
+        +31 (0)20 — 224 68 00</p>
+      </div>
+    </div>
   </body>
 </html>
 '''
 
-contents_boiler_plate = '''<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Repertorium Hutlthem - Contents</title>
-    <link rel="stylesheet" type="text/css" href="css/repertorium.css" />
-    <meta charset="UTF-8">
-  </head>
+contents_boiler_plate = '''<!DOCTYPE html>
+<html lang="nl-NL">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    Online Repertorium van teksten in het handschrift Hulthem
+  </title>
+  <link rel="stylesheet" href="/public/css/repertorium.css">
+
   <body>
-    <div class="contents">
+    <div class="header"><img id="logo" src="https://www.huygens.knaw.nl/wp-content/themes/huygens/img/logo-white.svg"></div>
+    <div class="content_container_rep">
+      <h1>Repertorium Hulthem — Inhoud</h1>
+      <div class="nav_container">
+        <div class="column_left">
+        </div>
+        <div class="column_right">
+          <div class="pag_container">
+            <a href="/public/hulthem_repertorium_contents.html"><div class="con_pag">
+              <svg width="20pt" version="1.1" id="Rectangle_3_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path d="M2,5h2V3H2V5z M6,3v2h8V3H6z M2,9h2V7H2V9z M11,7H6v2h5V7z M2,13h2v-2H2V13z M6,13h7v-2H6V13z"/>
+              </svg></div>
+            </a>
+            <a href="/index.html"><div class="home_pag">
+              <svg width="20pt" version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                <path d="M7.4,3.5l-4,3.2C3.1,6.9,3,7.2,3,7.5V13h3.5v-2.5C6.5,9.7,7.2,9,8,9h0c0.8,0,1.5,0.7,1.5,1.5V13H13V7.5c0-0.3-0.1-0.6-0.4-0.8l-4-3.2C8.3,3.2,7.7,3.2,7.4,3.5z"/>
+              </svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
 {}
+    </div>
+    <div class="footer">
+      <div class="footer_column">
+        <h2>Contact</h2>
+        <p>Ons bezoekadres:<br>
+        Spinhuis<br>
+        Oudezijds Achterburgwal 185<br>
+        1012 DK AMSTERDAM</p>
+        <p>Ons postadres:<br>
+        Huygens ING<br>
+        Postbus 10855<br>
+        1001 EW AMSTERDAM</p>
+        <p><a href="mailto:info@huygens.knaw.nl">info@huygens.knaw.nl</a><br>
+        +31 (0)20 — 224 68 00</p>
+      </div>
     </div>
   </body>
 </html>
@@ -519,13 +592,15 @@ def save_as_pages( doc ):
     max_idx = len( html_docs[1:] )
     print( max_idx )
     for idx,doc in enumerate( html_docs[1:] ):
+        # I admit this is a terrible hack, but it's 30C and I'm lazy.
+        ops = regex.search( '<span class="ops" prov="DOCUMENT.DOC:L\d+">(.*)</span>', doc ).groups()[0]
         next_page = '<a href="hulthem_repertorium_{}.html"><div class="next_pag">&#x25BA;</div></a>'.format( idx+2 )
         if( idx==max_idx-1 ):
             next_page = ''
         previous_page = '<a href="hulthem_repertorium_{}.html"><div class="prev_pag">&#x25C4;</div></a>'.format( idx )
         if( idx==0 ):
             previous_page = ''
-        doc = html_boiler_plate.format( 'Repertorium Hulthem, tekst {}'.format( idx+1 ), next_page, previous_page, doc[0:-1] )
+        doc = html_boiler_plate.format( 'Repertorium Hulthem, tekst {}'.format( idx+1 ), ops, next_page, previous_page, doc[0:-1] )
         with open( 'docs/public/hulthem_repertorium_{}.html'.format(idx+1), 'w' ) as html_file:
             html_file.write( doc )
 
@@ -561,5 +636,5 @@ for nohandle in unhandled:
 
 # Postprocessing
 # save_as_doc( doc )
-# save_as_pages( doc )
+save_as_pages( doc )
 save_contents( contents )
