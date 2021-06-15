@@ -26,10 +26,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   gegevens te vinden over alle teksten die het Handschrift-van Hulthem, de
   ‘Nachtwacht van de Middelnederlandse letterkunde’, bevat.
 version: 0.0.6
-baseurl: # the subpath of your site, e.g. /blog
+baseurl: "/repertorium_hulthem" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: jorisvanzundert
+github_username:  jorisvanzundert
 
 # Build settings
 theme:
