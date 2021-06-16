@@ -149,6 +149,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L1061">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L1062">,&nbsp;band 1 p. 227-232</span>
@@ -172,6 +178,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L1065">Van Anrooij 1995</span>
           <div class="ref">
@@ -239,55 +251,117 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L1077">
-          <span class="vss">(a) vss. 1-218</span>
+          <span class="vss">(a) vss. 1-218&nbsp;</span>
           <span prov="DOCUMENT.DOC:L1078">Oxford, Bodleian Libary, Marshall 29</span>
-          <div class="ref">
-            <span class="ref">216</span>
-            <span class="title">(216)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L1079">&nbsp;[1375 - 1425]</span>
           <span prov="DOCUMENT.DOC:L1080">,&nbsp;f. 24va-45va (= <I>Jan's Teesteye</I>)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1542">Oxford, Bodleian Libary, Marshall 29</div>
+            <div class="mov" prov="PERDOC.DOC:L1543">(<I>olim</I> 5364, Add. C 122)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1544">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L1545">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1546">Datering: ca. 1400</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1547">14</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L1081">
-          <span class="vss">(a) vss. 1-218</span>
+          <span class="vss">(b) vss. 1-218&nbsp;</span>
           <span prov="DOCUMENT.DOC:L1082">Oxford, Bodleian Libary, Marshall 29</span>
-          <div class="ref">
-            <span class="ref">216</span>
-            <span class="title">(216)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L1083">&nbsp;[1375 - 1425]</span>
           <span prov="DOCUMENT.DOC:L1084">,&nbsp;f. 48ra-78vb (= <I>Boec vander Wraken</I>)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1542">Oxford, Bodleian Libary, Marshall 29</div>
+            <div class="mov" prov="PERDOC.DOC:L1543">(<I>olim</I> 5364, Add. C 122)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1544">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L1545">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1546">Datering: ca. 1400</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1547">14</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L1085">
-          <span class="vss">(a) vss. 1-218</span>
+          <span class="vss">(c) vss. 1-218&nbsp;</span>
           <span prov="DOCUMENT.DOC:L1086">Brussel, Koninklijke Bibliotheek van België, IV 209 (15)</span>
-          <div class="ref">
-            <span class="ref">76</span>
-            <span class="title">(76)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L1087">&nbsp;[1300 - 1400]</span>
           <span prov="DOCUMENT.DOC:L1088">,&nbsp;(= <I>Jan's Teesteye</I>)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L526">Brussel, Koninklijke Bibliotheek van België, IV 209 (15)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L527">Post quem: 1300</div>
+            <div class="adtp" prov="PERDOC.DOC:L528">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L529">Datering: 14e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L530">14</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L1089">
-          <span class="vss">(a) vss. 1-218</span>
+          <span class="vss">(d) vss. 1-218&nbsp;</span>
           <span prov="DOCUMENT.DOC:L1090">Leiden, Universiteitsbibliotheek, LTK 1527 (16)</span>
-          <div class="ref">
-            <span class="ref">185</span>
-            <span class="title">(185)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L1091">&nbsp;[1325 - 1375]</span>
           <span prov="DOCUMENT.DOC:L1092">,&nbsp;(= <I>Jan's Teesteye</I>, fragment)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1328">Leiden, Universiteitsbibliotheek, LTK 1527 (16)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1329">Post quem: 1325</div>
+            <div class="adtp" prov="PERDOC.DOC:L1330">Ante quem: 1375</div>
+            <div class="datp" prov="PERDOC.DOC:L1331">Datering: midden 14e eeuw, na 1345 (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1332">Biemans 1997</span>
+            <span class="pps" prov="PERDOC.DOC:L1333">,&nbsp;p. 432-434 (55-1)</span>
+            <div class="ref">
+              <span class="ref">Biemans 1997</span>
+              <span class="title">J.A.A.M. Biemans, <i>Onsen Speghele Ystoriale in Vlaemsche. Codicologisch onderzoek naar de overlevering van de Spieghel historiael van Jacob van Maerlant, Philip Utenbroeke en Lodewijk van Velthem met een beschrijving van de handschriften en fragmenten</i>. 2 dln. Leuven (Peeters) 1997. Schrift en schriftdragers in de Nederlanden in de Middeleeuwen II. Diss. Utrecht 1995.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1334">Verdam 1902</span>
+            <span class="pps" prov="PERDOC.DOC:L1335">,&nbsp;p. 31</span>
+            <div class="ref">
+              <span class="ref">Verdam 1902</span>
+              <span class="title">J. Verdam, 'Nieuwe Middelnederlandsche fragmenten'. In: <i>Tijdschrift voor Ned. taal- en letterkunde</i> 21 (1902), p. 1-34.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1336">14</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L1093">
-          <span class="vss">(a) vss. 1-218</span>
+          <span class="vss">(e) vss. 1-218&nbsp;</span>
           <span prov="DOCUMENT.DOC:L1094">Brussel, Koninklijke Bibliotheek van België, IV 685</span>
-          <div class="ref">
-            <span class="ref">82</span>
-            <span class="title">(82)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L1095">&nbsp;[1350 - 1600]</span>
           <span prov="DOCUMENT.DOC:L1096">,&nbsp;(= <I>Brabantsche yeesten</I>)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L565">Brussel, Koninklijke Bibliotheek van België, IV 685</div>
+            <div class="pdtp" prov="PERDOC.DOC:L566">Post quem: 1350</div>
+            <div class="adtp" prov="PERDOC.DOC:L567">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L568">Datering: na 1351 (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L569">Van Anrooij 1995</span>
+            <span class="pps" prov="PERDOC.DOC:L570">,&nbsp;p. 43</span>
+            <div class="ref">
+              <span class="ref">Van Anrooij 1995</span>
+              <span class="title">W. van Anrooij, 'Boendales <i>Boec van der wraken</i>: datering en ontstaansgeschiedenis'. In: <i>Queeste</i> 2 (1995), p. 40-53.</span>
+            </div>
+            <span prov="PERDOC.DOC:L571">Deschamps 1975</span>
+            <span class="pps" prov="PERDOC.DOC:L572">,&nbsp;p. 25 (26)</span>
+            <div class="ref">
+              <span class="ref">Deschamps 1975</span>
+              <span class="title">J. Deschamps, <i>Vijf jaar aanwinsten 1969-1973. Tentoonstelling georganiseerd in de Koninklijke Bibliotheek Albert I van 18 januari tot 1 maart 1975</i>. Brussel (KB. Albert I) 1975.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L573">14</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -296,6 +370,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L1098">Van Anrooij 1995</span>
           <span prov="DOCUMENT.DOC:L1099">,&nbsp;(a-e)</span>

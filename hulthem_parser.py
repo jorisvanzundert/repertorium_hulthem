@@ -7,6 +7,24 @@ doc, tag, text = Doc().tagtext()
 doc.asis('<!DOCTYPE html>')
 contents = []
 
+# svg for expand button
+expand_button_svg = '''<svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+</svg>'''
+
+# Define often used regexs
+re_hulthem_nr = regex.compile( r'\>(\d+.*)\<' )
+re_lit_ref = regex.compile( r'LITERATURE="L(\d+)"' )
+re_par_ref = regex.compile( r'PERSON="P(\d+)"' )
+re_afb = regex.compile( r'HELP="(.*)".*\$HELPID,(.*) ></A></U>' )
+
+# Define inline tag transformations
+def html_5_tags( text ):
+    text = regex.sub( r'\<(/?)I\>', r'<\1i>', text )
+    text = regex.sub( r'\<(/?)B\>', r'<\1b>', text )
+    return text
+
 # Create the data
 hulthem_data = []
 with open( 'cdrom_contents/DOCS/DOCUMENT.DOC', 'r', encoding='cp850' ) as doc_file:
@@ -26,17 +44,75 @@ ref_data_text = regex.sub( r'TIT = ', '', ref_data_text )
 ref_data = ref_data_text.split( 'REF = ' )
 ref_data = [ ref.strip().split('\n') for ref in ref_data ]
 
-# Define often used regexs
-re_hulthem_nr = regex.compile( r'\>(\d+.*)\<' )
-re_lit_ref = regex.compile( r'LITERATURE="L(\d+)"' )
-re_par_ref = regex.compile( r'PERSON="P(\d+)"' )
-re_afb = regex.compile( r'HELP="(.*)".*\$HELPID,(.*) ></A></U>' )
+# Define ref handler
+def ref_handler( line ):
+    ref = int( re_lit_ref.search( line ).groups()[0] )
+    ref = ref_data[ref]
+    cite = line.split( '$LITERATUREID,' )[-1][:-9]
+    return ( ref, cite )
 
-# Define inline tag transformations
-def html_5_tags( text ):
-    text = regex.sub( r'\<(/?)I\>', r'<\1i>', text )
-    text = regex.sub( r'\<(/?)B\>', r'<\1b>', text )
-    return text
+# Define handlers for PERDOC (parallels) data
+def pmsp( handle, prov, value, html ):
+    return( '{}<div class="{}" prov="{}">{}</div>\n'.format( html, handle, prov, value ) )
+
+def mov( handle, prov, value, html ):
+    return( '{}<div class="{}" prov="{}">{}</div>\n'.format( html, handle, prov, value ) )
+
+def pdtp( handle, prov, value, html ):
+    return( '{}<div class="{}" prov="{}">Post quem: {}</div>\n'.format( html, handle, prov, value ) )
+
+def adtp( handle, prov, value, html ):
+    return( '{}<div class="{}" prov="{}">Ante quem: {}</div>\n'.format( html, handle, prov, value ) )
+
+def datp( handle, prov, value, html ):
+    return( '{}<div class="{}" prov="{}">Datering: {}</div>\n'.format( html, handle, prov, value ) )
+
+def var( handle, prov, value, html ):
+    return( '{}<span class="{}" prov="{}">{},&nbsp;</span>'.format( html, handle, prov, value ) )
+
+def vop( handle, prov, value, html ):
+    return( '{}<span class="{}" prov="{}">{}</span>'.format( html, handle, prov, value ) )
+
+def litp( handle, prov, value, html ):
+    ref, cite = ref_handler( value )
+    html = '{}<span prov="{}">{}</span>'.format( html, prov, cite )
+    title_html = '<span class="title">{}</span>'.format( html_5_tags( ref[1] ) )
+    html += '<div class="ref"><span class="ref">{}</span>{}</div>'.format( ref[0], title_html )
+    return html
+
+def pss( handle, prov, value, html ):
+    insertion_idx = list( regex.finditer( r'<span prov=".*?">.*?</span>', html ) )[-1].span()[1]
+    html = html[0:insertion_idx] + '<span class="pps" prov="{}">,&nbsp;{}</span>'.format( prov, value ) + html[insertion_idx:]
+    return html
+
+def opm( handle, prov, value, html ):
+    html = '{}<div class="opm" prov="{}">Aanvullende informatie:&nbsp;{}</div>'.format( html, prov, value )
+    return html
+
+# Create parallel data
+per_data = []
+with open( 'cdrom_contents/DOCS/PERDOC.DOC', 'r', encoding='cp850' ) as per_file:
+    # Last line is empty.
+    per_data_text = per_file.read()
+per_data_list = per_data_text.split( 'PMSP= ' )
+per_data_list = [ ( 'PMSP= ' + per ) for per in per_data_list ]
+per_data_list = [ [ idx, per.strip().split('\n') ] for idx,per in enumerate( per_data_list ) ]
+per_data = {}
+line_idx = 1
+for idx,per in enumerate( per_data_list[1:] ):
+    per_html = ''
+    for item in per[1]:
+        handle, value = regex.search( r'([^\s=]+)[\s=]+(.*)', item ).groups() # ' = ' '= '
+        handle = handle.lower()
+        per_html = locals()[ handle ]( handle, 'PERDOC.DOC:L{}'.format( line_idx ), value.strip(), per_html )
+        line_idx += 1
+    vars = list( regex.finditer( r'<span class="var" prov=".*?">.*?</span>', per_html ) )
+    last_var_idx = vars[-1].span()[1]
+    per_html = '{}</span>'.format( per_html[0:last_var_idx-14] ) # removes the last comma in series ',&nbsp;</span>'
+    vars_start = vars[0].span()[0]
+    per_html = '{}<div class="vars"><span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>{}</div>'.format( per_html[0:vars_start], per_html[vars_start:] )
+    per_html = '<div class="per">{}</div>'.format( per_html )
+    per_data[ idx+1 ] = per_html
 
 # Boilerplates for handlers
 def label_boilerplate( options ):
@@ -49,7 +125,6 @@ def span_boilerplate( ididx, line, options ):
         doc.asis( html_5_tags( line ) )
 
 # Define handlers
-
 def nr( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ) ):
         label_boilerplate( options )
@@ -73,11 +148,12 @@ def afb_ref_handler( line ):
 def afb( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ) ):
         label_boilerplate( options )
-        src, ref = afb_ref_handler( line )
-        with tag( 'div', klass=options['method'].__name__, prov=ididx ):
-            with tag( 'span', klass='afb_caption' ):
-                text( ref )
-            doc.stag( 'img', src='/images/{}.png'.format( src ), alt=ref, title=ref )
+        with tag( 'div', klass='column_right' ):
+            src, ref = afb_ref_handler( line )
+            with tag( 'div', klass=options['method'].__name__, prov=ididx ):
+                with tag( 'div', klass='afb_caption' ):
+                    text( ref )
+                doc.stag( 'img', klass='facsimile', src='images/{}.png'.format( src ), alt=ref, title=ref )
     return next( data_iter )
 
 def ops( ididx, line, options, data_iter ):
@@ -209,16 +285,14 @@ def pet( ididx, line, options, data_iter ):
             span_boilerplate( ','.join( [ str(ididx) for ididx in ididxs ] ), '; '.join( lines ), options )
             return item
 
-def ref_handler( line ):
-    ref = int( re_lit_ref.search( line ).groups()[0] )
-    ref = ref_data[ref]
-    cite = line.split( '$LITERATUREID,' )[-1][:-9]
-    return ( ref, cite )
-
 def elt( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ) ):
         label_boilerplate( options )
         with tag( 'div', klass='column_right' ):
+            expand_refs = "elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );"
+            toggle_button = "document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );"
+            with tag( 'div', klass='expand_container', onclick="{}{}".format( expand_refs, toggle_button ) ):
+                doc.asis( expand_button_svg )
             with tag( 'div', klass='editie' ):
                 ref, cite = ref_handler( line )
                 with tag( 'span', prov=ididx ):
@@ -254,6 +328,10 @@ def slt( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ) ):
         label_boilerplate( options )
         with tag( 'div', klass='column_right' ):
+            expand_refs = "elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );"
+            toggle_button = "document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );"
+            with tag( 'div', klass='expand_container', onclick="{}{}".format( expand_refs, toggle_button ) ):
+                doc.asis( expand_button_svg )
             with tag( 'div', klass='secundaire_lit' ):
                 ref, cite = ref_handler( line )
                 with tag( 'span', prov=ididx ):
@@ -291,44 +369,45 @@ def parallel_handler( line ):
     cite = line.split( '$PERSONID,' )[-1][:-9]
     return ( ref, cite )
 
+def real_parallel_handler( line ):
+    ref = int( re_par_ref.search( line ).groups()[0] )
+    per = per_data[ref]
+    cite = line.split( '$PERSONID,' )[-1][:-9]
+    return ( per, cite )
+
 def vss( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ) ):
         label_boilerplate( options )
         with tag( 'div', klass='column_right' ):
+            expand_refs = "elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );"
+            toggle_button = "document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );"
+            with tag( 'div', klass='expand_container', onclick="{}{}".format( expand_refs, toggle_button ) ):
+                doc.asis( expand_button_svg )
             with tag( 'div', klass='parallel_variant', prov=ididx ):
                 with tag( 'span', klass=options['method'].__name__ ):
                     text( line )
+                    doc.asis( '&nbsp;' )
                 item = next( data_iter ) #PMS
-                ref, cite = parallel_handler( item['line'] )
+                per, cite = real_parallel_handler( item['line'] )
                 with tag( 'span', prov=item['ididx'] ):
                     text( cite )
-                with tag( 'div', klass='ref' ):
-                    with tag( 'span', klass='ref' ):
-                        text( ref[0] )
-                    with tag( 'span', klass='title' ):
-                        # doc.asis( html_5_tags( ref[1] ) )
-                        doc.asis( '({})'.format( ref[0] ) )
                 item = next( data_iter ) #DAT
                 with tag( 'span', prov=item['ididx'] ):
                     doc.asis( '&nbsp;{}'.format( item['line'] ) )
                 item = next( data_iter )
                 with tag( 'span', prov=item['ididx'] ): #POS
                     doc.asis( ',&nbsp;{}'.format( item['line'] ) )
+                doc.asis( per )
                 item = next( data_iter )
             while( item['handle']=='VSS' ):
                 with tag( 'div', klass='parallel_variant', prov=item['ididx']  ):
                     with tag( 'span', klass=options['method'].__name__ ):
-                        text( line )
+                        text( item['line'] )
+                        doc.asis( '&nbsp;' )
                     item = next( data_iter ) #PMS
-                    ref, cite = parallel_handler( item['line'] )
+                    per, cite = real_parallel_handler( item['line'] )
                     with tag( 'span', prov=item['ididx']  ):
                         text( cite )
-                    with tag( 'div', klass='ref' ):
-                        with tag( 'span', klass='ref' ):
-                            text( ref[0] )
-                        with tag( 'span', klass='title' ):
-                            # doc.asis( html_5_tags( ref[1] ) )
-                            doc.asis( '({})'.format( ref[0] ) )
                     item = next( data_iter ) #DAT
                     with tag( 'span', prov=item['ididx']  ):
                         doc.asis( '&nbsp;{}'.format( item['line'] ) )
@@ -337,6 +416,7 @@ def vss( ididx, line, options, data_iter ):
                         with tag( 'span', prov=item['ididx']  ): #POS
                             doc.asis( ',&nbsp;{}'.format( item['line'] ) )
                         item = next( data_iter )
+                    doc.asis( per )
     return item
 
 def zie( ididx, line, options, data_iter ):
@@ -344,6 +424,10 @@ def zie( ididx, line, options, data_iter ):
     with tag( 'div', klass=( options['method'].__name__ + '_container' ), prov=ididx ):
         label_boilerplate( options )
         with tag( 'div', klass='column_right' ):
+            expand_refs = "elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );"
+            toggle_button = "document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );"
+            with tag( 'div', klass='expand_container', onclick="{}{}".format( expand_refs, toggle_button ) ):
+                doc.asis( expand_button_svg )
             with tag( 'div', klass='secundaire_lit' ):
                 ref, cite = ref_handler( item['line'] )
                 with tag( 'span', prov=item['ididx'] ):
@@ -452,7 +536,8 @@ handlers = {
     'AFB': { 'method': afb, 'label': 'Afbeelding' },
     'PAR': { 'method': par, 'label': 'Parallellen en varianten' },
     'SEC': { 'method': sec, 'label': 'SEC' },
-     '─':  { 'method': dsh, 'label': '─' }
+     '─':  { 'method': dsh, 'label': '─' },
+    'MOV': { 'method': mov, 'label': '' }
 }
 
 unhandled = set()
@@ -590,7 +675,7 @@ def save_as_pages( doc ):
     html_doc = ( '\n'.join( html_doc[3:-2] ) ) + '\n'
     html_docs = html_doc.split( '    <div class="nr_container">' )
     max_idx = len( html_docs[1:] )
-    print( max_idx )
+    # print( max_idx )
     for idx,doc in enumerate( html_docs[1:] ):
         # I admit this is a terrible hack, but it's 30C and I'm lazy.
         ops = regex.search( '<span class="ops" prov="DOCUMENT.DOC:L\d+">(.*)</span>', doc ).groups()[0]
@@ -637,4 +722,4 @@ for nohandle in unhandled:
 # Postprocessing
 # save_as_doc( doc )
 save_as_pages( doc )
-save_contents( contents )
+# save_contents( contents )

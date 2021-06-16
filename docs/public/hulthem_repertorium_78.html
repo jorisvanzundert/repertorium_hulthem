@@ -138,6 +138,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L4612">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L4613">,&nbsp;band 1 p. 393-395</span>
@@ -161,6 +167,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L4616">Van Anrooij 1991</span>
           <span prov="DOCUMENT.DOC:L4617">,&nbsp;p. 198</span>
@@ -237,25 +249,46 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L4631">
-          <span class="vss">(a) vss. 1-65</span>
+          <span class="vss">(a) vss. 1-65&nbsp;</span>
           <span prov="DOCUMENT.DOC:L4632">Brussel, Koninklijke Bibliotheek van België, 2.559-62</span>
-          <div class="ref">
-            <span class="ref">30</span>
-            <span class="title">(30)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L4633">&nbsp;[1400 - 1450]</span>
           <span prov="DOCUMENT.DOC:L4634">,&nbsp;f. 159va (onleesbaar gemaakte variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L211">Brussel, Koninklijke Bibliotheek van België, 2.559-62</div>
+            <div class="pdtp" prov="PERDOC.DOC:L212">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L213">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L214">Datering: ca. 1425</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L215">59,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L216">69,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L217">172,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L218">204</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L4635">
-          <span class="vss">(a) vss. 1-65</span>
+          <span class="vss">(b) vss. 1-65&nbsp;</span>
           <span prov="DOCUMENT.DOC:L4636">Brussel, Koninklijke Bibliotheek van België, 720-22</span>
-          <div class="ref">
-            <span class="ref">28</span>
-            <span class="title">(28)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L4637">&nbsp;[1400 - 1450]</span>
           <span prov="DOCUMENT.DOC:L4638">,&nbsp;f. 40v-43v (langere variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L190">Brussel, Koninklijke Bibliotheek van België, 720-22</div>
+            <div class="pdtp" prov="PERDOC.DOC:L191">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L192">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L193">Datering: ca. 1425</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L194">69</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -264,6 +297,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L4640">Lievens 1992-1995</span>
           <span prov="DOCUMENT.DOC:L4641">,&nbsp;p. 355 (b)</span>

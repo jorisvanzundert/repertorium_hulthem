@@ -139,6 +139,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L11402">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L11403">,&nbsp;band 2 p. 945-947</span>
@@ -162,6 +168,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L11406">Axters 1944-1946</span>
           <span prov="DOCUMENT.DOC:L11407">,&nbsp;dl. 3 p. 32-35 (17)</span>
@@ -208,55 +220,102 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L11415">
-          <span class="vss">(a)</span>
+          <span class="vss">(a)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L11416">Brussel, Koninklijke Bibliotheek van België, II 2.271</span>
-          <div class="ref">
-            <span class="ref">70</span>
-            <span class="title">(70)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L11417">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L11418">,&nbsp;f. 149b-152a (langere variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L487">Brussel, Koninklijke Bibliotheek van België, II 2.271</div>
+            <div class="pdtp" prov="PERDOC.DOC:L488">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L489">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L490">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L491">178</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L11419">
-          <span class="vss">(a)</span>
+          <span class="vss">(b)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L11420">Maastricht, Gemeente Archief, 479</span>
-          <div class="ref">
-            <span class="ref">204</span>
-            <span class="title">(204)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L11421">&nbsp;[1450 - 1500]</span>
           <span prov="DOCUMENT.DOC:L11422">,&nbsp;f. 265-266 (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1464">Maastricht, Gemeente Archief, 479</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1465">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L1466">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1467">Datering: 1470-1480</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1468">178</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L11423">
-          <span class="vss">(a)</span>
+          <span class="vss">(c)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L11424">Brussel, Koninklijke Bibliotheek van België, II 112</span>
-          <div class="ref">
-            <span class="ref">64</span>
-            <span class="title">(64)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L11425">&nbsp;[1450 - 1500]</span>
           <span prov="DOCUMENT.DOC:L11426">,&nbsp;f. 21 (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L444">Brussel, Koninklijke Bibliotheek van België, II 112</div>
+            <div class="pdtp" prov="PERDOC.DOC:L445">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L446">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L447">Datering: ca. 1450-1480</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L448">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L449">178,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L450">204</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L11427">
-          <span class="vss">(a)</span>
+          <span class="vss">(d)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L11428">Gent, Universiteitsbibliotheek, 1330</span>
-          <div class="ref">
-            <span class="ref">111</span>
-            <span class="title">(111)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L11429">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L11430">,&nbsp;f. 149</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L773">Gent, Universiteitsbibliotheek, 1330</div>
+            <div class="mov" prov="PERDOC.DOC:L774">(<I>olim</I> 1121)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L775">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L776">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L777">Datering: 15e eeuw (BNM: ca. eind 15e eeuw)</div>
+            <span prov="PERDOC.DOC:L778">Lieftinck 1936</span>
+            <span class="pps" prov="PERDOC.DOC:L779">,&nbsp;p. 86</span>
+            <div class="ref">
+              <span class="ref">Lieftinck 1936</span>
+              <span class="title">G.I. Lieftinck, <i>De Middelnederlandsche Tauler-handschriften</i>. Groningen (Wolters) 1936.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L780">45,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L781">178</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L11431">
-          <span class="vss">(a)</span>
+          <span class="vss">(e)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L11432">Würzburg, Universitätsbibliothek, M.ch.q. 144</span>
-          <div class="ref">
-            <span class="ref">250</span>
-            <span class="title">(250)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L11433">&nbsp;[1475 - 1525]</span>
           <span prov="DOCUMENT.DOC:L11434">,&nbsp;f. 166r</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1790">Würzburg, Universitätsbibliothek, M.ch.q. 144</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1791">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1792">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1793">Datering: eind 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1794">60,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1795">178</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -265,6 +324,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L11436">Lieftinck 1936</span>
           <span prov="DOCUMENT.DOC:L11437">,&nbsp;p. 86 (d)</span>

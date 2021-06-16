@@ -79,7 +79,8 @@ h2 {
 }
 
 /* Clear floats after the columns */
-.con_container, .nr_container, .ops_container, .inc_container, .exp_container, .afr_container,
+.con_container, .nr_container, .ops_container, .inc_container, .exp_container,
+.afr_container, .afb_container,
 .sam_container, .nam_container, .aut_container, .srt_container, .vrm_container,
 .lng_container, .ain_container, .pet_container, .elt_container, .slt_container,
 .vss_container, .zie_container, .ovt_container {
@@ -89,7 +90,8 @@ h2 {
   clear: both;
 }
 
-.con_container, .nr_container, .ops_container, .inc_container, .exp_container, .afr_container,
+.con_container, .nr_container, .ops_container, .inc_container, .exp_container,
+.afr_container, .afb_container,
 .sam_container, .nam_container, .aut_container, .srt_container, .vrm_container,
 .lng_container, .ain_container, .pet_container, .elt_container, .slt_container,
 .vss_container, .zie_container, .ovt_container {
@@ -133,6 +135,27 @@ h2 {
   margin-left: 4pt;
 }
 
+.expand_container {
+  margin-left: 11pt;
+  width: 20pt;
+  height: 20pt;
+  float: right;
+}
+
+.expand_button {
+  border: 1px solid #666;
+  background-color: #f9f9f9;
+  width: 16pt;
+  height: 16pt;
+  text-align: center;
+  transition: 1s
+}
+
+.expand_button.collapse {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
 .ops, .inc, .exp, .afr, .sam, .nam, .aut, .srt, .vrm, .lng, .ain, .pet,
 .elt, div.editie, div.secundaire_lit, div.parallel_variant {
   /* border: 1px solid red; */
@@ -144,14 +167,7 @@ h2 {
   display: inline;
 }
 
-div.ref {
-  display: none;
-  padding-left: 5em;
-  padding-top: 0.1em;
-  padding-bottom: 0.2em;
-}
-
-.editie:hover div.ref, .secundaire_lit:hover div.ref {
+.secundaire_lit div.ref.expand {
   color: #666;
   display: block;
   font-size: 11pt;
@@ -160,7 +176,16 @@ div.ref {
   padding-bottom: 0.75em;
 }
 
-.ref.ref {
+.editie div.ref.expand, .per.expand {
+  color: #666;
+  display: block;
+  font-size: 11pt;
+  padding-left: 3em;
+  padding-top: 0.2em;
+  padding-bottom: 0.75em;
+}
+
+.ref.ref, .per {
   display: none;
 }
 
@@ -177,6 +202,15 @@ div.ref {
 
 .hulthem_nummer_contents {
   padding-right: 1em;
+}
+
+.facsimile {
+  width: 450px;
+  border: 1px solid #999;
+}
+
+.afb_caption {
+  font-size: 11pt;
 }
 
 .header {

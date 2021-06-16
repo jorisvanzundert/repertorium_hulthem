@@ -168,6 +168,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L13332">Adema 1994</span>
           <span prov="DOCUMENT.DOC:L13333">,&nbsp;(bewerking)</span>
@@ -514,6 +520,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L13407">Ampe 1962</span>
           <div class="ref">
@@ -1736,55 +1748,133 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L13656">
-          <span class="vss">(a) vss. 1-954</span>
+          <span class="vss">(a) vss. 1-954&nbsp;</span>
           <span prov="DOCUMENT.DOC:L13657">olim Lübeck, Stadtbibliothek, Phil. germ. oct. 3105</span>
-          <div class="ref">
-            <span class="ref">202</span>
-            <span class="title">(202)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L13658">&nbsp;[1475 - 1500]</span>
           <span prov="DOCUMENT.DOC:L13659">,&nbsp;f. ? (variant: incunabel)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1448">olim Lübeck, Stadtbibliothek, Phil. germ. oct. 3105</div>
+            <div class="mov" prov="PERDOC.DOC:L1449">(in W.O. II verloren gegaan)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1450">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1451">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1452">Datering: ca. 1486-1492, incunabel: Gouda, Govert van Ghemen</div>
+            <span prov="PERDOC.DOC:L1453">Beckers 1989</span>
+            <div class="ref">
+              <span class="ref">Beckers 1989</span>
+              <span class="title">J. Beckers, 'Van hoofse toneeltekst naar leestekst voor burgers? Enkele opmerkingen bij de Goudse druk van <i>Lanseloet</i>'. In: <i>Literatuur</i> 6 (1989), p. 222-228.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1454">Beckers 1993</span>
+            <span class="pps" prov="PERDOC.DOC:L1455">,&nbsp;p. 8</span>
+            <div class="ref">
+              <span class="ref">Beckers 1993</span>
+              <span class="title">J.J.M. Beckers, <i>Een tekst voor alle tijden. Een onderzoek naar de receptiesituatie van de oudste overgeleverde versies van Lanceloet van Denemerken</i>. S.l., s.n., s.a. [1993]. Diss. Amsterdam (UvA) 1993.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L1456">Aanvullende informatie:&nbsp;niet in BNM: incunabel</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1457">206A</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L13660">
-          <span class="vss">(a) vss. 1-954</span>
+          <span class="vss">(b) vss. 1-954&nbsp;</span>
           <span prov="DOCUMENT.DOC:L13661">'s-Gravenhage, Koninklijke Bibliotheek, 151 D 11</span>
-          <div class="ref">
-            <span class="ref">146</span>
-            <span class="title">(146)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L13662">&nbsp;[1475 - 1500]</span>
           <span prov="DOCUMENT.DOC:L13663">,&nbsp;f. ? (variant: incunabelfragment)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1045">'s-Gravenhage, Koninklijke Bibliotheek, 151 D 11</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1046">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1047">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1048">Datering: 1491; incunabelfragment, anoniem, wrs. gedrukt door Peter van Os te Breda</div>
+            <span prov="PERDOC.DOC:L1049">Beckers 1993</span>
+            <span class="pps" prov="PERDOC.DOC:L1050">,&nbsp;p. 9-10</span>
+            <div class="ref">
+              <span class="ref">Beckers 1993</span>
+              <span class="title">J.J.M. Beckers, <i>Een tekst voor alle tijden. Een onderzoek naar de receptiesituatie van de oudste overgeleverde versies van Lanceloet van Denemerken</i>. S.l., s.n., s.a. [1993]. Diss. Amsterdam (UvA) 1993.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L1051">Aanvullende informatie:&nbsp;niet in BNM: incunabel</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1052">206A</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L13664">
-          <span class="vss">(a) vss. 1-954</span>
+          <span class="vss">(c) vss. 1-954&nbsp;</span>
           <span prov="DOCUMENT.DOC:L13665">Brussel, Koninklijke Bibliotheek van België, A 1.521</span>
-          <div class="ref">
-            <span class="ref">63</span>
-            <span class="title">(63)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L13666">&nbsp;[1500 - 1525]</span>
           <span prov="DOCUMENT.DOC:L13667">,&nbsp;f. ? (variant: vroege druk, fragment)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L436">Brussel, Koninklijke Bibliotheek van België, A 1.521</div>
+            <div class="pdtp" prov="PERDOC.DOC:L437">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L438">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L439">Datering: 1508; vroege druk: Antwerpen, Adriaen van Berghen</div>
+            <span prov="PERDOC.DOC:L440">Beckers 1993</span>
+            <span class="pps" prov="PERDOC.DOC:L441">,&nbsp;p. 10</span>
+            <div class="ref">
+              <span class="ref">Beckers 1993</span>
+              <span class="title">J.J.M. Beckers, <i>Een tekst voor alle tijden. Een onderzoek naar de receptiesituatie van de oudste overgeleverde versies van Lanceloet van Denemerken</i>. S.l., s.n., s.a. [1993]. Diss. Amsterdam (UvA) 1993.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L442">Aanvullende informatie:&nbsp;niet in BNM: vroege druk</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L443">206A</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L13668">
-          <span class="vss">(a) vss. 1-954</span>
+          <span class="vss">(d) vss. 1-954&nbsp;</span>
           <span prov="DOCUMENT.DOC:L13669">München, Bayerische Staatsbibliothek, Rar. 990</span>
-          <div class="ref">
-            <span class="ref">208</span>
-            <span class="title">(208)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L13670">&nbsp;[1500 - 1525]</span>
           <span prov="DOCUMENT.DOC:L13671">,&nbsp;f. ? (variant: vroege druk)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1487">München, Bayerische Staatsbibliothek, Rar. 990</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1488">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L1489">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1490">Datering: ca. 1518; vroege druk: Antwerpen, Willem Vorsterman</div>
+            <span prov="PERDOC.DOC:L1491">Beckers 1993</span>
+            <span class="pps" prov="PERDOC.DOC:L1492">,&nbsp;p. 10-11</span>
+            <div class="ref">
+              <span class="ref">Beckers 1993</span>
+              <span class="title">J.J.M. Beckers, <i>Een tekst voor alle tijden. Een onderzoek naar de receptiesituatie van de oudste overgeleverde versies van Lanceloet van Denemerken</i>. S.l., s.n., s.a. [1993]. Diss. Amsterdam (UvA) 1993.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L1493">Aanvullende informatie:&nbsp;niet in BNM: vroege druk</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1494">206A</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L13672">
-          <span class="vss">(a) vss. 1-954</span>
+          <span class="vss">(e) vss. ?&nbsp;</span>
           <span prov="DOCUMENT.DOC:L13673">Borssele, Gemeente-archief, s.o., archief van de Rederijkerskamer De Fiolieren</span>
-          <div class="ref">
-            <span class="ref">23</span>
-            <span class="title">(23)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L13674">&nbsp;[1675 - 1700]</span>
           <span prov="DOCUMENT.DOC:L13675">,&nbsp;f. ? (toneelvariant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L150">Borssele, Gemeente-archief, s.o., archief van de Rederijkerskamer De Fiolieren</div>
+            <div class="mov" prov="PERDOC.DOC:L151">[heden in bruikleen Universiteitsbibliotheek Nijmegen: 1 U 27]</div>
+            <div class="pdtp" prov="PERDOC.DOC:L152">Post quem: 1675</div>
+            <div class="adtp" prov="PERDOC.DOC:L153">Ante quem: 1700</div>
+            <div class="datp" prov="PERDOC.DOC:L154">Datering: 1684 (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L155">Hüsken 1985A</span>
+            <span class="pps" prov="PERDOC.DOC:L156">,&nbsp;p. 9</span>
+            <div class="ref">
+              <span class="ref">Hüsken 1985A</span>
+              <span class="title">W.N.M. Hüsken & F.A.M. Schaars, <i>Sandrijn en Lanslot. Diplomatische uitgave van twee toneelrollen uit het voormalig archief van de rederijkerskamer "De Fiolieren" te 's-Gravenpolder</i>. Nijmegen etc. (Alfa) 1985.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L157">Aanvullende informatie:&nbsp;in BNM te vinden onder: s.o., B</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L158">206A</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1793,6 +1883,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L13677">Beckers 1989</span>
           <span prov="DOCUMENT.DOC:L13678">,&nbsp;(a)</span>

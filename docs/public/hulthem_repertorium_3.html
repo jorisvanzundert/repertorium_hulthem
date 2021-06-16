@@ -152,6 +152,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L254">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L255">,&nbsp;band 1 p. 158-168</span>
@@ -183,6 +189,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L260">Meertens 1930-1934</span>
           <span prov="DOCUMENT.DOC:L261">,&nbsp;dl. 1 p. 149-150</span>
@@ -230,24 +242,54 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L270">
-          <span class="vss">(a) vss. 1-389</span>
+          <span class="vss">(a) vss. 1-389&nbsp;</span>
           <span prov="DOCUMENT.DOC:L271">Tübingen, Universitätsbibliothek, ME IV 3</span>
-          <div class="ref">
-            <span class="ref">234</span>
-            <span class="title">(234)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L272">&nbsp;[1425 - 1450]</span>
           <span prov="DOCUMENT.DOC:L273">,&nbsp;f. 1r-24v (langere variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1679">Tübingen, Universitätsbibliothek, ME IV 3</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1680">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1681">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1682">Datering: ca. 1440 (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1683">Sonnemans 1996</span>
+            <span class="pps" prov="PERDOC.DOC:L1684">,&nbsp;p. 14-38</span>
+            <div class="ref">
+              <span class="ref">Sonnemans 1996</span>
+              <span class="title">G. Sonnemans (ed.), <i>Het Tübingse Sint-Geertruihandschrift. Hs. Tübingen UB Me IV 3</i>. Hilversum (Verloren) 1996. Middeleeuwse verzamelhandschriften uit de Nederlanden 3.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1685">Verdam 1906</span>
+            <div class="ref">
+              <span class="ref">Verdam 1906</span>
+              <span class="title">J. Verdam (ed.), 'Het Tübingsche handschrift van <i>Ons Heren passie</i>'. In: <i>Tijdschrift voor Ned. taal- en letterkunde</i> 25 (1906), p. 190-242.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1686">3</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L274">
-          <span class="vss">(a) vss. 1-389</span>
+          <span class="vss">(b) vss. 159-258&nbsp;</span>
           <span prov="DOCUMENT.DOC:L275">Kopenhagen, Det Kongelige Bibliotek, Rostgaard 160.6 fol.</span>
-          <div class="ref">
-            <span class="ref">166</span>
-            <span class="title">(166)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L276">&nbsp;[1400 - 1450]</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1215">Kopenhagen, Det Kongelige Bibliotek, Rostgaard 160.6 fol.</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1216">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1217">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1218">Datering: eerste helft 15e eeuw</div>
+            <div class="opm" prov="PERDOC.DOC:L1219">Aanvullende informatie:&nbsp;niet in BNM; er is geen publicatie bekend over dit handschrift; J.G.M. Kienhorst zal het beschrijven en de tekst ervan uitgeven in zijn proefschrift</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1220">3</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -256,6 +298,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L278">Verdam 1906</span>
           <span prov="DOCUMENT.DOC:L279">,&nbsp;(a)</span>

@@ -130,6 +130,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L4231">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L4232">,&nbsp;band 1 p. 371-372</span>
@@ -153,6 +159,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L4235">Bloomfield 1952</span>
           <div class="ref">
@@ -205,35 +217,85 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L4244">
-          <span class="vss">(a)</span>
+          <span class="vss">(a)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L4245">S. Petersburg, Bibliotheka Akademii Nauk, XX I LXIII</span>
-          <div class="ref">
-            <span class="ref">223</span>
-            <span class="title">(223)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L4246">&nbsp;[1300 - 1350]</span>
           <span prov="DOCUMENT.DOC:L4247">,&nbsp;f. 267v.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1587">S. Petersburg, Bibliotheka Akademii Nauk, XX I LXIII</div>
+            <div class="mov" prov="PERDOC.DOC:L1588">(<I>olim</I> Leningrad AvW XX I LXIII)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1589">Post quem: 1300</div>
+            <div class="adtp" prov="PERDOC.DOC:L1590">Ante quem: 1350</div>
+            <div class="datp" prov="PERDOC.DOC:L1591">Datering: 1e helft 14e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1592">60,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1593">61,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1594">62</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L4248">
-          <span class="vss">(a)</span>
+          <span class="vss">(b)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L4249">Wenen, Österreichische Nationalbibliothek, 13708</span>
-          <div class="ref">
-            <span class="ref">245</span>
-            <span class="title">(245)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L4250">&nbsp;[1375 - 1425]</span>
           <span prov="DOCUMENT.DOC:L4251">,&nbsp;f. 227ra</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1752">Wenen, Österreichische Nationalbibliothek, 13708</div>
+            <div class="mov" prov="PERDOC.DOC:L1753">(<I>olim</I> Suppl. 2644)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1754">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L1755">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1756">Datering: ca. 1392 (BNM: 1392, 1394, 1402)</div>
+            <span prov="PERDOC.DOC:L1757">Biemans 1997</span>
+            <span class="pps" prov="PERDOC.DOC:L1758">,&nbsp;p. 116-123, 450-452 (64)</span>
+            <div class="ref">
+              <span class="ref">Biemans 1997</span>
+              <span class="title">J.A.A.M. Biemans, <i>Onsen Speghele Ystoriale in Vlaemsche. Codicologisch onderzoek naar de overlevering van de Spieghel historiael van Jacob van Maerlant, Philip Utenbroeke en Lodewijk van Velthem met een beschrijving van de handschriften en fragmenten</i>. 2 dln. Leuven (Peeters) 1997. Schrift en schriftdragers in de Nederlanden in de Middeleeuwen II. Diss. Utrecht 1995.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1759">Deschamps 1971</span>
+            <span class="pps" prov="PERDOC.DOC:L1760">,&nbsp;p. 30-33</span>
+            <div class="ref">
+              <span class="ref">Deschamps 1971</span>
+              <span class="title">J. Deschamps, <i>Het Weense handschrift van de Tweede partie van de Spiegel historiael/The Vienna manuscript of the Second part of the Spiegel historiael. Hs. Wenen, Österreichische Nationalbibliothek, 13.708</i>. Copenhagen (Rosenkilde & Bagger) 1971. Medieval manuscripts from the Low Countries in Facsimile 1.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1761">Deschamps 1972</span>
+            <span class="pps" prov="PERDOC.DOC:L1762">,&nbsp;p. 95-98 (28)</span>
+            <div class="ref">
+              <span class="ref">Deschamps 1972</span>
+              <span class="title">J. Deschamps, <i>Middelnederlandse handschriften uit Europese en Amerikaanse bibliotheken. Catalogus [van de] tentoonstelling ter gelegenheid van het honderdjarig bestaan van de Koninklijke Zuidnederlandse Maatschappij voor taal- en letterkunde en geschiedenis [in de] Koninklijke Bibliotheek Albert I [te] Brussel, 24 okt.-24 dec. 1970</i>. 2e herz. dr. Leiden (Brill) 1972.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1763">62,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1764">135,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1765">183</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L4252">
-          <span class="vss">(a)</span>
+          <span class="vss">(c)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L4253">Brussel, Koninklijke Bibliotheek van België, 3.026-30</span>
-          <div class="ref">
-            <span class="ref">35</span>
-            <span class="title">(35)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L4254">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L4255">,&nbsp;f. 220a-226a</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L249">Brussel, Koninklijke Bibliotheek van België, 3.026-30</div>
+            <div class="pdtp" prov="PERDOC.DOC:L250">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L251">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L252">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L253">60,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L254">61,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L255">62</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -242,6 +304,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L4257">Deschamps 1971</span>
           <span prov="DOCUMENT.DOC:L4258">,&nbsp;(b)</span>

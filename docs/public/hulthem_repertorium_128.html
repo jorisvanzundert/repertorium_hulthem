@@ -47,9 +47,11 @@
       <div class="column_left">
         <span class="label">Afbeelding:&nbsp;</span>
       </div>
-      <div class="afb" prov="DOCUMENT.DOC:L7390">
-        <span class="afb_caption">Foto van f. 104r</span>
-        <img src="/images/afb04.png" alt="Foto van f. 104r" title="Foto van f. 104r" />
+      <div class="column_right">
+        <div class="afb" prov="DOCUMENT.DOC:L7390">
+          <div class="afb_caption">Foto van f. 104r</div>
+          <img class="facsimile" src="images/afb04.png" alt="Foto van f. 104r" title="Foto van f. 104r" />
+        </div>
       </div>
     </div>
     <div class="ops_container">
@@ -167,6 +169,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L7410">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L7411">,&nbsp;band 1 p. 576-577</span>
@@ -198,6 +206,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L7416">Van Anrooij 1991</span>
           <span prov="DOCUMENT.DOC:L7417">,&nbsp;p. 193-194</span>

@@ -148,6 +148,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L12315">Blommaert 1838-1851</span>
           <span prov="DOCUMENT.DOC:L12316">,&nbsp;dl. 2 p. 109-110</span>
@@ -195,6 +201,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L12325">Van Anrooij 1991</span>
           <span prov="DOCUMENT.DOC:L12326">,&nbsp;p. 187</span>
@@ -336,15 +348,32 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L12357">
-          <span class="vss">Vss. 1-158</span>
+          <span class="vss">Vss. 1-158&nbsp;</span>
           <span prov="DOCUMENT.DOC:L12358">Brussel, Koninklijke Bibliotheek van België, II 116</span>
-          <div class="ref">
-            <span class="ref">65</span>
-            <span class="title">(65)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L12359">&nbsp;[1400 - 1450]</span>
           <span prov="DOCUMENT.DOC:L12360">,&nbsp;f. 19v-22v (160 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L451">Brussel, Koninklijke Bibliotheek van België, II 116</div>
+            <div class="pdtp" prov="PERDOC.DOC:L452">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L453">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L454">Datering: 1e helft 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L455">6,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L456">47A,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L457">71,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L458">148,&nbsp;</span>
+              <span class="vop" prov="PERDOC.DOC:L459">spr. 1</span>
+              <span class="var" prov="PERDOC.DOC:L460">195</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -353,6 +382,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L12362">Braekman 1969</span>
           <span prov="DOCUMENT.DOC:L12363">,&nbsp;p. 102-107</span>

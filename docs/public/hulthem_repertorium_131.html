@@ -147,6 +147,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L7526">Blommaert 1855</span>
           <div class="ref">
@@ -177,6 +183,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L7531">Hogenelst 1991</span>
           <span prov="DOCUMENT.DOC:L7532">,&nbsp;p. 182</span>
@@ -215,35 +227,84 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L7538">
-          <span class="vss">(a) vss. 1-64</span>
+          <span class="vss">(a) vss. 1-64&nbsp;</span>
           <span prov="DOCUMENT.DOC:L7539">Leiden, Universiteitsbibliotheek, LTK 1201</span>
-          <div class="ref">
-            <span class="ref">184</span>
-            <span class="title">(184)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L7540">&nbsp;[1350 - 1400]</span>
           <span prov="DOCUMENT.DOC:L7541">,&nbsp;f. 1ra,35-f. 1va,39 (98 vss.: 'Niemen en mach tween heeren dienen' ondertekend door 'Egidius'</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1322">Leiden, Universiteitsbibliotheek, LTK 1201</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1323">Post quem: 1350</div>
+            <div class="adtp" prov="PERDOC.DOC:L1324">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L1325">Datering: 2e helft 14e eeuw (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1326">Verdam 1892A</span>
+            <div class="ref">
+              <span class="ref">Verdam 1892A</span>
+              <span class="title">J. Verdam (ed.), 'Kleine Middelnederlandsche overblijfselen'. In: <i>Tijdschrift voor Ned. taal- en letterkunde</i> 11 (1892), p. 285-305.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1327">122</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L7542">
-          <span class="vss">(a) vss. 1-64</span>
+          <span class="vss">(b) vss. 1-64&nbsp;</span>
           <span prov="DOCUMENT.DOC:L7543">Stuttgart, Württembergische Landesbibliothek, Poët. et philol. fol. 22</span>
-          <div class="ref">
-            <span class="ref">228</span>
-            <span class="title">(228)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L7544">&nbsp;[1375 - 1425]</span>
           <span prov="DOCUMENT.DOC:L7545">,&nbsp;2x: f. 85vb-86ra en f. 265ra-265rb (varianten)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1623">Stuttgart, Württembergische Landesbibliothek, Poët. et philol. fol. 22</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1624">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L1625">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1626">Datering: 1380-1425</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1627">2,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1628">18,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1629">24,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1630">44,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1631">71,&nbsp;</span>
+              <span class="vop" prov="PERDOC.DOC:L1632">(2x)</span>
+              <span class="var" prov="PERDOC.DOC:L1633">92,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1634">111,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1635">122,&nbsp;</span>
+              <span class="vop" prov="PERDOC.DOC:L1636">(2x)</span>
+              <span class="var" prov="PERDOC.DOC:L1637">124,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1638">148,&nbsp;</span>
+              <span class="vop" prov="PERDOC.DOC:L1639">spr. 5</span>
+              <span class="var" prov="PERDOC.DOC:L1640">183</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L7546">
-          <span class="vss">(a) vss. 1-64</span>
+          <span class="vss">(c) vss. 1-64&nbsp;</span>
           <span prov="DOCUMENT.DOC:L7547">Paderborn, Erzbischöfliche Akademische Bibliothek, Sa 8</span>
-          <div class="ref">
-            <span class="ref">217</span>
-            <span class="title">(217)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L7548">&nbsp;[1400 - 1450]</span>
           <span prov="DOCUMENT.DOC:L7549">,&nbsp;f. 1va-b (Middelnederduitse variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1548">Paderborn, Erzbischöfliche Akademische Bibliothek, Sa 8</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1549">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1550">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1551">Datering: 1419-1428</div>
+            <span prov="PERDOC.DOC:L1552">Peters 1974</span>
+            <div class="ref">
+              <span class="ref">Peters 1974</span>
+              <span class="title">R. Peters, 'Die mnd. Gedichte der Paderborner Hs. Sa8 aus Böddeken. Zugleich ein Beitrag zur Geschichte der Brüder Conradt und Engelbert van der Wijch aus Münster'. In: <i>Niederdeutsches Wort</i> 14 (1974), p. 59-75.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L1553">Aanvullende informatie:&nbsp;niet gevonden in BNM</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1554">122,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1555">189</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -252,6 +313,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L7551">Brinkman 1997B</span>
           <span prov="DOCUMENT.DOC:L7552">,&nbsp;p. 456-457, 1157-1158 (b)</span>

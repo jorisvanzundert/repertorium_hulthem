@@ -154,6 +154,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L375">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L376">,&nbsp;band 1 p. 177-196</span>
@@ -193,6 +199,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L383">Baert 1995</span>
           <div class="ref">
@@ -433,55 +445,107 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L430">
-          <span class="vss">(a) vss. 1-591</span>
+          <span class="vss">(a) vss. 1-591&nbsp;</span>
           <span prov="DOCUMENT.DOC:L431">Utrecht, Universiteitsbibliotheek, 1329</span>
-          <div class="ref">
-            <span class="ref">238</span>
-            <span class="title">(238)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L432">&nbsp;[1425 - 1450]</span>
           <span prov="DOCUMENT.DOC:L433">,&nbsp;f. 34ra-37vb (fragment: eerste 567 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1706">Utrecht, Universiteitsbibliotheek, 1329</div>
+            <div class="mov" prov="PERDOC.DOC:L1707">(<I>olim</I> 5 F 12, <I>olim</I> Eccl. 507)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1708">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1709">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1710">Datering: 1438</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1711">5</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L434">
-          <span class="vss">(a) vss. 1-591</span>
+          <span class="vss">(b) vss. 512-699&nbsp;</span>
           <span prov="DOCUMENT.DOC:L435">Brussel, Koninklijke Bibliotheek van België, II 5.580</span>
-          <div class="ref">
-            <span class="ref">71</span>
-            <span class="title">(71)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L436">&nbsp;[1350 - 1375]</span>
           <span prov="DOCUMENT.DOC:L437">,&nbsp;(fragmenten)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L492">Brussel, Koninklijke Bibliotheek van België, II 5.580</div>
+            <div class="pdtp" prov="PERDOC.DOC:L493">Post quem: 1350</div>
+            <div class="adtp" prov="PERDOC.DOC:L494">Ante quem: 1375</div>
+            <div class="datp" prov="PERDOC.DOC:L495">Datering: ca. 1360</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L496">5</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L438">
-          <span class="vss">(a) vss. 1-591</span>
+          <span class="vss">(c) vss. 1-780&nbsp;</span>
           <span prov="DOCUMENT.DOC:L439">Groningen, Universiteitsbibliotheek, 405</span>
-          <div class="ref">
-            <span class="ref">155</span>
-            <span class="title">(155)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L440">&nbsp;[1325 - 1350]</span>
           <span prov="DOCUMENT.DOC:L441">,&nbsp;f. 210va-214va (gehele tekst: 848 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1133">Groningen, Universiteitsbibliotheek, 405</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1134">Post quem: 1325</div>
+            <div class="adtp" prov="PERDOC.DOC:L1135">Ante quem: 1350</div>
+            <div class="datp" prov="PERDOC.DOC:L1136">Datering: 1339?</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1137">5,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1138">43,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1139">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1140">175</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L442">
-          <span class="vss">(a) vss. 1-591</span>
+          <span class="vss">(d) vss. 390-658&nbsp;</span>
           <span prov="DOCUMENT.DOC:L443">Göttingen, Niedersächsische Staats- und Universitätsbibliothek, Luneb. 24a</span>
-          <div class="ref">
-            <span class="ref">121</span>
-            <span class="title">(121)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L444">&nbsp;[1300 - 1400]</span>
           <span prov="DOCUMENT.DOC:L445">,&nbsp;(fragmenten)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L843">Göttingen, Niedersächsische Staats- und Universitätsbibliothek, Luneb. 24a</div>
+            <div class="pdtp" prov="PERDOC.DOC:L844">Post quem: 1300</div>
+            <div class="adtp" prov="PERDOC.DOC:L845">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L846">Datering: 14e eeuw (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L847">Hermodsson 1959</span>
+            <span class="pps" prov="PERDOC.DOC:L848">,&nbsp;p. 45-46</span>
+            <div class="ref">
+              <span class="ref">Hermodsson 1959</span>
+              <span class="title">L. Hermodsson, <i>Dat boec van den houte. Eine mittelniederländische Dichtung von der Herkunft des Kreuzes Christi</i>. Mit einer Einleitung neu herausgegeben von ─. Uppsala etc. (Ad Lundequistska Bokhandeln) 1959. Uppsala Universitets Årsskrift 1959:1.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L849">5</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L446">
-          <span class="vss">(a) vss. 1-591</span>
+          <span class="vss">(e) vss. 70-753&nbsp;</span>
           <span prov="DOCUMENT.DOC:L447">Düsseldorf, Hauptstaatsarchiv, s.o.</span>
-          <div class="ref">
-            <span class="ref">100</span>
-            <span class="title">(100)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L448">&nbsp;[1400 - 1450]</span>
           <span prov="DOCUMENT.DOC:L449">,&nbsp;(fragmenten)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L702">Düsseldorf, Hauptstaatsarchiv, s.o.</div>
+            <div class="pdtp" prov="PERDOC.DOC:L703">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L704">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L705">Datering: 1e helft 15e eeuw (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L706">Hermodsson 1959</span>
+            <span class="pps" prov="PERDOC.DOC:L707">,&nbsp;p. 40-42</span>
+            <div class="ref">
+              <span class="ref">Hermodsson 1959</span>
+              <span class="title">L. Hermodsson, <i>Dat boec van den houte. Eine mittelniederländische Dichtung von der Herkunft des Kreuzes Christi</i>. Mit einer Einleitung neu herausgegeben von ─. Uppsala etc. (Ad Lundequistska Bokhandeln) 1959. Uppsala Universitets Årsskrift 1959:1.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L708">5</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -490,6 +554,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L451">Deschamps 1972</span>
           <span prov="DOCUMENT.DOC:L452">,&nbsp;52-53 (a, b, c, d, e)</span>

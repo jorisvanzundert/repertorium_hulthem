@@ -156,6 +156,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L5569">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L5570">,&nbsp;band 1 p. 441-443</span>
@@ -178,6 +184,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L5572">Van Anrooij 1991</span>
           <span prov="DOCUMENT.DOC:L5573">,&nbsp;p. 188-189</span>
@@ -313,55 +325,116 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L5598">
-          <span class="vss">(a) vss. 1-96</span>
+          <span class="vss">(a) vss. 1-96&nbsp;</span>
           <span prov="DOCUMENT.DOC:L5599">Nijmegen, Gemeentearchief, 953</span>
-          <div class="ref">
-            <span class="ref">213</span>
-            <span class="title">(213)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L5600">&nbsp;[1425 - 1450]</span>
           <span prov="DOCUMENT.DOC:L5601">,&nbsp;f. 279vb-283va (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1521">Nijmegen, Gemeentearchief, 953</div>
+            <div class="mov" prov="PERDOC.DOC:L1522">(<I>olim</I> Nijmegen Weeshuis 61)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1523">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1524">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1525">Datering: 1445</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1526">59,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1527">89</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L5602">
-          <span class="vss">(a) vss. 1-96</span>
+          <span class="vss">(b) vss. 1-96&nbsp;</span>
           <span prov="DOCUMENT.DOC:L5603">Hamburg, Staats- und Universitätsbibliothek, Scrin. 102c</span>
-          <div class="ref">
-            <span class="ref">157</span>
-            <span class="title">(157)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L5604">&nbsp;[1400 - 1425]</span>
           <span prov="DOCUMENT.DOC:L5605">,&nbsp;f. 76r-80v (Middelnederduitse variant: 296 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1146">Hamburg, Staats- und Universitätsbibliothek, Scrin. 102c</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1147">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1148">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1149">Datering: 1404 (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1150">Brandis 1972</span>
+            <span class="pps" prov="PERDOC.DOC:L1151">,&nbsp;p. 175-176</span>
+            <div class="ref">
+              <span class="ref">Brandis 1972</span>
+              <span class="title">T. Brandis, <i>Die Codices in scrinio der Staats- und Universitätsbibliothek Hamburg 1-110</i>. Hamburg (Hauswedell) 1972. Katalog der Handschriften der Staats- und Universitätsbibliothek Hamburg 7, p. 175-176.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1152">5,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1153">89,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1154">180</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L5606">
-          <span class="vss">(a) vss. 1-96</span>
+          <span class="vss">(c) vss. 1-96&nbsp;</span>
           <span prov="DOCUMENT.DOC:L5607">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. fol. 1027</span>
-          <div class="ref">
-            <span class="ref">20</span>
-            <span class="title">(20)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L5608">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L5609">,&nbsp;f. 154vb-156rb (Rijnlandse variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L131">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. fol. 1027</div>
+            <div class="pdtp" prov="PERDOC.DOC:L132">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L133">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L134">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L135">59,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L136">89</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L5610">
-          <span class="vss">(a) vss. 1-96</span>
+          <span class="vss">(d) vss. 1-96&nbsp;</span>
           <span prov="DOCUMENT.DOC:L5611">Stuttgart, Württembergische Landesbibliothek, Poët. et philol. qu. 83</span>
-          <div class="ref">
-            <span class="ref">229</span>
-            <span class="title">(229)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L5612">&nbsp;[1375 - 1425]</span>
           <span prov="DOCUMENT.DOC:L5613">,&nbsp;f. 129r-134v (Rijnlandse variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1641">Stuttgart, Württembergische Landesbibliothek, Poët. et philol. qu. 83</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1642">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L1643">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1644">Datering: ca. 1400</div>
+            <span prov="PERDOC.DOC:L1645">Irtenkauf 1964-...</span>
+            <span class="pps" prov="PERDOC.DOC:L1646">,&nbsp;p. 140-142</span>
+            <div class="ref">
+              <span class="ref">Irtenkauf 1964-...</span>
+              <span class="title">W. Irtenkauf & I. Krekler, <i>Die Handschriften der Württembergischen Landesbibliothek Stuttgart</i>. Wiesbaden (Harrassowitz) 1964-... . ... dln. 1e reeks, deel 2: Codices poetici et philologici, beschrieben von ─ mit vorarbeiten von I. Dumke.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L1647">Aanvullende informatie:&nbsp;niet gevonden in BNM: Middelfrankische tekst</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1648">89</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L5614">
-          <span class="vss">(a) vss. 1-96</span>
+          <span class="vss">(e) vss. 1-96&nbsp;</span>
           <span prov="DOCUMENT.DOC:L5615">Wolfenbüttel, Herzog August Bibliothek, Cod. Guelph. Aug. 16.17. qu.</span>
-          <div class="ref">
-            <span class="ref">249</span>
-            <span class="title">(249)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L5616">&nbsp;[1100 - 1600]</span>
           <span prov="DOCUMENT.DOC:L5617">,&nbsp;f. 85v-87r (variant in clausen)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1782">Wolfenbüttel, Herzog August Bibliothek, Cod. Guelph. Aug. 16.17. qu.</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1783">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1784">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1785">Datering: datering onbekend</div>
+            <span prov="PERDOC.DOC:L1786">Heinemann 1890-1903</span>
+            <span class="pps" prov="PERDOC.DOC:L1787">,&nbsp;dl. 4 p. 202-203</span>
+            <div class="ref">
+              <span class="ref">Heinemann 1890-1903</span>
+              <span class="title">O. Heinemann, <i>Die Handschriften der herzoglichen Bibliothek</i>. 2e Abt.: Die Augusteischen Handschriften. Wolffenbüttel (Zwissler) 1890-1903.</span>
+            </div>
+            <div class="opm" prov="PERDOC.DOC:L1788">Aanvullende informatie:&nbsp;niet gevonden in BNM</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1789">89</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -370,6 +443,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L5619">Brandis 1972</span>
           <span prov="DOCUMENT.DOC:L5620">,&nbsp;p. 175-176 (b)</span>

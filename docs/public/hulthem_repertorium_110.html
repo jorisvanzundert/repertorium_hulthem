@@ -255,6 +255,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L6300">Blommaert 1838-1851</span>
           <span prov="DOCUMENT.DOC:L6301">,&nbsp;dl. 1 p. 84-90</span>
@@ -294,6 +300,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L6308">Van Anrooij 1986A</span>
           <div class="ref">
@@ -375,55 +387,117 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L6322">
-          <span class="vss">(a) vss. 1-352</span>
+          <span class="vss">(a) vss. 1-352&nbsp;</span>
           <span prov="DOCUMENT.DOC:L6323">Leiden, Universiteitsbibliotheek, LTK 1019</span>
-          <div class="ref">
-            <span class="ref">182</span>
-            <span class="title">(182)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L6324">&nbsp;[1425 - 1450]</span>
           <span prov="DOCUMENT.DOC:L6325">,&nbsp;f. 3a-8b (totaal 368 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1305">Leiden, Universiteitsbibliotheek, LTK 1019</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1306">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1307">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1308">Datering: ca. 1430 en in 1575 aangevuld (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1309">Stein 1994</span>
+            <span class="pps" prov="PERDOC.DOC:L1310">,&nbsp;p. 21-24</span>
+            <div class="ref">
+              <span class="ref">Stein 1994</span>
+              <span class="title">R. Stein, <i>Politiek en historiografie. Het ontstaansmilieu van Brabantse kronieken in de eerste helft van de vijftiende eeuw</i>. Leuven (Peeters) 1994. Diss. Leiden.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1311">Willems 1839-1869</span>
+            <span class="pps" prov="PERDOC.DOC:L1312">,&nbsp;dl. 1 p. XXIII-XXIV</span>
+            <div class="ref">
+              <span class="ref">Willems 1839-1869</span>
+              <span class="title">J.F. Willems & J.H. Bormans, <i>De Brabantsche yeesten of rymkronyk van Braband door Jan de Klerk, van Antwerpen</i>. Uitgegeven door ─. Brussel (Hayez) 1839-1869. 3 dln. in 2 bdn. Publications de la Commission Royale d'Histoire de l'Académie Royale de Belgique.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1313">101</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L6326">
-          <span class="vss">(a) vss. 1-352</span>
+          <span class="vss">(b) vss. 1-352&nbsp;</span>
           <span prov="DOCUMENT.DOC:L6327">Brussel, Koninklijke Bibliotheek van België, 15.652-56</span>
-          <div class="ref">
-            <span class="ref">52</span>
-            <span class="title">(52)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L6328">&nbsp;[1350 - 1400]</span>
           <span prov="DOCUMENT.DOC:L6329">,&nbsp;f. 4r-6v (korte versie: 219 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L350">Brussel, Koninklijke Bibliotheek van België, 15.652-56</div>
+            <div class="pdtp" prov="PERDOC.DOC:L351">Post quem: 1350</div>
+            <div class="adtp" prov="PERDOC.DOC:L352">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L353">Datering: kort vóór 1378</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L354">101</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L6330">
-          <span class="vss">(a) vss. 1-352</span>
+          <span class="vss">(c) vss. 1-352&nbsp;</span>
           <span prov="DOCUMENT.DOC:L6331">'s-Gravenhage, Koninklijke Bibliotheek, 131 G 37</span>
-          <div class="ref">
-            <span class="ref">141</span>
-            <span class="title">(141)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L6332">&nbsp;[1400 - 1425]</span>
           <span prov="DOCUMENT.DOC:L6333">,&nbsp;f. 1-19a (lange versie: 1991 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1011">'s-Gravenhage, Koninklijke Bibliotheek, 131 G 37</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1012">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1013">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1014">Datering: 1404 of kort hierna (BNM: ca. 1400-1405)</div>
+            <span prov="PERDOC.DOC:L1015">De Geer van Jutfaas 1848-1862</span>
+            <span class="pps" prov="PERDOC.DOC:L1016">,&nbsp;p. 1-67</span>
+            <div class="ref">
+              <span class="ref">De Geer van Jutfaas 1848-1862</span>
+              <span class="title">B.J.L. de Geer van Jutfaas (ed.), 'Chronijk van Brabant'. In: <i>Codex diplomaticus Neerlandicus: verzamelingen van oorkonden betrekkelijk de vaderlandsche geschiedenis uitgegeven door het Historisch Genootschap gevestigd te Utrecht</i>. Utrecht (Kemink) 1848-1862. 6 dln. 2de serie, VI. Dl. 1, p. I-VI en 1-67.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1017">101,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1018">143</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L6334">
-          <span class="vss">(a) vss. 1-352</span>
+          <span class="vss">(d) vss. 1-352&nbsp;</span>
           <span prov="DOCUMENT.DOC:L6335">Brussel, Koninklijke Bibliotheek van België, II 6.563</span>
-          <div class="ref">
-            <span class="ref">73</span>
-            <span class="title">(73)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L6336">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L6337">,&nbsp;f. 86-90v (304 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L505">Brussel, Koninklijke Bibliotheek van België, II 6.563</div>
+            <div class="pdtp" prov="PERDOC.DOC:L506">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L507">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L508">Datering: 15e eeuw (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L509">Lemaire 1987</span>
+            <span class="pps" prov="PERDOC.DOC:L510">,&nbsp;p. 281</span>
+            <div class="ref">
+              <span class="ref">Lemaire 1987</span>
+              <span class="title">Cl. Lemaire, 'Een kroniek vol <i>quade truffen</i>'. In: E. Cockx-Indestege e.a. (red.), <i>Miscellanea neerlandica. Opstellen voor dr. Jan Deschamps</i>. Leuven (Peeters) 1987. 3 dln., dl. 2, p. 279-295.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L511">101</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L6338">
-          <span class="vss">(a) vss. 1-352</span>
+          <span class="vss">(e) vss. 1-352&nbsp;</span>
           <span prov="DOCUMENT.DOC:L6339">Brussel, Koninklijke Bibliotheek van België, IV 686</span>
-          <div class="ref">
-            <span class="ref">83</span>
-            <span class="title">(83)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L6340">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L6341">,&nbsp;f. ? (328 vss.)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L574">Brussel, Koninklijke Bibliotheek van België, IV 686</div>
+            <div class="mov" prov="PERDOC.DOC:L575">(<I>olim</I> Brussel, Alg. Rijksarchief, mss. divers, 878)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L576">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L577">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L578">Datering: 15e eeuw (BNM: na 1469)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L579">101</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -432,6 +506,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L6343">Van Anrooij 1986A</span>
           <span prov="DOCUMENT.DOC:L6344">,&nbsp;(a, b, c)</span>

@@ -167,6 +167,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L14565">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L14566">,&nbsp;band 2 p. 1225-1227</span>
@@ -190,6 +196,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L14569">De Gheldere 1896</span>
           <span prov="DOCUMENT.DOC:L14570">,&nbsp;p. 192</span>
@@ -228,55 +240,106 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L14576">
-          <span class="vss">(a)</span>
+          <span class="vss">(a)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L14577">Brussel, Koninklijke Bibliotheek van België, 19.551</span>
-          <div class="ref">
-            <span class="ref">57</span>
-            <span class="title">(57)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L14578">&nbsp;[1400 - 1500]</span>
           <span prov="DOCUMENT.DOC:L14579">,&nbsp;f. 39-41 (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L393">Brussel, Koninklijke Bibliotheek van België, 19.551</div>
+            <div class="pdtp" prov="PERDOC.DOC:L394">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L395">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L396">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L397">6,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L398">19C,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L399">213</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L14580">
-          <span class="vss">(a)</span>
+          <span class="vss">(b)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L14581">Brussel, Koninklijke Bibliotheek van België, II 279</span>
-          <div class="ref">
-            <span class="ref">68</span>
-            <span class="title">(68)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L14582">&nbsp;[1500 - 1600]</span>
           <span prov="DOCUMENT.DOC:L14583">,&nbsp;f. 3-6 (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L477">Brussel, Koninklijke Bibliotheek van België, II 279</div>
+            <div class="pdtp" prov="PERDOC.DOC:L478">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L479">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L480">Datering: 16e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L481">213</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L14584">
-          <span class="vss">(a)</span>
+          <span class="vss">(c)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L14585">olim Leuven, Universiteitsbibliotheek, D 380</span>
-          <div class="ref">
-            <span class="ref">187</span>
-            <span class="title">(187)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L14586">&nbsp;[1100 - 1600]</span>
           <span prov="DOCUMENT.DOC:L14587">,&nbsp;f. 143-144v (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1345">olim Leuven, Universiteitsbibliotheek, D 380</div>
+            <div class="mov" prov="PERDOC.DOC:L1346">(verbrand in 1940)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1347">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1348">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1349">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1350">213</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L14588">
-          <span class="vss">(a)</span>
+          <span class="vss">(d)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L14589">Londen, British Library, Add. 18214</span>
-          <div class="ref">
-            <span class="ref">190</span>
-            <span class="title">(190)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L14590">&nbsp;[1475 - 1500]</span>
           <span prov="DOCUMENT.DOC:L14591">,&nbsp;f. 127v-128v (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1368">Londen, British Library, Add. 18214</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1369">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1370">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1371">Datering: ca. 1480 (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1372">De Flou 1895-1897</span>
+            <span class="pps" prov="PERDOC.DOC:L1373">,&nbsp;2e verslag p. 169-176</span>
+            <div class="ref">
+              <span class="ref">De Flou 1895-1897</span>
+              <span class="title">K. de Flou & Edw. Gailliard, 'Beschrijving van Middelnederlandsche en andere handschriften die in Engeland bewaard worden'. In: <i>Versl. & meded. van de Kon. Vl. Acad. voor taal- en letterkunde</i> 1895, p. 39-263 (= 1e verslag); 1896, p. 76-337 (= 2e verslag); 1897, p. 373-502 (= 3e verslag).</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1374">213</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L14592">
-          <span class="vss">(a)</span>
+          <span class="vss">(e)&nbsp;</span>
           <span prov="DOCUMENT.DOC:L14593">Londen, British Library, Add. 17445</span>
-          <div class="ref">
-            <span class="ref">189</span>
-            <span class="title">(189)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L14594">&nbsp;[1500 - 1600]</span>
           <span prov="DOCUMENT.DOC:L14595">,&nbsp;f. 33r (variant)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1361">Londen, British Library, Add. 17445</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1362">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L1363">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1364">Datering: 16e eeuw (BNM: ongedateerd)</div>
+            <span prov="PERDOC.DOC:L1365">De Flou 1895-1897</span>
+            <span class="pps" prov="PERDOC.DOC:L1366">,&nbsp;2e verslag p. 189-192</span>
+            <div class="ref">
+              <span class="ref">De Flou 1895-1897</span>
+              <span class="title">K. de Flou & Edw. Gailliard, 'Beschrijving van Middelnederlandsche en andere handschriften die in Engeland bewaard worden'. In: <i>Versl. & meded. van de Kon. Vl. Acad. voor taal- en letterkunde</i> 1895, p. 39-263 (= 1e verslag); 1896, p. 76-337 (= 2e verslag); 1897, p. 373-502 (= 3e verslag).</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1367">213</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -285,6 +348,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L14597">De Flou 1895-1897</span>
           <span prov="DOCUMENT.DOC:L14598">,&nbsp;2e verslag, p. 174, 190 (d, e)</span>

@@ -147,6 +147,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L12773">Blommaert 1838-1851</span>
           <span prov="DOCUMENT.DOC:L12774">,&nbsp;dl. 1 p. 73-83</span>
@@ -193,6 +199,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L12782">Axters 1943</span>
           <div class="ref">
@@ -277,15 +289,45 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L12799">
-          <span class="vss">Vss. 1-864</span>
+          <span class="vss">Vss. 1-864&nbsp;</span>
           <span prov="DOCUMENT.DOC:L12800">'s-Gravenhage, Koninklijke Bibliotheek, KNAW XX</span>
-          <div class="ref">
-            <span class="ref">147</span>
-            <span class="title">(147)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L12801">&nbsp;[1325 - 1375]</span>
           <span prov="DOCUMENT.DOC:L12802">,&nbsp;f. 87r (variant in <I>Spiegel Historiael</I> I, 8 kap. 48)</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1053">'s-Gravenhage, Koninklijke Bibliotheek, KNAW XX</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1054">Post quem: 1325</div>
+            <div class="adtp" prov="PERDOC.DOC:L1055">Ante quem: 1375</div>
+            <div class="datp" prov="PERDOC.DOC:L1056">Datering: ca. 1350 (BNM; ca. 1320-1330)</div>
+            <span prov="PERDOC.DOC:L1057">Biemans 1997</span>
+            <span class="pps" prov="PERDOC.DOC:L1058">,&nbsp;p. 332-341 (1)</span>
+            <div class="ref">
+              <span class="ref">Biemans 1997</span>
+              <span class="title">J.A.A.M. Biemans, <i>Onsen Speghele Ystoriale in Vlaemsche. Codicologisch onderzoek naar de overlevering van de Spieghel historiael van Jacob van Maerlant, Philip Utenbroeke en Lodewijk van Velthem met een beschrijving van de handschriften en fragmenten</i>. 2 dln. Leuven (Peeters) 1997. Schrift en schriftdragers in de Nederlanden in de Middeleeuwen II. Diss. Utrecht 1995.</span>
+            </div>
+            <span prov="PERDOC.DOC:L1059">Deschamps 1972</span>
+            <span class="pps" prov="PERDOC.DOC:L1060">,&nbsp;p. 93-95 (27)</span>
+            <div class="ref">
+              <span class="ref">Deschamps 1972</span>
+              <span class="title">J. Deschamps, <i>Middelnederlandse handschriften uit Europese en Amerikaanse bibliotheken. Catalogus [van de] tentoonstelling ter gelegenheid van het honderdjarig bestaan van de Koninklijke Zuidnederlandse Maatschappij voor taal- en letterkunde en geschiedenis [in de] Koninklijke Bibliotheek Albert I [te] Brussel, 24 okt.-24 dec. 1970</i>. 2e herz. dr. Leiden (Brill) 1972.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1061">90,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1062">91,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1063">148,&nbsp;</span>
+              <span class="vop" prov="PERDOC.DOC:L1064">spr. 27</span>
+              <span class="var" prov="PERDOC.DOC:L1065">175,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1066">201,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1067">202</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -294,6 +336,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L12804">Biemans 1997</span>
           <span prov="DOCUMENT.DOC:L12805">,&nbsp;p. 98-99</span>

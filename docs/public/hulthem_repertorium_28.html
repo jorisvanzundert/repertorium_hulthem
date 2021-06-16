@@ -164,6 +164,12 @@
         <span class="label">Edities:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.elt_container .editie div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.elt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="editie">
           <span prov="DOCUMENT.DOC:L1949">Brinkman/Schenkel 1999</span>
           <span prov="DOCUMENT.DOC:L1950">,&nbsp;band 1 p. 264-271</span>
@@ -219,6 +225,12 @@
         <span class="label">Secundaire literatuur:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.slt_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.slt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L1961">Burghoorn 1984</span>
           <span prov="DOCUMENT.DOC:L1962">,&nbsp;(scriptie)</span>
@@ -381,25 +393,43 @@
         <span class="label">Parallellen en varianten:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.vss_container .per' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.vss_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L1996">
-          <span class="vss">(a) vss. 1-282</span>
+          <span class="vss">(a) vss. 1-282&nbsp;</span>
           <span prov="DOCUMENT.DOC:L1997">Keulen, Historisches Archiv, GB oct. 69</span>
-          <div class="ref">
-            <span class="ref">163</span>
-            <span class="title">(163)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L1998">&nbsp;[1100 - 1600]</span>
           <span prov="DOCUMENT.DOC:L1999">,&nbsp;f. 1r-9v</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1193">Keulen, Historisches Archiv, GB oct. 69</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1194">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1195">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1196">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1197">26</span>
+            </div>
+          </div>
         </div>
         <div class="parallel_variant" prov="DOCUMENT.DOC:L2000">
-          <span class="vss">(a) vss. 1-282</span>
+          <span class="vss">(b) vss. 1-282&nbsp;</span>
           <span prov="DOCUMENT.DOC:L2001">Wiesbaden, Hess. Hauptstaatsarchiv, 3004 B 10</span>
-          <div class="ref">
-            <span class="ref">248</span>
-            <span class="title">(248)</span>
-          </div>
           <span prov="DOCUMENT.DOC:L2002">&nbsp;[1400 - 1425]</span>
           <span prov="DOCUMENT.DOC:L2003">,&nbsp;f. 90ra-91rb</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1777">Wiesbaden, Hess. Hauptstaatsarchiv, 3004 B 10</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1778">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1779">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1780">Datering: ca. 1410</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1781">26</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -408,6 +438,12 @@
         <span class="label">Zie:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.zie_container .secundaire_lit div.ref' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.zie_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <div class="secundaire_lit">
           <span prov="DOCUMENT.DOC:L2005">Deschamps 1972</span>
           <span prov="DOCUMENT.DOC:L2006">,&nbsp;p. 245 (b)</span>
