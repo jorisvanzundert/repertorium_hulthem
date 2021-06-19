@@ -98,7 +98,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L3171">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -290,7 +301,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1731">Post quem: 1425</div>
             <div class="adtp" prov="PERDOC.DOC:L1732">Ante quem: 1450</div>
             <div class="datp" prov="PERDOC.DOC:L1733">Datering: ca. 1440 (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1734">Lievens 1963</span>
+            <span class="litp" prov="PERDOC.DOC:L1734">Lievens 1963</span>
             <span class="pps" prov="PERDOC.DOC:L1735">,&nbsp;p. 174-177</span>
             <div class="ref">
               <span class="ref">Lievens 1963</span>
@@ -313,7 +324,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1656">Post quem: 1500</div>
             <div class="adtp" prov="PERDOC.DOC:L1657">Ante quem: 1550</div>
             <div class="datp" prov="PERDOC.DOC:L1658">Datering: ca. 1525 (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1659">Ampe 1964C</span>
+            <span class="litp" prov="PERDOC.DOC:L1659">Ampe 1964C</span>
             <div class="ref">
               <span class="ref">Ampe 1964C</span>
               <span class="title">A. Ampe, 'Kanttekeningen bij de <i>Evangelische Peerle</i> (vervolg)'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 225-319.</span>
@@ -337,7 +348,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1039">Post quem: 1450</div>
             <div class="adtp" prov="PERDOC.DOC:L1040">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L1041">Datering: ca. 1475 (BNM: 3e kwart 15e eeuw)</div>
-            <span prov="PERDOC.DOC:L1042">Oosterman 1995A</span>
+            <span class="litp" prov="PERDOC.DOC:L1042">Oosterman 1995A</span>
             <span class="pps" prov="PERDOC.DOC:L1043">,&nbsp;p. 338 (74)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>

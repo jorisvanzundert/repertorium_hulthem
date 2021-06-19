@@ -101,7 +101,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L10303">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">

@@ -91,7 +91,20 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L9663">Colpaert?</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L131">Colpaert?</div>
+          <div class="data" prov="KUEDOC.DOC:L132">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L133">Nrs. 94 en 157 toegeschreven door Van Eeghem aan Colpaert. Niet weerlegd.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L134">W. van Eeghem, <I>Brusselse dichters</I>. Brussel (Simon Stevin) 1958-1963. 5 dln.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L135">dl. 3 p. 126-127</span></div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -328,7 +341,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1164">Post quem: 1500</div>
             <div class="adtp" prov="PERDOC.DOC:L1165">Ante quem: 1525</div>
             <div class="datp" prov="PERDOC.DOC:L1166">Datering: vroeg 16e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1167">Braekman 1984</span>
+            <span class="litp" prov="PERDOC.DOC:L1167">Braekman 1984</span>
             <div class="ref">
               <span class="ref">Braekman 1984</span>
               <span class="title">W.L. Braekman, 'Vogelspreuken op rijm uit de vroege zestiende eeuw'. In: <i>Handelingen van de Zuidnederlandse</i> 38 (1984), p. 175-188.</span>
@@ -391,22 +404,30 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Verder noemt</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Verder noemt&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L9714">Seelmann 1888</span>
+          <span prov="DOCUMENT.DOC:L9714" he="duh">Seelmann 1888</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L9715"> nog 30 anderstalige hss.; zie ook&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L9716" he="lo">Henkel 1977-...</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L9717">.&nbsp;</span>
+        </div>
+        <div class="refs">
           <div class="ref">
             <span class="ref">Seelmann 1888</span>
             <span class="title">W. Seelmann, 'Die Vogelsprachen (Vogelparlamente) der mittelalterlichen Literatur'. In: <i>Jahrbuch des Vereins für niederdeutsche Sprachforschung</i> 14 (1888), p. 101-147.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L9715"> nog 30 anderstalige hss.; zie ook</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L9716">Henkel 1977-...</span>
-            <div class="ref">
-              <span class="ref">Henkel 1977-...</span>
-              <span class="title">N. Henkel, 'Rat der Vögel'. In: W. Stammler e.a., <i>Die deutsche Literatur des Mittelalters: Verfasserlexikon</i>. 2e, völlig neu bearb. Aufl. [...] Berlin etc. (De Gruyter) 1977-... . ... dln. Dl. 7, kol. 1007-1012.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">Henkel 1977-...</span>
+            <span class="title">N. Henkel, 'Rat der Vögel'. In: W. Stammler e.a., <i>Die deutsche Literatur des Mittelalters: Verfasserlexikon</i>. 2e, völlig neu bearb. Aufl. [...] Berlin etc. (De Gruyter) 1977-... . ... dln. Dl. 7, kol. 1007-1012.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L9717">.</span>
         </div>
       </div>
     </div>

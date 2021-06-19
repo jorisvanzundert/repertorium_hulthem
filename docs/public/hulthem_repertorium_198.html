@@ -91,7 +91,20 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L11907">Jan van Boendale?</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L271">Jan van Boendale?</div>
+          <div class="data" prov="KUEDOC.DOC:L272">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L273">Als mogelijk auteur van nr. 189/spreuk 24 van nr. 148 werd door o.a. Van Anrooij Jan van Boendale genoemd.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L274">W. van Anrooij, '<I>Hoemen ene stat regeren sal</I>. Een vroege stadstekst uit de Zuidelijke Nederlanden'. In: <I>Spiegel der letteren</I> 34 (1992), p. 139-157.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L275">p. 148</span></div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -319,7 +332,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L737">Post quem: 1350</div>
             <div class="adtp" prov="PERDOC.DOC:L738">Ante quem: 1375</div>
             <div class="datp" prov="PERDOC.DOC:L739">Datering: 3e kwart 14e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L740">Van Anrooij 1992C</span>
+            <span class="litp" prov="PERDOC.DOC:L740">Van Anrooij 1992C</span>
             <span class="pps" prov="PERDOC.DOC:L741">,&nbsp;p. 148</span>
             <div class="ref">
               <span class="ref">Van Anrooij 1992C</span>
@@ -341,7 +354,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L138">Post quem: 1525</div>
             <div class="adtp" prov="PERDOC.DOC:L139">Ante quem: 1550</div>
             <div class="datp" prov="PERDOC.DOC:L140">Datering: 1549 (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L141">Ippel 1892</span>
+            <span class="litp" prov="PERDOC.DOC:L141">Ippel 1892</span>
             <span class="pps" prov="PERDOC.DOC:L142">,&nbsp;p. 11-12</span>
             <div class="ref">
               <span class="ref">Ippel 1892</span>
@@ -471,48 +484,81 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Voorts noemt</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Voorts noemt&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L11977">Van Anrooij 1992C</span>
+          <span prov="DOCUMENT.DOC:L11977" he="duh">Van Anrooij 1992C</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L11978"> nog de variant in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L11979" he="la">Brussel, Koninklijke Bibliotheek van België, 15.659-61</span>
+            <span prov="DOCUMENT.DOC:L11980">,&nbsp;[1450 - 1475]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L11981">, f. 69rb-70va, het opschrift in het stadhuis van Brussel en een mnd. parallel;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L11982" he="lo">Seelmann 1921</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L11983">, p. 26-27 vermeldt eveneens een aantal mnd. parallellen. Ook in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L11984" he="la">Paderborn, Erzbischöfliche Akademische Bibliothek, Sa 8</span>
+            <span prov="DOCUMENT.DOC:L11985">,&nbsp;[1400 - 1450]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L11986">, f. 2r, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L11987" he="lo">Peters 1974</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L11988">, p. 63 en 69-70.&nbsp;</span>
+        </div>
+        <div class="refs">
           <div class="ref">
             <span class="ref">Van Anrooij 1992C</span>
             <span class="title">W. van Anrooij, '<i>Hoemen ene stat regeren sal</i>. Een vroege stadstekst uit de Zuidelijke Nederlanden'. In: <i>Spiegel der letteren</i> 34 (1992), p. 139-157.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11978"> nog de variant in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L11979">Brussel, Koninklijke Bibliotheek van België, 15.659-61</span>
-            <div class="ref">
-              <span class="ref">54</span>
-              <span class="title">0</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L367">Brussel, Koninklijke Bibliotheek van België, 15.659-61</div>
+            <div class="mov" prov="PERDOC.DOC:L368">(<I>olim</I> 198)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L369">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L370">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L371">Datering: 1469</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L372">25,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L373">102,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L374">166,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L375">177,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L376">184,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L377">189</span>
             </div>
-            <span prov="DOCUMENT.DOC:L11980">,&nbsp;[1450 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11981">, f. 69rb-70va, het opschrift in het stadhuis van Brussel en een mnd. parallel;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L11982">Seelmann 1921</span>
-            <div class="ref">
-              <span class="ref">Seelmann 1921</span>
-              <span class="title">W. Seelmann, 'Brüsseler Lehren vom Stadtregiment und ihr Nachwuchs'. In: <i>Jahrbuch des Vereins für niederdeutsche Sprachforschung</i> 47 (1921), p. 25-30.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">Seelmann 1921</span>
+            <span class="title">W. Seelmann, 'Brüsseler Lehren vom Stadtregiment und ihr Nachwuchs'. In: <i>Jahrbuch des Vereins für niederdeutsche Sprachforschung</i> 47 (1921), p. 25-30.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11983">, p. 26-27 vermeldt eveneens een aantal mnd. parallellen. Ook in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L11984">Paderborn, Erzbischöfliche Akademische Bibliothek, Sa 8</span>
-            <div class="ref">
-              <span class="ref">217</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L11985">,&nbsp;[1400 - 1450]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11986">, f. 2r, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L11987">Peters 1974</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1548">Paderborn, Erzbischöfliche Akademische Bibliothek, Sa 8</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1549">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1550">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1551">Datering: 1419-1428</div>
+            <span class="litp" prov="PERDOC.DOC:L1552">Peters 1974</span>
             <div class="ref">
               <span class="ref">Peters 1974</span>
               <span class="title">R. Peters, 'Die mnd. Gedichte der Paderborner Hs. Sa8 aus Böddeken. Zugleich ein Beitrag zur Geschichte der Brüder Conradt und Engelbert van der Wijch aus Münster'. In: <i>Niederdeutsches Wort</i> 14 (1974), p. 59-75.</span>
             </div>
+            <div class="opm" prov="PERDOC.DOC:L1553">Aanvullende informatie:&nbsp;niet gevonden in BNM</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1554">122,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1555">189</span>
+            </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11988">, p. 63 en 69-70.</span>
+          <div class="ref">
+            <span class="ref">Peters 1974</span>
+            <span class="title">R. Peters, 'Die mnd. Gedichte der Paderborner Hs. Sa8 aus Böddeken. Zugleich ein Beitrag zur Geschichte der Brüder Conradt und Engelbert van der Wijch aus Münster'. In: <i>Niederdeutsches Wort</i> 14 (1974), p. 59-75.</span>
+          </div>
         </div>
       </div>
     </div>

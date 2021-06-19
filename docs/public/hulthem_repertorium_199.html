@@ -107,7 +107,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L12001">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -247,7 +258,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L226">Post quem: 1375</div>
             <div class="adtp" prov="PERDOC.DOC:L227">Ante quem: 1425</div>
             <div class="datp" prov="PERDOC.DOC:L228">Datering: begin 15e eeuw (BNM: eind 14e, begin 15e eeuw)</div>
-            <span prov="PERDOC.DOC:L229">Oosterman 1995A</span>
+            <span class="litp" prov="PERDOC.DOC:L229">Oosterman 1995A</span>
             <span class="pps" prov="PERDOC.DOC:L230">,&nbsp;p. 330 (22)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
@@ -360,31 +371,53 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Voorts vele varianten, w.o.</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Voorts vele varianten, w.o.&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L12042">Brussel, Koninklijke Bibliotheek van België, 19.588</span>
-          <div class="ref">
-            <span class="ref">59</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L12042" he="nou">Brussel, Koninklijke Bibliotheek van België, 19.588</span>
           <span prov="DOCUMENT.DOC:L12043">,&nbsp;[1400 - 1500]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L12044">, f. 128, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L12044">, f. 128, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12045">Meertens 1930-1934</span>
-            <div class="ref">
-              <span class="ref">Meertens 1930-1934</span>
-              <span class="title">M. Meertens, <i>De godsvrucht in de Nederlanden</i>. Naar handschriften van gebedenboeken der XVe eeuw. Antwerpen etc. (Standaardboekhandel etc.) 1930-1934. 6 dln. [alleen dln. 1-3 en 6 verschenen]. Historische bibliotheek van godsdienstwetenschappen.</span>
+            <span prov="DOCUMENT.DOC:L12045" he="lo">Meertens 1930-1934</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L12046">, dl. 6 p. 12, 21, 35, 116 en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L12047" he="lo">Paquay 1933</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L12048">, p. 48.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L405">Brussel, Koninklijke Bibliotheek van België, 19.588</div>
+            <div class="pdtp" prov="PERDOC.DOC:L406">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L407">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L408">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L409">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L410">39,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L411">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L412">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L413">43,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L414">83,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L415">85,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L416">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L417">190</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12046">, dl. 6 p. 12, 21, 35, 116 en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12047">Paquay 1933</span>
-            <div class="ref">
-              <span class="ref">Paquay 1933</span>
-              <span class="title">E.H.J. Paquay (ed.), <i>Middelnederlandsche gewijde teksten naar handschriften der XIVe-XVe eeuw</i>. Lummen (St. Ferdinand) 1933.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">Meertens 1930-1934</span>
+            <span class="title">M. Meertens, <i>De godsvrucht in de Nederlanden</i>. Naar handschriften van gebedenboeken der XVe eeuw. Antwerpen etc. (Standaardboekhandel etc.) 1930-1934. 6 dln. [alleen dln. 1-3 en 6 verschenen]. Historische bibliotheek van godsdienstwetenschappen.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12048">, p. 48.</span>
+          <div class="ref">
+            <span class="ref">Paquay 1933</span>
+            <span class="title">E.H.J. Paquay (ed.), <i>Middelnederlandsche gewijde teksten naar handschriften der XIVe-XVe eeuw</i>. Lummen (St. Ferdinand) 1933.</span>
+          </div>
         </div>
       </div>
     </div>

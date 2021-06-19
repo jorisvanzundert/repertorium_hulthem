@@ -106,7 +106,21 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L368">Jacob van Maerlant? (1)</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L187">Jacob van Maerlant? (1)</div>
+          <div class="data" prov="KUEDOC.DOC:L188">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L189">Nr. 5 toegeschreven door Tideman aan Jacob van Maerlant. Betwijfeld door Serrure.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L190">C.P. Serrure, '<I>DBoec van den houte</I> is niet van Maerlant'. In: <I>Vaderlandsch museum</I> 4 (1861), p. 173-180.</div>
+          <div class="lita" prov="KUEDOC.DOC:L191">J. Tideman, <I>dBoec vanden houte door Jacob van Maerlant</I>. Uitg. door ─. Leiden (Du Mortier) 1844. Werken van de Vereeniging ter Bevordering der Oude Nederlandsche Letterkunde 1:2.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -513,7 +527,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L844">Post quem: 1300</div>
             <div class="adtp" prov="PERDOC.DOC:L845">Ante quem: 1400</div>
             <div class="datp" prov="PERDOC.DOC:L846">Datering: 14e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L847">Hermodsson 1959</span>
+            <span class="litp" prov="PERDOC.DOC:L847">Hermodsson 1959</span>
             <span class="pps" prov="PERDOC.DOC:L848">,&nbsp;p. 45-46</span>
             <div class="ref">
               <span class="ref">Hermodsson 1959</span>
@@ -535,7 +549,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L703">Post quem: 1400</div>
             <div class="adtp" prov="PERDOC.DOC:L704">Ante quem: 1450</div>
             <div class="datp" prov="PERDOC.DOC:L705">Datering: 1e helft 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L706">Hermodsson 1959</span>
+            <span class="litp" prov="PERDOC.DOC:L706">Hermodsson 1959</span>
             <span class="pps" prov="PERDOC.DOC:L707">,&nbsp;p. 40-42</span>
             <div class="ref">
               <span class="ref">Hermodsson 1959</span>
@@ -607,115 +621,179 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L462">'s-Hertogenbosch, Archivum Capuccinorum Hollandiae, 4</span>
-          <div class="ref">
-            <span class="ref">162</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L462" he="nou">'s-Hertogenbosch, Archivum Capuccinorum Hollandiae, 4</span>
           <span prov="DOCUMENT.DOC:L463">,&nbsp;[1400 - 1500]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L464"> (fragm.), zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L464"> (fragm.), zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L465">Maximilianus 1914</span>
-            <div class="ref">
-              <span class="ref">Maximilianus 1914</span>
-              <span class="title">P. Maximilianus, '<i>Dboec van den houte</i>'. In: <i>Bijblad voor taal en letteren bij opvoeding en onderwijs</i> 2 (1914), p. 38-48.</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L465" he="lo">Maximilianus 1914</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L466">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L466">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L467">Oudenaarde, Stadsbibliotheek, 5576</span>
-            <div class="ref">
-              <span class="ref">215</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L467" he="la">Oudenaarde, Stadsbibliotheek, 5576</span>
             <span prov="DOCUMENT.DOC:L468">,&nbsp;[1275 - 1325]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L469"> (fragm.); een incunabel en enkele drukken uit 1496, 16e, 17e en 18e eeuw en 3 Middelnederduitse vertalingen (w.o. één in het zgn. Hartebok:</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L469"> (fragm.); een incunabel en enkele drukken uit 1496, 16e, 17e en 18e eeuw en 3 Middelnederduitse vertalingen (w.o. één in het zgn. Hartebok:&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L470">Hamburg, Staats- und Universitätsbibliothek, Scrin. 102c</span>
-            <div class="ref">
-              <span class="ref">157</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L470" he="la">Hamburg, Staats- und Universitätsbibliothek, Scrin. 102c</span>
             <span prov="DOCUMENT.DOC:L471">,&nbsp;[1400 - 1425]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L472">, f. 11r-23v, en één in</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L472">, f. 11r-23v, en één in&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L473">Hamburg, Staats- und Universitätsbibliothek, Conv. 4</span>
-            <div class="ref">
-              <span class="ref">156</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L473" he="la">Hamburg, Staats- und Universitätsbibliothek, Conv. 4</span>
             <span prov="DOCUMENT.DOC:L474">,&nbsp;[1100 - 1600]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L475"> ), zie:</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L475"> ), zie:&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L476">Hermodsson 1959</span>
+            <span prov="DOCUMENT.DOC:L476" he="lo">Hermodsson 1959</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L477">, p. 30-32,&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L478" he="lo">Brandis 1972</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L479">, p. 175-176 en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L480" he="lo">Deschamps 1972</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L481">, p. 53.&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L482" he="lo">Wirth 1893</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L483">, p. 18-22 vermeldt een variant in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L484" he="la">Breda, Gemeente-archief, Kathedraalarchief Hs. 2</span>
+            <span prov="DOCUMENT.DOC:L485">,&nbsp;[1450 - 1475]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L486"> en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L487" he="lo">Tideman 1844</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L488">, p. 46-58 een proza-bewerking.&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L489" he="lo">Baert 1995</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L490"> noemt een incunabel: Culemborg 1483 (Brussel, Koninklijke Bibliotheek van België, INC.A 1.582) en andere tekstgetuigen (p. 39-40). Zie ook&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L491" he="lo">BNM</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L492">, trefwoord: H. Kruis.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1183">'s-Hertogenbosch, Archivum Capuccinorum Hollandiae, 4</div>
+            <div class="mov" prov="PERDOC.DOC:L1184">(<I>olim</I> 258)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1185">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1186">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1187">Datering: 15e eeuw (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1188">Hermodsson 1959</span>
+            <span class="pps" prov="PERDOC.DOC:L1189">,&nbsp;p. 55-57</span>
             <div class="ref">
               <span class="ref">Hermodsson 1959</span>
               <span class="title">L. Hermodsson, <i>Dat boec van den houte. Eine mittelniederländische Dichtung von der Herkunft des Kreuzes Christi</i>. Mit einer Einleitung neu herausgegeben von ─. Uppsala etc. (Ad Lundequistska Bokhandeln) 1959. Uppsala Universitets Årsskrift 1959:1.</span>
             </div>
+            <div class="opm" prov="PERDOC.DOC:L1190">Aanvullende informatie:&nbsp;ook bekend als: 's-Hertogenbosch, Prov. Archief der Minderbroeders Capucijnen, 4 (<I>olim</I> 258)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1191">5</span>
+            </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L477">, p. 30-32,</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L478">Brandis 1972</span>
+          <div class="ref">
+            <span class="ref">Maximilianus 1914</span>
+            <span class="title">P. Maximilianus, '<i>Dboec van den houte</i>'. In: <i>Bijblad voor taal en letteren bij opvoeding en onderwijs</i> 2 (1914), p. 38-48.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1534">Oudenaarde, Stadsbibliotheek, 5576</div>
+            <div class="mov" prov="PERDOC.DOC:L1535">(<I>olim</I> Stadsarchief 32)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1536">Post quem: 1275</div>
+            <div class="adtp" prov="PERDOC.DOC:L1537">Ante quem: 1325</div>
+            <div class="datp" prov="PERDOC.DOC:L1538">Datering: ca. 1300</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1539">5,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1540">39,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1541">158</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1146">Hamburg, Staats- und Universitätsbibliothek, Scrin. 102c</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1147">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1148">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1149">Datering: 1404 (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1150">Brandis 1972</span>
+            <span class="pps" prov="PERDOC.DOC:L1151">,&nbsp;p. 175-176</span>
             <div class="ref">
               <span class="ref">Brandis 1972</span>
               <span class="title">T. Brandis, <i>Die Codices in scrinio der Staats- und Universitätsbibliothek Hamburg 1-110</i>. Hamburg (Hauswedell) 1972. Katalog der Handschriften der Staats- und Universitätsbibliothek Hamburg 7, p. 175-176.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L479">, p. 175-176 en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L480">Deschamps 1972</span>
-            <div class="ref">
-              <span class="ref">Deschamps 1972</span>
-              <span class="title">J. Deschamps, <i>Middelnederlandse handschriften uit Europese en Amerikaanse bibliotheken. Catalogus [van de] tentoonstelling ter gelegenheid van het honderdjarig bestaan van de Koninklijke Zuidnederlandse Maatschappij voor taal- en letterkunde en geschiedenis [in de] Koninklijke Bibliotheek Albert I [te] Brussel, 24 okt.-24 dec. 1970</i>. 2e herz. dr. Leiden (Brill) 1972.</span>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1152">5,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1153">89,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1154">180</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L481">, p. 53.</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L482">Wirth 1893</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1141">Hamburg, Staats- und Universitätsbibliothek, Conv. 4</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1142">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1143">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1144">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1145">5</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Hermodsson 1959</span>
+            <span class="title">L. Hermodsson, <i>Dat boec van den houte. Eine mittelniederländische Dichtung von der Herkunft des Kreuzes Christi</i>. Mit einer Einleitung neu herausgegeben von ─. Uppsala etc. (Ad Lundequistska Bokhandeln) 1959. Uppsala Universitets Årsskrift 1959:1.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Brandis 1972</span>
+            <span class="title">T. Brandis, <i>Die Codices in scrinio der Staats- und Universitätsbibliothek Hamburg 1-110</i>. Hamburg (Hauswedell) 1972. Katalog der Handschriften der Staats- und Universitätsbibliothek Hamburg 7, p. 175-176.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Deschamps 1972</span>
+            <span class="title">J. Deschamps, <i>Middelnederlandse handschriften uit Europese en Amerikaanse bibliotheken. Catalogus [van de] tentoonstelling ter gelegenheid van het honderdjarig bestaan van de Koninklijke Zuidnederlandse Maatschappij voor taal- en letterkunde en geschiedenis [in de] Koninklijke Bibliotheek Albert I [te] Brussel, 24 okt.-24 dec. 1970</i>. 2e herz. dr. Leiden (Brill) 1972.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Wirth 1893</span>
+            <span class="title">L. Wirth, <i>Het heilige kruis en de Denensage te Breda</i>. Groningen (Wolters) 1893. Bibliotheek voor Middelnederlandsche letterkunde 49.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L166">Breda, Gemeente-archief, Kathedraalarchief Hs. 2</div>
+            <div class="mov" prov="PERDOC.DOC:L167">(<I>olim</I> Archief St. Barbarakerk 3 316 41/42)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L168">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L169">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L170">Datering: na 1457 (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L171">Wirth 1893</span>
+            <span class="pps" prov="PERDOC.DOC:L172">,&nbsp;p. 18-22</span>
             <div class="ref">
               <span class="ref">Wirth 1893</span>
               <span class="title">L. Wirth, <i>Het heilige kruis en de Denensage te Breda</i>. Groningen (Wolters) 1893. Bibliotheek voor Middelnederlandsche letterkunde 49.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L483">, p. 18-22 vermeldt een variant in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L484">Breda, Gemeente-archief, Kathedraalarchief Hs. 2</span>
-            <div class="ref">
-              <span class="ref">25</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L485">,&nbsp;[1450 - 1475]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L486"> en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L487">Tideman 1844</span>
-            <div class="ref">
-              <span class="ref">Tideman 1844</span>
-              <span class="title">J. Tideman, <i>dBoec vanden houte door Jacob van Maerlant</i>. Uitg. door ─. Leiden (Du Mortier) 1844. Werken van de Vereeniging ter Bevordering der Oude Nederlandsche Letterkunde 1:2.</span>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L173">5</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L488">, p. 46-58 een proza-bewerking.</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L489">Baert 1995</span>
-            <div class="ref">
-              <span class="ref">Baert 1995</span>
-              <span class="title">B. Baert, <i>Het boec vanden houte</i>. Brussel (Kon. Acad.) 1995. Verhandeling van de Kon. Acad. voor Wetenschap, Letteren en Schone Kunsten van België. Klasse der Schone Kunsten 62.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">Tideman 1844</span>
+            <span class="title">J. Tideman, <i>dBoec vanden houte door Jacob van Maerlant</i>. Uitg. door ─. Leiden (Du Mortier) 1844. Werken van de Vereeniging ter Bevordering der Oude Nederlandsche Letterkunde 1:2.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L490"> noemt een incunabel: Culemborg 1483 (Brussel, Koninklijke Bibliotheek van België, INC.A 1.582) en andere tekstgetuigen (p. 39-40). Zie ook</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L491">BNM</span>
-            <div class="ref">
-              <span class="ref">BNM</span>
-              <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">Baert 1995</span>
+            <span class="title">B. Baert, <i>Het boec vanden houte</i>. Brussel (Kon. Acad.) 1995. Verhandeling van de Kon. Acad. voor Wetenschap, Letteren en Schone Kunsten van België. Klasse der Schone Kunsten 62.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L492">, trefwoord: H. Kruis.</span>
+          <div class="ref">
+            <span class="ref">BNM</span>
+            <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          </div>
         </div>
       </div>
     </div>

@@ -90,7 +90,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L1368">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -398,40 +409,66 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L1420">Heeswijk-Dinther, Abdij van Berne, 6</span>
-          <div class="ref">
-            <span class="ref">160</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L1420" he="nou">Heeswijk-Dinther, Abdij van Berne, 6</span>
           <span prov="DOCUMENT.DOC:L1421">,&nbsp;[1450 - 1475]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L1422">, f. 138r en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1422">, f. 138r en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1423">Rotterdam, Gemeentebibliotheek, 96 E 14</span>
-            <div class="ref">
-              <span class="ref">225</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L1423" he="la">Rotterdam, Gemeentebibliotheek, 96 E 14</span>
             <span prov="DOCUMENT.DOC:L1424">,&nbsp;[1425 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1425">, f. 89r-v, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1425">, f. 89r-v, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1426">Oosterman 1994</span>
-            <div class="ref">
-              <span class="ref">Oosterman 1994</span>
-              <span class="title">J.B. Oosterman, 'Heiligengebeden en een verdwenen blad uit het handschrift-Van Hulthem (Brussel, KB, HS. 15.589-623)'. In: <i>Spiegel der letteren</i> 36 (1994), p. 307-318.</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L1426" he="lo">Oosterman 1994</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1427"> en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1427"> en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1428">Oosterman 1995A</span>
+            <span prov="DOCUMENT.DOC:L1428" he="lo">Oosterman 1995A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L1429">.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1169">Heeswijk-Dinther, Abdij van Berne, 6</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1170">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L1171">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L1172">Datering: 3e kwart 15e eeuw (BNM: eind 15e eeuw, na 1456)</div>
+            <span class="litp" prov="PERDOC.DOC:L1173">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L1174">,&nbsp;p. 343 (105)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
               <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
             </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1175">19A</span>
+            </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1429">.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1600">Rotterdam, Gemeentebibliotheek, 96 E 14</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1601">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1602">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1603">Datering: 1432, ca. 1432 en ca. 1500</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1604">19A</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Oosterman 1994</span>
+            <span class="title">J.B. Oosterman, 'Heiligengebeden en een verdwenen blad uit het handschrift-Van Hulthem (Brussel, KB, HS. 15.589-623)'. In: <i>Spiegel der letteren</i> 36 (1994), p. 307-318.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Oosterman 1995A</span>
+            <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+          </div>
         </div>
       </div>
     </div>

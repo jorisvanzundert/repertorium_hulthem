@@ -99,7 +99,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L1477">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -387,58 +398,99 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L1526">Baltimore, Walters Art Gallery, W. 167</span>
-          <div class="ref">
-            <span class="ref">14</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L1526" he="nou">Baltimore, Walters Art Gallery, W. 167</span>
           <span prov="DOCUMENT.DOC:L1527">,&nbsp;[1425 - 1475]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L1528">, f. 101v-102r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1528">, f. 101v-102r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1529">olim Lübeck, Stadtbibliothek, Ms. Theol. germ. 42</span>
-            <div class="ref">
-              <span class="ref">203</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L1529" he="la">olim Lübeck, Stadtbibliothek, Ms. Theol. germ. 42</span>
             <span prov="DOCUMENT.DOC:L1530">,&nbsp;[1450 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1531">, f. 186v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1531">, f. 186v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1532">New York, Pierpont Morgan Library, M. 156</span>
-            <div class="ref">
-              <span class="ref">212</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L1532" he="la">New York, Pierpont Morgan Library, M. 156</span>
             <span prov="DOCUMENT.DOC:L1533">,&nbsp;[1475 - 1525]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1534">, f. 159r en in</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1534">, f. 159r en in&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1535">Nederland, privé-collectie, z.s.</span>
-            <div class="ref">
-              <span class="ref">210</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L1535" he="la">Nederland, privé-collectie, z.s.</span>
             <span prov="DOCUMENT.DOC:L1536">,&nbsp;[1425 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1537">, f. 118r-v, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L1537">, f. 118r-v, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1538">Oosterman 1994</span>
-            <div class="ref">
-              <span class="ref">Oosterman 1994</span>
-              <span class="title">J.B. Oosterman, 'Heiligengebeden en een verdwenen blad uit het handschrift-Van Hulthem (Brussel, KB, HS. 15.589-623)'. In: <i>Spiegel der letteren</i> 36 (1994), p. 307-318.</span>
+            <span prov="DOCUMENT.DOC:L1538" he="lo">Oosterman 1994</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L1539"> en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L1540" he="lo">Oosterman 1995A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L1541">.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L85">Baltimore, Walters Art Gallery, W. 167</div>
+            <div class="pdtp" prov="PERDOC.DOC:L86">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L87">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L88">Datering: 1450</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L89">19A,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L90">19C</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1539"> en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L1540">Oosterman 1995A</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1458">olim Lübeck, Stadtbibliothek, Ms. Theol. germ. 42</div>
+            <div class="mov" prov="PERDOC.DOC:L1459">(sinds W.O. II vermist)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1460">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L1461">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1462">Datering: 2e helft 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1463">19C</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1516">New York, Pierpont Morgan Library, M. 156</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1517">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1518">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1519">Datering: ca. 1500</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1520">19C</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1503">Nederland, privé-collectie, z.s.</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1504">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1505">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L1506">Datering: midden 15e eeuw</div>
+            <span class="litp" prov="PERDOC.DOC:L1507">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L1508">,&nbsp;p. 353 (168)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
               <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
             </div>
+            <div class="opm" prov="PERDOC.DOC:L1509">Aanvullende informatie:&nbsp;niet gevonden in BNM</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1510">19C</span>
+            </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L1541">.</span>
+          <div class="ref">
+            <span class="ref">Oosterman 1994</span>
+            <span class="title">J.B. Oosterman, 'Heiligengebeden en een verdwenen blad uit het handschrift-Van Hulthem (Brussel, KB, HS. 15.589-623)'. In: <i>Spiegel der letteren</i> 36 (1994), p. 307-318.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Oosterman 1995A</span>
+            <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+          </div>
         </div>
       </div>
     </div>

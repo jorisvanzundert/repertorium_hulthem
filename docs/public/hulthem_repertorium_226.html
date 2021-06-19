@@ -119,7 +119,20 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L14559">Jacob van Maerlant? (2)</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L192">Jacob van Maerlant? (2)</div>
+          <div class="data" prov="KUEDOC.DOC:L193">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L194">Nr. 213 toegeschreven door De Gheldere aan Jacob van Maerlant. Niet weerlegd.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L195">K. de Gheldere, <I>Dietsce Rime. Geestelijke gedichten uit de XIIIe, XIVe & XVe eeuw naar een hs. van het einde der XVe eeuw</I>. Uitgegeven en van aanteekeningen en woordenlijst voorzien door ─. Brugge (Lod. de Plancke) 1896.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L196">p. 192.</span></div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -307,7 +320,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1369">Post quem: 1475</div>
             <div class="adtp" prov="PERDOC.DOC:L1370">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L1371">Datering: ca. 1480 (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1372">De Flou 1895-1897</span>
+            <span class="litp" prov="PERDOC.DOC:L1372">De Flou 1895-1897</span>
             <span class="pps" prov="PERDOC.DOC:L1373">,&nbsp;2e verslag p. 169-176</span>
             <div class="ref">
               <span class="ref">De Flou 1895-1897</span>
@@ -329,7 +342,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1362">Post quem: 1500</div>
             <div class="adtp" prov="PERDOC.DOC:L1363">Ante quem: 1600</div>
             <div class="datp" prov="PERDOC.DOC:L1364">Datering: 16e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1365">De Flou 1895-1897</span>
+            <span class="litp" prov="PERDOC.DOC:L1365">De Flou 1895-1897</span>
             <span class="pps" prov="PERDOC.DOC:L1366">,&nbsp;2e verslag p. 189-192</span>
             <div class="ref">
               <span class="ref">De Flou 1895-1897</span>
@@ -401,74 +414,123 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L14608">Londen, British Library, Harley 914</span>
-          <div class="ref">
-            <span class="ref">193</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L14608" he="nou">Londen, British Library, Harley 914</span>
           <span prov="DOCUMENT.DOC:L14609">,&nbsp;[1100 - 1600]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L14610">, f. 135r, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L14610">, f. 135r, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14611">De Flou 1895-1897</span>
-            <div class="ref">
-              <span class="ref">De Flou 1895-1897</span>
-              <span class="title">K. de Flou & Edw. Gailliard, 'Beschrijving van Middelnederlandsche en andere handschriften die in Engeland bewaard worden'. In: <i>Versl. & meded. van de Kon. Vl. Acad. voor taal- en letterkunde</i> 1895, p. 39-263 (= 1e verslag); 1896, p. 76-337 (= 2e verslag); 1897, p. 373-502 (= 3e verslag).</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L14611" he="lo">De Flou 1895-1897</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14612">, 2e verslag p. 195;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L14612">, 2e verslag p. 195;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14613">Boedapest, Nationaal Museum, Cod. mss. holl. 6</span>
-            <div class="ref">
-              <span class="ref">22</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L14613" he="la">Boedapest, Nationaal Museum, Cod. mss. holl. 6</span>
             <span prov="DOCUMENT.DOC:L14614">,&nbsp;[1500 - 1525]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14615">, f. 152b, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L14615">, f. 152b, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14616">Meertens 1930-1934</span>
-            <div class="ref">
-              <span class="ref">Meertens 1930-1934</span>
-              <span class="title">M. Meertens, <i>De godsvrucht in de Nederlanden</i>. Naar handschriften van gebedenboeken der XVe eeuw. Antwerpen etc. (Standaardboekhandel etc.) 1930-1934. 6 dln. [alleen dln. 1-3 en 6 verschenen]. Historische bibliotheek van godsdienstwetenschappen.</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L14616" he="lo">Meertens 1930-1934</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14617">, dl. 6 p. 107. Voorts in vele hss., w.o.</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L14617">, dl. 6 p. 107. Voorts in vele hss., w.o.&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14618">olim Leuven, Universiteitsbibliotheek, D 419</span>
-            <div class="ref">
-              <span class="ref">188</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L14618" he="la">olim Leuven, Universiteitsbibliotheek, D 419</span>
             <span prov="DOCUMENT.DOC:L14619">,&nbsp;[1375 - 1425]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14620">, f. 62-64, en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L14620">, f. 62-64, en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14621">Zwolle, Gemeente-archief, Emmanuelshuizen 13</span>
-            <div class="ref">
-              <span class="ref">251</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L14621" he="la">Zwolle, Gemeente-archief, Emmanuelshuizen 13</span>
             <span prov="DOCUMENT.DOC:L14622">,&nbsp;[1475 - 1525]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14623">, f. 102b-107b, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L14623">, f. 102b-107b, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14624">Maximilianus 1957-1959</span>
-            <div class="ref">
-              <span class="ref">Maximilianus 1957-1959</span>
-              <span class="title">P. Maximilianus, 'De <i>Vijf Pater Noster</i> van Sint Franciscus'. In: <i>Franciscaans Leven</i> 40 (1957), p. 149-153 en 42 (1959), p. 31.</span>
+            <span prov="DOCUMENT.DOC:L14624" he="lo">Maximilianus 1957-1959</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L14625"> en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L14626" he="lo">BNM</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L14627">, trefwoord: Franciscus V gebedekens.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1389">Londen, British Library, Harley 914</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1390">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1391">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1392">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1393">213</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14625"> en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L14626">BNM</span>
-            <div class="ref">
-              <span class="ref">BNM</span>
-              <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          <div class="ref">
+            <span class="ref">De Flou 1895-1897</span>
+            <span class="title">K. de Flou & Edw. Gailliard, 'Beschrijving van Middelnederlandsche en andere handschriften die in Engeland bewaard worden'. In: <i>Versl. & meded. van de Kon. Vl. Acad. voor taal- en letterkunde</i> 1895, p. 39-263 (= 1e verslag); 1896, p. 76-337 (= 2e verslag); 1897, p. 373-502 (= 3e verslag).</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L145">Boedapest, Nationaal Museum, Cod. mss. holl. 6</div>
+            <div class="pdtp" prov="PERDOC.DOC:L146">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L147">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L148">Datering: 1505</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L149">213</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L14627">, trefwoord: Franciscus V gebedekens.</span>
+          <div class="ref">
+            <span class="ref">Meertens 1930-1934</span>
+            <span class="title">M. Meertens, <i>De godsvrucht in de Nederlanden</i>. Naar handschriften van gebedenboeken der XVe eeuw. Antwerpen etc. (Standaardboekhandel etc.) 1930-1934. 6 dln. [alleen dln. 1-3 en 6 verschenen]. Historische bibliotheek van godsdienstwetenschappen.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1351">olim Leuven, Universiteitsbibliotheek, D 419</div>
+            <div class="mov" prov="PERDOC.DOC:L1352">(verbrand in 1940)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1353">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L1354">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1355">Datering: begin 15e eeuw (BNM: 1e kwart 15e eeuw)</div>
+            <span class="litp" prov="PERDOC.DOC:L1356">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L1357">,&nbsp;p. 345 (118)</span>
+            <div class="ref">
+              <span class="ref">Oosterman 1995A</span>
+              <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1358">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1359">103,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1360">213</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1796">Zwolle, Gemeente-archief, Emmanuelshuizen 13</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1797">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1798">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1799">Datering: begin 16e eeuw (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1800">De Vreese 1900-1902</span>
+            <span class="pps" prov="PERDOC.DOC:L1801">,&nbsp;p. 334-345 o (48)</span>
+            <div class="ref">
+              <span class="ref">De Vreese 1900-1902</span>
+              <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1802">45,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1803">59,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1804">213</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Maximilianus 1957-1959</span>
+            <span class="title">P. Maximilianus, 'De <i>Vijf Pater Noster</i> van Sint Franciscus'. In: <i>Franciscaans Leven</i> 40 (1957), p. 149-153 en 42 (1959), p. 31.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">BNM</span>
+            <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          </div>
         </div>
       </div>
     </div>

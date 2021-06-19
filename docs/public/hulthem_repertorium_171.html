@@ -108,7 +108,28 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L10023">Hein van Aken?</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L161">Hein van Aken?</div>
+          <div class="vnms">Ook bekend als:&nbsp;<span class="vnm" prov="KUEDOC.DOC:L162">Heyne van Aken van Bruessele</span><span class="vnm" prov="KUEDOC.DOC:L163">Henric van Brussel</span></div>
+          <div class="data" prov="KUEDOC.DOC:L164">Datering:&nbsp;13e/14e eeuw (1250- ca. 1320)</div>
+          <div class="inf" prov="KUEDOC.DOC:L165">Nr. 162 en spreuk 6 van nr. 148 toegeschreven door Van Eeghem aan Hein van Aken. Niet weerlegd. Waarschijnlijk geboren te Brussel, <I>prochiaen</I> te Corbeke bij Leuven, vóór 1330 overleden. Jan van Boendale bewondert hem in <I>Der leken spiegel</I>.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L166">W. van Eeghem, <I>Brusselse dichters</I>. Brussel (Simon Stevin) 1958-1963. 5 dln.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L167">dl. 1 p. 47-102</span></div>
+          <div class="lita" prov="KUEDOC.DOC:L168">W.E. Hegman, 'Is Hein van Aken de dichter van het tweede gedeelte van de <I>Rinclus</I>?'. In: <I>De nieuwe taalgids</I> 48 (1955), p. 77-81.</div>
+          <div class="lita" prov="KUEDOC.DOC:L169">W.E. Hegman, 'Hein van Aken. Nieuwe gegevens voor 's dichters biografie'. In: <I>Handelingen van de Zuidnederlandse</I> 11 (1957), p. 53-67.</div>
+          <div class="lita" prov="KUEDOC.DOC:L170">W.E. Hegman, <I>Hein van Aken. Een Brussels dichter uit de Middeleeuwen</I>. Licentiaatsverhandeling Gent 1958.</div>
+          <div class="lita" prov="KUEDOC.DOC:L171">R. Lievens, 'De dichter Hein van Aken'. In: <I>Spiegel der letteren</I> 4 (1960), p. 57-74.</div>
+          <div class="lita" prov="KUEDOC.DOC:L172">F.A. Snellaert (ed.), <I>Nederlandsche gedichten uit de veertiende eeuw van Jan van Boendale, Hein van Aken en anderen naar het Oxfordsch handschrift</I>. Brussel (s.n.) 1869.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L173">LXXVIII-XCI</span></div>
+          <div class="lita" prov="KUEDOC.DOC:L174">J.F. Willems, 'Hein van Aken'. In: <I>Belgisch museum</I> 4 (1840), p. 102-112.</div>
+          <div class="lita" prov="KUEDOC.DOC:L175">J. te Winkel, <I>Geschiedenis der Nederlandsche letterkunde</I>. Haarlem (Bohn) 1887.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L176">p. 223-224</span></div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -811,7 +832,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L794">Post quem: 1425</div>
             <div class="adtp" prov="PERDOC.DOC:L795">Ante quem: 1475</div>
             <div class="datp" prov="PERDOC.DOC:L796">Datering: midden 15e eeuw (BNM: 3e kwart 14e eeuw)</div>
-            <span prov="PERDOC.DOC:L797">Biemans 1997</span>
+            <span class="litp" prov="PERDOC.DOC:L797">Biemans 1997</span>
             <span class="pps" prov="PERDOC.DOC:L798">,&nbsp;p. 447-448 (61-2)</span>
             <div class="ref">
               <span class="ref">Biemans 1997</span>
@@ -951,14 +972,22 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Daarnaast vermeldt</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Daarnaast vermeldt&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L10193">Resoort 1988</span>
+          <span prov="DOCUMENT.DOC:L10193" he="duh">Resoort 1988</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L10194"> twee drukken uit de 16e en 17e eeuw.&nbsp;</span>
+        </div>
+        <div class="refs">
           <div class="ref">
             <span class="ref">Resoort 1988</span>
             <span class="title">R. Resoort, <i>Een schoone historie van der borchgravinne van Vergi. Onderzoek naar de intentie en gebruikssfeer van een zestiende-eeuwse prozaroman</i>. Hilversum (Verloren) 1988. Middeleeuwse studies en bronnen 9. Diss. Utrecht.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L10194"> twee drukken uit de 16e en 17e eeuw.</span>
         </div>
       </div>
     </div>

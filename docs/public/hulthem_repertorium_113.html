@@ -102,7 +102,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L6522">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -424,146 +435,269 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L6580">Brussel, Koninklijke Bibliotheek van België, 19.588</span>
-          <div class="ref">
-            <span class="ref">59</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L6580" he="nou">Brussel, Koninklijke Bibliotheek van België, 19.588</span>
           <span prov="DOCUMENT.DOC:L6581">,&nbsp;[1400 - 1500]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L6582">, f. 161r-166r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6582">, f. 161r-166r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6583">Brussel, Koninklijke Bibliotheek van België, 10.762</span>
-            <div class="ref">
-              <span class="ref">39</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6583" he="la">Brussel, Koninklijke Bibliotheek van België, 10.762</span>
             <span prov="DOCUMENT.DOC:L6584">,&nbsp;[1500 - 1600]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6585">, f. 57r-60r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6585">, f. 57r-60r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6586">Brussel, Koninklijke Bibliotheek van België, II 6.407</span>
-            <div class="ref">
-              <span class="ref">72</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6586" he="la">Brussel, Koninklijke Bibliotheek van België, II 6.407</span>
             <span prov="DOCUMENT.DOC:L6587">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6588">, f. 33r-47r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6588">, f. 33r-47r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6589">Brussel, Koninklijke Bibliotheek van België, IV 997</span>
-            <div class="ref">
-              <span class="ref">86</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6589" he="la">Brussel, Koninklijke Bibliotheek van België, IV 997</span>
             <span prov="DOCUMENT.DOC:L6590">,&nbsp;[1400 - 1450]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6591">, f. 26v-29v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6591">, f. 26v-29v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6592">Gent, Universiteitsbibliotheek, 198</span>
-            <div class="ref">
-              <span class="ref">107</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6592" he="la">Gent, Universiteitsbibliotheek, 198</span>
             <span prov="DOCUMENT.DOC:L6593">,&nbsp;[1450 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6594">, f. 136r-142v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6594">, f. 136r-142v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6595">Groningen, Universiteitsbibliotheek, 405</span>
-            <div class="ref">
-              <span class="ref">155</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6595" he="la">Groningen, Universiteitsbibliotheek, 405</span>
             <span prov="DOCUMENT.DOC:L6596">,&nbsp;[1325 - 1350]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6597">, f. 233ra-vb (ed.</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6597">, f. 233ra-vb (ed.&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6598">Leendertz 1895</span>
-            <div class="ref">
-              <span class="ref">Leendertz 1895</span>
-              <span class="title">P. Leendertz Jr., 'Het Zutfensch-Groningsche handschrift'. In: <i>Tijdschrift voor Ned. taal- en letterkunde</i> 14 (1895), p. 265-283.</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6598" he="lo">Leendertz 1895</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6599">, p. 276);</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6599">, p. 276);&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6600">Londen, British Library, Harley 2850</span>
-            <div class="ref">
-              <span class="ref">195</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6600" he="la">Londen, British Library, Harley 2850</span>
             <span prov="DOCUMENT.DOC:L6601">,&nbsp;[1450 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6602">, f. 87v-90v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6602">, f. 87v-90v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6603">Parijs, Bibliothèque de l'Arsenal, 565</span>
-            <div class="ref">
-              <span class="ref">218</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6603" he="la">Parijs, Bibliothèque de l'Arsenal, 565</span>
             <span prov="DOCUMENT.DOC:L6604">,&nbsp;[1400 - 1425]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6605">, f. 76r-79r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6605">, f. 76r-79r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6606">Utrecht, Rijksmuseum Het Catharijneconvent, Warmond 92 A 12</span>
-            <div class="ref">
-              <span class="ref">236</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6606" he="la">Utrecht, Rijksmuseum Het Catharijneconvent, Warmond 92 A 12</span>
             <span prov="DOCUMENT.DOC:L6607">,&nbsp;[1325 - 1350]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6608">, f. 155r-164v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6608">, f. 155r-164v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6609">olim Londen, Christie's 2-12-87, kavel 36</span>
-            <div class="ref">
-              <span class="ref">198</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6609" he="la">olim Londen, Christie's 2-12-87, kavel 36</span>
             <span prov="DOCUMENT.DOC:L6610">,&nbsp;[1400 - 1425]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6611">, f. 75r-78r en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6611">, f. 75r-78r en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6612">olim Sankt Peter im Schwarzwald</span>
-            <div class="ref">
-              <span class="ref">226</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L6612" he="la">olim Sankt Peter im Schwarzwald</span>
             <span prov="DOCUMENT.DOC:L6613">,&nbsp;[1100 - 1600]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6614">, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6614">, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6615">Oosterman 1995A</span>
+            <span prov="DOCUMENT.DOC:L6615" he="lo">Oosterman 1995A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L6616">, p. 261-262 en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L6617" he="lo">Meertens 1930-1934</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L6618">, dl. 6 p. 118. Eveneens in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L6619" he="la">Brugge, Groot-Seminarie, 72/175</span>
+            <span prov="DOCUMENT.DOC:L6620">,&nbsp;[1400 - 1425]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L6621">, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L6622" he="lo">De Gheldere 1896</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L6623">, p. 109-111.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L405">Brussel, Koninklijke Bibliotheek van België, 19.588</div>
+            <div class="pdtp" prov="PERDOC.DOC:L406">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L407">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L408">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L409">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L410">39,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L411">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L412">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L413">43,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L414">83,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L415">85,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L416">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L417">190</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L275">Brussel, Koninklijke Bibliotheek van België, 10.762</div>
+            <div class="pdtp" prov="PERDOC.DOC:L276">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L277">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L278">Datering: 16e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L279">104</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L498">Brussel, Koninklijke Bibliotheek van België, II 6.407</div>
+            <div class="pdtp" prov="PERDOC.DOC:L499">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L500">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L501">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L502">85,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L503">103,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L504">104</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L603">Brussel, Koninklijke Bibliotheek van België, IV 997</div>
+            <div class="pdtp" prov="PERDOC.DOC:L604">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L605">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L606">Datering: ca. 1425</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L607">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L608">83,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L609">85,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L610">104</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L752">Gent, Universiteitsbibliotheek, 198</div>
+            <div class="pdtp" prov="PERDOC.DOC:L753">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L754">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L755">Datering: 3e kwart 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L756">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L757">104</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1133">Groningen, Universiteitsbibliotheek, 405</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1134">Post quem: 1325</div>
+            <div class="adtp" prov="PERDOC.DOC:L1135">Ante quem: 1350</div>
+            <div class="datp" prov="PERDOC.DOC:L1136">Datering: 1339?</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1137">5,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1138">43,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1139">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1140">175</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Leendertz 1895</span>
+            <span class="title">P. Leendertz Jr., 'Het Zutfensch-Groningsche handschrift'. In: <i>Tijdschrift voor Ned. taal- en letterkunde</i> 14 (1895), p. 265-283.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1402">Londen, British Library, Harley 2850</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1403">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L1404">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1405">Datering: 2e helft 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1406">104</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1557">Parijs, Bibliothèque de l'Arsenal, 565</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1558">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1559">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1560">Datering: 1400-1415</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1561">27,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1562">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1563">212</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1692">Utrecht, Rijksmuseum Het Catharijneconvent, Warmond 92 A 12</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1693">Post quem: 1325</div>
+            <div class="adtp" prov="PERDOC.DOC:L1694">Ante quem: 1350</div>
+            <div class="datp" prov="PERDOC.DOC:L1695">Datering: 1340-1350 (en ca. 1462)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1696">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1697">83,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1698">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1699">212</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1418">olim Londen, Christie's 2-12-87, kavel 36</div>
+            <div class="mov" prov="PERDOC.DOC:L1419">(<I>olim</I> Wigan, Upholland College, 106) (huidige bewaarplaats onbekend)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1420">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1421">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1422">Datering: 1410-1420</div>
+            <span class="litp" prov="PERDOC.DOC:L1423">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L1424">,&nbsp;p. 354 (177)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
               <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6616">, p. 261-262 en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6617">Meertens 1930-1934</span>
-            <div class="ref">
-              <span class="ref">Meertens 1930-1934</span>
-              <span class="title">M. Meertens, <i>De godsvrucht in de Nederlanden</i>. Naar handschriften van gebedenboeken der XVe eeuw. Antwerpen etc. (Standaardboekhandel etc.) 1930-1934. 6 dln. [alleen dln. 1-3 en 6 verschenen]. Historische bibliotheek van godsdienstwetenschappen.</span>
+            <div class="opm" prov="PERDOC.DOC:L1425">Aanvullende informatie:&nbsp;niet gevonden in BNM</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1426">104</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6618">, dl. 6 p. 118. Eveneens in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6619">Brugge, Groot-Seminarie, 72/175</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1605">olim Sankt Peter im Schwarzwald</div>
+            <div class="mov" prov="PERDOC.DOC:L1606">(huidige bewaarplaats onbekend; verloren?)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1607">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1608">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1609">Datering: datering onbekend</div>
+            <span class="litp" prov="PERDOC.DOC:L1610">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L1611">,&nbsp;p. 355 (181)</span>
             <div class="ref">
-              <span class="ref">26</span>
-              <span class="title">0</span>
+              <span class="ref">Oosterman 1995A</span>
+              <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
             </div>
-            <span prov="DOCUMENT.DOC:L6620">,&nbsp;[1400 - 1425]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6621">, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6622">De Gheldere 1896</span>
-            <div class="ref">
-              <span class="ref">De Gheldere 1896</span>
-              <span class="title">K. de Gheldere, <i>Dietsce Rime. Geestelijke gedichten uit de XIIIe, XIVe & XVe eeuw naar een hs. van het einde der XVe eeuw</i>. Uitgegeven en van aanteekeningen en woordenlijst voorzien door ─. Brugge (Lod. de Plancke) 1896.</span>
+            <div class="opm" prov="PERDOC.DOC:L1612">Aanvullende informatie:&nbsp;niet gevonden in BNM; afschriften naar dit hs. bevinden zich in de BNM</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1613">104</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6623">, p. 109-111.</span>
+          <div class="ref">
+            <span class="ref">Oosterman 1995A</span>
+            <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Meertens 1930-1934</span>
+            <span class="title">M. Meertens, <i>De godsvrucht in de Nederlanden</i>. Naar handschriften van gebedenboeken der XVe eeuw. Antwerpen etc. (Standaardboekhandel etc.) 1930-1934. 6 dln. [alleen dln. 1-3 en 6 verschenen]. Historische bibliotheek van godsdienstwetenschappen.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L174">Brugge, Groot-Seminarie, 72/175</div>
+            <div class="pdtp" prov="PERDOC.DOC:L175">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L176">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L177">Datering: ca. 1400-1415</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L178">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L179">42,&nbsp;</span>
+              <span class="vop" prov="PERDOC.DOC:L180">(2x)</span>
+              <span class="var" prov="PERDOC.DOC:L181">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L182">196,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L183">214</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">De Gheldere 1896</span>
+            <span class="title">K. de Gheldere, <i>Dietsce Rime. Geestelijke gedichten uit de XIIIe, XIVe & XVe eeuw naar een hs. van het einde der XVe eeuw</i>. Uitgegeven en van aanteekeningen en woordenlijst voorzien door ─. Brugge (Lod. de Plancke) 1896.</span>
+          </div>
         </div>
       </div>
     </div>

@@ -93,7 +93,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L2875">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -247,7 +258,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L226">Post quem: 1375</div>
             <div class="adtp" prov="PERDOC.DOC:L227">Ante quem: 1425</div>
             <div class="datp" prov="PERDOC.DOC:L228">Datering: begin 15e eeuw (BNM: eind 14e, begin 15e eeuw)</div>
-            <span prov="PERDOC.DOC:L229">Oosterman 1995A</span>
+            <span class="litp" prov="PERDOC.DOC:L229">Oosterman 1995A</span>
             <span class="pps" prov="PERDOC.DOC:L230">,&nbsp;p. 330 (22)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
@@ -396,73 +407,130 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Voorts noemen</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Voorts noemen&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L2925">Paquay 1933</span>
+          <span prov="DOCUMENT.DOC:L2925" he="duh">Paquay 1933</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L2926">, p. 48-49 en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2927" he="lo">Lievens 1994A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2928">, p. 320-321 zeer veel hss. met (varianten van) deze tekst, w.o.&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2929" he="la">Keulen, Historisches Archiv, W. Qu. 97</span>
+            <span prov="DOCUMENT.DOC:L2930">,&nbsp;[1550 - 1600]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2931">, f. 301rb. Ook in:&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2932" he="la">'s-Gravenhage, Koninklijke Bibliotheek, KNAW XXVII</span>
+            <span prov="DOCUMENT.DOC:L2933">,&nbsp;[1400 - 1450]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2934">, f. 20b-23a, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2935" he="lo">Meijer 1839</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2936">, en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2937" he="la">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. qu. 557</span>
+            <span prov="DOCUMENT.DOC:L2938">,&nbsp;[1400 - 1450]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2939">, f. 5v, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2940" he="lo">Brinkman 1995</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2941">, p. 52-53.&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L2942" he="lo">Moll 1880</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L2943"> vermeldt eveneens een aantal hss. met deze tekst.&nbsp;</span>
+        </div>
+        <div class="refs">
           <div class="ref">
             <span class="ref">Paquay 1933</span>
             <span class="title">E.H.J. Paquay (ed.), <i>Middelnederlandsche gewijde teksten naar handschriften der XIVe-XVe eeuw</i>. Lummen (St. Ferdinand) 1933.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2926">, p. 48-49 en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2927">Lievens 1994A</span>
+          <div class="ref">
+            <span class="ref">Lievens 1994A</span>
+            <span class="title">R. Lievens, 'Een berijmde parafrase van het Salve Regina'. In: <i>Spiegel der letteren</i> 36 (1994), p. 319-330.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1198">Keulen, Historisches Archiv, W. Qu. 97</div>
+            <div class="mov" prov="PERDOC.DOC:L1199">(<I>olim</I> W. III 13)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1200">Post quem: 1550</div>
+            <div class="adtp" prov="PERDOC.DOC:L1201">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1202">Datering: 1575 (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1203">Ampe 1964A</span>
+            <span class="pps" prov="PERDOC.DOC:L1204">,&nbsp;p. 31</span>
             <div class="ref">
-              <span class="ref">Lievens 1994A</span>
-              <span class="title">R. Lievens, 'Een berijmde parafrase van het Salve Regina'. In: <i>Spiegel der letteren</i> 36 (1994), p. 319-330.</span>
+              <span class="ref">Ampe 1964A</span>
+              <span class="title">A. Ampe, 'Een oud Florilegium Eucharisticum'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 23-55.</span>
+            </div>
+            <span class="litp" prov="PERDOC.DOC:L1205">Menne 1937</span>
+            <div class="ref">
+              <span class="ref">Menne 1937</span>
+              <span class="title">K. Menne, <i>Deutsche und niederländische Handschriften</i>. Köln (Neubner) 1937. Mitteilungen aus dem Stadtarchiv von Köln. Die Hss. des Archivs, Heft X, Abt. 365-368.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1206">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1207">60</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2928">, p. 320-321 zeer veel hss. met (varianten van) deze tekst, w.o.</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2929">Keulen, Historisches Archiv, W. Qu. 97</span>
-            <div class="ref">
-              <span class="ref">164</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L2930">,&nbsp;[1550 - 1600]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2931">, f. 301rb. Ook in:</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2932">'s-Gravenhage, Koninklijke Bibliotheek, KNAW XXVII</span>
-            <div class="ref">
-              <span class="ref">149</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L2933">,&nbsp;[1400 - 1450]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2934">, f. 20b-23a, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2935">Meijer 1839</span>
-            <div class="ref">
-              <span class="ref">Meijer 1839</span>
-              <span class="title">G.J. Meijer, 'Verslag van en mededeeling uit twee getijdenboeken der veertiende eeuw'. In: <i>Verhandelingen der Tweede Klasse van het Kon. Ned. Inst. van Wetenschappen, Letterkunde en Schoone Kunsten</i> 6 (1839), 2e stuk p. 32-71.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1078">'s-Gravenhage, Koninklijke Bibliotheek, KNAW XXVII</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1079">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1080">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1081">Datering: 1e helft 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1082">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1083">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1084">103,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1085">104</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2936">, en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2937">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. qu. 557</span>
-            <div class="ref">
-              <span class="ref">18</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L2938">,&nbsp;[1400 - 1450]</span>
+          <div class="ref">
+            <span class="ref">Meijer 1839</span>
+            <span class="title">G.J. Meijer, 'Verslag van en mededeeling uit twee getijdenboeken der veertiende eeuw'. In: <i>Verhandelingen der Tweede Klasse van het Kon. Ned. Inst. van Wetenschappen, Letterkunde en Schoone Kunsten</i> 6 (1839), 2e stuk p. 32-71.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2939">, f. 5v, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2940">Brinkman 1995</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L107">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. qu. 557</div>
+            <div class="mov" prov="PERDOC.DOC:L108">(deel I)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L109">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L110">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L111">Datering: 1e helft 15e eeuw (BNM: 2e helft 15e eeuw [ca. 1475-1481])</div>
+            <span class="litp" prov="PERDOC.DOC:L112">Brinkman 1995</span>
+            <span class="pps" prov="PERDOC.DOC:L113">,&nbsp;p. 13-27</span>
             <div class="ref">
               <span class="ref">Brinkman 1995</span>
               <span class="title">H. Brinkman (ed.), <i>Het handschrift-Jan Phillipsz. Hs. Berlijn, Staatsbibliothek Preuszischer Kulturbesitz, Germ. Qu. 557</i>. Hilversum (Verloren) 1995. Middeleeuwse verzamelhandschriften uit de Nederlanden 2.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2941">, p. 52-53.</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L2942">Moll 1880</span>
+            <span class="litp" prov="PERDOC.DOC:L114">Brinkman 1997A</span>
+            <span class="pps" prov="PERDOC.DOC:L115">,&nbsp;p. 123-158</span>
             <div class="ref">
-              <span class="ref">Moll 1880</span>
-              <span class="title">W. Moll, <i>Geert Groote's Dietsche vertalingen</i>. Beschreven en toegelicht door ─. Amsterdam (Müller) 1880. Verhandelingen der Kon. Ned. Acad. van Wetenschappen, afd. Letterkunde, deel XIII.</span>
+              <span class="ref">Brinkman 1997A</span>
+              <span class="title">H. Brinkman, <i>Dichten uit liefde. Literatuur in Leiden aan het einde van de Middeleeuwen</i>. Hilversum (Verloren) 1997. Diss. Amsterdam (UvA).</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L116">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L117">172,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L118">196</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L2943"> vermeldt eveneens een aantal hss. met deze tekst.</span>
+          <div class="ref">
+            <span class="ref">Brinkman 1995</span>
+            <span class="title">H. Brinkman (ed.), <i>Het handschrift-Jan Phillipsz. Hs. Berlijn, Staatsbibliothek Preuszischer Kulturbesitz, Germ. Qu. 557</i>. Hilversum (Verloren) 1995. Middeleeuwse verzamelhandschriften uit de Nederlanden 2.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Moll 1880</span>
+            <span class="title">W. Moll, <i>Geert Groote's Dietsche vertalingen</i>. Beschreven en toegelicht door ─. Amsterdam (Müller) 1880. Verhandelingen der Kon. Ned. Acad. van Wetenschappen, afd. Letterkunde, deel XIII.</span>
+          </div>
         </div>
       </div>
     </div>

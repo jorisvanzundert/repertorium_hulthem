@@ -100,7 +100,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L5350">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -300,7 +311,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L618">Post quem: 1400</div>
             <div class="adtp" prov="PERDOC.DOC:L619">Ante quem: 1425</div>
             <div class="datp" prov="PERDOC.DOC:L620">Datering: 1410-1420 (BNM: ca. 1420)</div>
-            <span prov="PERDOC.DOC:L621">Oosterman 1995A</span>
+            <span class="litp" prov="PERDOC.DOC:L621">Oosterman 1995A</span>
             <span class="pps" prov="PERDOC.DOC:L622">,&nbsp;p. 335 (52)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
@@ -350,49 +361,78 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L5390">Edinburgh, National Library of Scotland, Nat. Galleries 7135</span>
-          <div class="ref">
-            <span class="ref">102</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L5390" he="nou">Edinburgh, National Library of Scotland, Nat. Galleries 7135</span>
           <span prov="DOCUMENT.DOC:L5391">,&nbsp;[1425 - 1475]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L5392">, f. 33r-34r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L5392">, f. 33r-34r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L5393">Krakow, Muzeum Narodowe, 2943</span>
-            <div class="ref">
-              <span class="ref">167</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L5393" he="la">Krakow, Muzeum Narodowe, 2943</span>
             <span prov="DOCUMENT.DOC:L5394">,&nbsp;[1400 - 1425]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L5395">, f. 94r-95v en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L5395">, f. 94r-95v en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L5396">Leiden, Universiteitsbibliotheek, LTK 304</span>
-            <div class="ref">
-              <span class="ref">179</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L5396" he="la">Leiden, Universiteitsbibliotheek, LTK 304</span>
             <span prov="DOCUMENT.DOC:L5397">,&nbsp;[1525 - 1575]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L5398">, f. 131r-v (al deze teksten zijn korter), zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L5398">, f. 131r-v (al deze teksten zijn korter), zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L5399">Oosterman 1995A</span>
-            <div class="ref">
-              <span class="ref">Oosterman 1995A</span>
-              <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+            <span prov="DOCUMENT.DOC:L5399" he="lo">Oosterman 1995A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L5400">. Zie ook&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L5401" he="lo">BNM</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L5402">, trefwoord: H. Kruis.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L716">Edinburgh, National Library of Scotland, Nat. Galleries 7135</div>
+            <div class="pdtp" prov="PERDOC.DOC:L717">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L718">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L719">Datering: midden 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L720">85</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L5400">. Zie ook</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L5401">BNM</span>
-            <div class="ref">
-              <span class="ref">BNM</span>
-              <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1222">Krakow, Muzeum Narodowe, 2943</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1223">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1224">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L1225">Datering: 1410-1420</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1226">31,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1227">40,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1228">85,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1229">87</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L5402">, trefwoord: H. Kruis.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1290">Leiden, Universiteitsbibliotheek, LTK 304</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1291">Post quem: 1525</div>
+            <div class="adtp" prov="PERDOC.DOC:L1292">Ante quem: 1575</div>
+            <div class="datp" prov="PERDOC.DOC:L1293">Datering: ca. 1550</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1294">85</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Oosterman 1995A</span>
+            <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">BNM</span>
+            <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          </div>
         </div>
       </div>
     </div>

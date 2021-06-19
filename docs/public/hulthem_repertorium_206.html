@@ -101,7 +101,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L12377">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -241,7 +252,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L226">Post quem: 1375</div>
             <div class="adtp" prov="PERDOC.DOC:L227">Ante quem: 1425</div>
             <div class="datp" prov="PERDOC.DOC:L228">Datering: begin 15e eeuw (BNM: eind 14e, begin 15e eeuw)</div>
-            <span prov="PERDOC.DOC:L229">Oosterman 1995A</span>
+            <span class="litp" prov="PERDOC.DOC:L229">Oosterman 1995A</span>
             <span class="pps" prov="PERDOC.DOC:L230">,&nbsp;p. 330 (22)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
@@ -364,58 +375,108 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L12421">Brussel, Koninklijke Bibliotheek van België, 12.079</span>
-          <div class="ref">
-            <span class="ref">46</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L12421" he="nou">Brussel, Koninklijke Bibliotheek van België, 12.079</span>
           <span prov="DOCUMENT.DOC:L12422">,&nbsp;[1500 - 1600]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L12423">, f. 20;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L12423">, f. 20;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12424">Brussel, Koninklijke Bibliotheek van België, 15.084</span>
-            <div class="ref">
-              <span class="ref">49</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L12424" he="la">Brussel, Koninklijke Bibliotheek van België, 15.084</span>
             <span prov="DOCUMENT.DOC:L12425">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12426">, f. 56 en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L12426">, f. 56 en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12427">Brussel, Koninklijke Bibliotheek van België, 21.893</span>
-            <div class="ref">
-              <span class="ref">60</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L12427" he="la">Brussel, Koninklijke Bibliotheek van België, 21.893</span>
             <span prov="DOCUMENT.DOC:L12428">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12429">, f. 12-56, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L12429">, f. 12-56, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12430">Paquay 1933</span>
-            <div class="ref">
-              <span class="ref">Paquay 1933</span>
-              <span class="title">E.H.J. Paquay (ed.), <i>Middelnederlandsche gewijde teksten naar handschriften der XIVe-XVe eeuw</i>. Lummen (St. Ferdinand) 1933.</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L12430" he="lo">Paquay 1933</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12431"> en in</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L12431"> en in&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12432">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. qu. 557</span>
-            <div class="ref">
-              <span class="ref">18</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L12432" he="la">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. qu. 557</span>
             <span prov="DOCUMENT.DOC:L12433">,&nbsp;[1400 - 1450]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12434">, f. 6r, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L12434">, f. 6r, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L12435">Brinkman 1995</span>
+            <span prov="DOCUMENT.DOC:L12435" he="lo">Brinkman 1995</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L12436">, p. 53.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L315">Brussel, Koninklijke Bibliotheek van België, 12.079</div>
+            <div class="mov" prov="PERDOC.DOC:L316">(<I>olim</I> I 789)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L317">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L318">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L319">Datering: 16e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L320">196</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L333">Brussel, Koninklijke Bibliotheek van België, 15.084</div>
+            <div class="mov" prov="PERDOC.DOC:L334">(<I>olim</I> I 792)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L335">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L336">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L337">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L338">196</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L418">Brussel, Koninklijke Bibliotheek van België, 21.893</div>
+            <div class="mov" prov="PERDOC.DOC:L419">(<I>olim</I> I 794)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L420">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L421">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L422">Datering: 1482</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L423">196</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Paquay 1933</span>
+            <span class="title">E.H.J. Paquay (ed.), <i>Middelnederlandsche gewijde teksten naar handschriften der XIVe-XVe eeuw</i>. Lummen (St. Ferdinand) 1933.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L107">Berlijn, Staatsbibliothek Preussischer Kulturbesitz, Germ. qu. 557</div>
+            <div class="mov" prov="PERDOC.DOC:L108">(deel I)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L109">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L110">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L111">Datering: 1e helft 15e eeuw (BNM: 2e helft 15e eeuw [ca. 1475-1481])</div>
+            <span class="litp" prov="PERDOC.DOC:L112">Brinkman 1995</span>
+            <span class="pps" prov="PERDOC.DOC:L113">,&nbsp;p. 13-27</span>
             <div class="ref">
               <span class="ref">Brinkman 1995</span>
               <span class="title">H. Brinkman (ed.), <i>Het handschrift-Jan Phillipsz. Hs. Berlijn, Staatsbibliothek Preuszischer Kulturbesitz, Germ. Qu. 557</i>. Hilversum (Verloren) 1995. Middeleeuwse verzamelhandschriften uit de Nederlanden 2.</span>
             </div>
+            <span class="litp" prov="PERDOC.DOC:L114">Brinkman 1997A</span>
+            <span class="pps" prov="PERDOC.DOC:L115">,&nbsp;p. 123-158</span>
+            <div class="ref">
+              <span class="ref">Brinkman 1997A</span>
+              <span class="title">H. Brinkman, <i>Dichten uit liefde. Literatuur in Leiden aan het einde van de Middeleeuwen</i>. Hilversum (Verloren) 1997. Diss. Amsterdam (UvA).</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L116">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L117">172,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L118">196</span>
+            </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L12436">, p. 53.</span>
+          <div class="ref">
+            <span class="ref">Brinkman 1995</span>
+            <span class="title">H. Brinkman (ed.), <i>Het handschrift-Jan Phillipsz. Hs. Berlijn, Staatsbibliothek Preuszischer Kulturbesitz, Germ. Qu. 557</i>. Hilversum (Verloren) 1995. Middeleeuwse verzamelhandschriften uit de Nederlanden 2.</span>
+          </div>
         </div>
       </div>
     </div>

@@ -101,7 +101,23 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L6907">Anoniem (claris)</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L1">Anoniem (claris)</div>
+          <div class="data" prov="KUEDOC.DOC:L2">Datering:&nbsp;midden 14e eeuw?</div>
+          <div class="inf" prov="KUEDOC.DOC:L3">Auteur van nr. 111. Anonieme claris, wellicht de voorzangeres in het klooster van Margriet van Meerbeke en een bekende van Ruusbroec.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L4">S. Axters, <I>Geschiedenis van de vroomheid in de Nederlanden</I>. Antwerpen (De Sikkel) 1950-1960. 4 dln.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L5">dl. 2 p. 124-125</span></div>
+          <div class="lita" prov="KUEDOC.DOC:L6">G. de Baere, V. Fraeters, F. Willaert, '<I>Vanden bogaert die ene clare maecte</I>'. In: H. van Dijk e.a. (red.), <I>Klein kapitaal uit het handschrift-Van Hulthem. Zeventien teksten uit Hs. Brussel, K.B. 15.589-623 uitgegeven en ingeleid door neerlandici, verbonden aan tien universiteiten in Nederland en België</I>. Hilversum (Verloren) 1992, p. 77-85. Middeleeuwse studies en bronnen 33.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L7">p. 77-78</span></div>
+          <div class="lita" prov="KUEDOC.DOC:L8">Edw. van Even, 'Eene Zuid-Nederlandsche dichteresse uit de XIIIe eeuw'. In: <I>De katholiek</I> 23 (1853), p. 329-340.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L9">p. 331, 337-339</span></div>
+          <div class="lita" prov="KUEDOC.DOC:L10">E. (von) Kausler, <I>Denkmäler altniederländischer Sprache und Literatur</I>. Nach ungedrückten Quellen hrsg. von ─. Tübingen (Fues) 1840. 3 dln. [Nachdr. Hildesheim etc. (Olms) 1978].:&nbsp;<span class="aps" prov="KUEDOC.DOC:L11">dl. 3 p. 121-125 en 465-471</span></div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -378,7 +394,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L899">Post quem: 1425</div>
             <div class="adtp" prov="PERDOC.DOC:L900">Ante quem: 1475</div>
             <div class="datp" prov="PERDOC.DOC:L901">Datering: begin 2e helft 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L902">De Vreese 1900-1902</span>
+            <span class="litp" prov="PERDOC.DOC:L902">De Vreese 1900-1902</span>
             <span class="pps" prov="PERDOC.DOC:L903">,&nbsp;p. 190-212 T (28)</span>
             <div class="ref">
               <span class="ref">De Vreese 1900-1902</span>
@@ -401,7 +417,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1027">Post quem: 1450</div>
             <div class="adtp" prov="PERDOC.DOC:L1028">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L1029">Datering: 2e helft 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1030">Strijbosch 1996</span>
+            <span class="litp" prov="PERDOC.DOC:L1030">Strijbosch 1996</span>
             <span class="pps" prov="PERDOC.DOC:L1031">,&nbsp;p. 36 (43)</span>
             <div class="ref">
               <span class="ref">Strijbosch 1996</span>
@@ -424,7 +440,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1120">Post quem: 1500</div>
             <div class="adtp" prov="PERDOC.DOC:L1121">Ante quem: 1525</div>
             <div class="datp" prov="PERDOC.DOC:L1122">Datering: ca. 1510 (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1123">De Baere 1992</span>
+            <span class="litp" prov="PERDOC.DOC:L1123">De Baere 1992</span>
             <span class="pps" prov="PERDOC.DOC:L1124">,&nbsp;p. 83</span>
             <div class="ref">
               <span class="ref">De Baere 1992</span>
@@ -512,31 +528,50 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L6979">Cambridge (Mass.), Houghton Library, Ms. Dutch 13</span>
-          <div class="ref">
-            <span class="ref">92</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L6979" he="nou">Cambridge (Mass.), Houghton Library, Ms. Dutch 13</span>
           <span prov="DOCUMENT.DOC:L6980">,&nbsp;[1425 - 1450]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L6981">, f. 160v-164, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L6981">, f. 160v-164, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6982">Lievens 1993</span>
-            <div class="ref">
-              <span class="ref">Lievens 1993</span>
-              <span class="title">R. Lievens, 'Een pseudo-mystieke kantileen: handschrift Cambridge Mass. Dutch 13'. In: <i>Ons geestelijk erf</i> 67 (1993), p. 66-81.</span>
+            <span prov="DOCUMENT.DOC:L6982" he="lo">Lievens 1993</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L6983"> en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L6984" he="lo">Oosterman 1995A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L6985">, p. 111.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L649">Cambridge (Mass.), Houghton Library, Ms. Dutch 13</div>
+            <div class="pdtp" prov="PERDOC.DOC:L650">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L651">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L652">Datering: 1428</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L653">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L654">18,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L655">83,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L656">87,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L657">111,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L658">158</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6983"> en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L6984">Oosterman 1995A</span>
-            <div class="ref">
-              <span class="ref">Oosterman 1995A</span>
-              <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">Lievens 1993</span>
+            <span class="title">R. Lievens, 'Een pseudo-mystieke kantileen: handschrift Cambridge Mass. Dutch 13'. In: <i>Ons geestelijk erf</i> 67 (1993), p. 66-81.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L6985">, p. 111.</span>
+          <div class="ref">
+            <span class="ref">Oosterman 1995A</span>
+            <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+          </div>
         </div>
       </div>
     </div>

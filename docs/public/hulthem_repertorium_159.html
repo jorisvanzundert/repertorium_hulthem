@@ -110,7 +110,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L9296">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -307,14 +318,22 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">(a) uit</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">(a) uit&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L9328">BNM</span>
+          <span prov="DOCUMENT.DOC:L9328" he="duh">BNM</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L9329">, trefwoord: Leeringhe.&nbsp;</span>
+        </div>
+        <div class="refs">
           <div class="ref">
             <span class="ref">BNM</span>
             <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L9329">, trefwoord: Leeringhe.</span>
         </div>
       </div>
     </div>

@@ -176,7 +176,8 @@ h2 {
   padding-bottom: 0.75em;
 }
 
-.editie div.ref.expand, .per.expand {
+.editie div.ref.expand, .per.expand, .auta_container.expand,
+.ovt_container .refs.expand {
   color: #666;
   display: block;
   font-size: 11pt;
@@ -185,7 +186,49 @@ h2 {
   padding-bottom: 0.75em;
 }
 
-.ref.ref, .per {
+.ovt_container .refs.expand .per {
+  display: block;
+  margin-top: 1em;
+}
+
+.refs.expand div.ref {
+  display: block;
+  margin-top: 1em;
+}
+
+.refs.expand .per div.ref {
+  display: block;
+  margin-top: 0em;
+}
+
+.ref.ref, .per, .auta_container, .refs.expand span.ref {
+  display: none;
+}
+
+.ovt_container div.refs.expand .per div.ref {
+  display: block;
+  margin-left: 3em;
+}
+
+.ovt_container .refs.expand .per .litp {
+  margin-left: 3em;
+}
+
+.ovt_container .refs.expand .per .litp::before {
+  content: 'Zie: ';
+}
+
+.auta_container .lita {
+  margin-top: 1em;
+}
+
+.auta_container .lita_caption {
+  margin-bottom: -0.75em;
+  margin-top: 1em;
+  color: #002048;
+}
+
+.auta_container .auta {
   display: none;
 }
 

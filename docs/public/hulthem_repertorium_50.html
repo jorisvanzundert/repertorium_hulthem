@@ -94,7 +94,21 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L3065">Nikolaas van Straatsburg</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L342">Nikolaas van Straatsburg</div>
+          <div class="vnms">Ook bekend als:&nbsp;<span class="vnm" prov="KUEDOC.DOC:L343">de leesmeester van Straatsburg</span><span class="vnm" prov="KUEDOC.DOC:L344">Nicolaus van Straatsburg)</span></div>
+          <div class="data" prov="KUEDOC.DOC:L345">Datering:&nbsp;1e helft 14e eeuw</div>
+          <div class="inf" prov="KUEDOC.DOC:L346">Auteur van nr. 45. Wellicht geboren te Straatsburg, tot 1318 dominicaan te Bazel, dan leesmeester te Keulen en Straatsburg, 1 augustus 1325 vicaris-provinciaal over Teutonia, 1326-1327 aanwezig bij het proces van meester Eckhart.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L347">S. Axters, 'De preek op den gulden berg door den leesmeester van Straatsburg'. In: <I>Tijdschrift voor taal- en letterkunde</I> 28 (1940), p. 5-58.:&nbsp;<span class="aps" prov="KUEDOC.DOC:L348">p. 5-12</span></div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -271,7 +285,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L22">Post quem: 1450</div>
             <div class="adtp" prov="PERDOC.DOC:L23">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L24">Datering: 2e helft 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L25">Axters 1940</span>
+            <span class="litp" prov="PERDOC.DOC:L25">Axters 1940</span>
             <span class="pps" prov="PERDOC.DOC:L26">,&nbsp;p. 42</span>
             <div class="ref">
               <span class="ref">Axters 1940</span>
@@ -294,7 +308,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L30">Post quem: 1425</div>
             <div class="adtp" prov="PERDOC.DOC:L31">Ante quem: 1475</div>
             <div class="datp" prov="PERDOC.DOC:L32">Datering: midden 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L33">Axters 1940</span>
+            <span class="litp" prov="PERDOC.DOC:L33">Axters 1940</span>
             <span class="pps" prov="PERDOC.DOC:L34">,&nbsp;p. 42</span>
             <div class="ref">
               <span class="ref">Axters 1940</span>
@@ -333,7 +347,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1529">Post quem: 1400</div>
             <div class="adtp" prov="PERDOC.DOC:L1530">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L1531">Datering: 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1532">Heynen 1940</span>
+            <span class="litp" prov="PERDOC.DOC:L1532">Heynen 1940</span>
             <div class="ref">
               <span class="ref">Heynen 1940</span>
               <span class="title">E. Heynen, 'De preek op <i>Den gulden berg</i>'. In: <i>Tijdschrift voor taal- en letterkunde</i> 28 (1940), p. 277-283.</span>
@@ -396,146 +410,252 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L3117">Brussel, Koninklijke Bibliotheek van België, 15.131</span>
-          <div class="ref">
-            <span class="ref">50</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L3117" he="nou">Brussel, Koninklijke Bibliotheek van België, 15.131</span>
           <span prov="DOCUMENT.DOC:L3118">,&nbsp;[1300 - 1400]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L3119">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3119">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3120">Gent, Universiteitsbibliotheek, 1101 (1)</span>
-            <div class="ref">
-              <span class="ref">109</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3120" he="la">Gent, Universiteitsbibliotheek, 1101 (1)</span>
             <span prov="DOCUMENT.DOC:L3121">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3122">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3122">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3123">Gent, Universiteitsbibliotheek, 1330</span>
-            <div class="ref">
-              <span class="ref">111</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3123" he="la">Gent, Universiteitsbibliotheek, 1330</span>
             <span prov="DOCUMENT.DOC:L3124">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3125">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3125">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3126">Gent, Universiteitsbibliotheek, 1376</span>
-            <div class="ref">
-              <span class="ref">113</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3126" he="la">Gent, Universiteitsbibliotheek, 1376</span>
             <span prov="DOCUMENT.DOC:L3127">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3128">, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3128">, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3129">Scharpé 1893</span>
-            <div class="ref">
-              <span class="ref">Scharpé 1893</span>
-              <span class="title">L. Scharpé (ed.), 'Anthonis de Rovere. Twee onuitgegeven gedichten'. In: <i>Biekorf</i> 4 (1893), p. 134-139, 169-174 en 225-232.</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3129" he="lo">Scharpé 1893</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3130">, p. 228-230;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3130">, p. 228-230;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3131">'s-Gravenhage, Koninklijke Bibliotheek, 73 E 24</span>
-            <div class="ref">
-              <span class="ref">125</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3131" he="la">'s-Gravenhage, Koninklijke Bibliotheek, 73 E 24</span>
             <span prov="DOCUMENT.DOC:L3132">,&nbsp;[1450 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3133">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3133">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3134">Heidelberg, Universitätsbibliothek, Salem VII 4d</span>
-            <div class="ref">
-              <span class="ref">161</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3134" he="la">Heidelberg, Universitätsbibliothek, Salem VII 4d</span>
             <span prov="DOCUMENT.DOC:L3135">,&nbsp;[1400 - 1450]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3136">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3136">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3137">Leiden, Universiteitsbibliotheek, LTK 349</span>
-            <div class="ref">
-              <span class="ref">181</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3137" he="la">Leiden, Universiteitsbibliotheek, LTK 349</span>
             <span prov="DOCUMENT.DOC:L3138">,&nbsp;[1100 - 1600]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3139">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3139">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3140">Parijs, Bibliothèque de l'Arsenal, 8221</span>
-            <div class="ref">
-              <span class="ref">219</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3140" he="la">Parijs, Bibliothèque de l'Arsenal, 8221</span>
             <span prov="DOCUMENT.DOC:L3141">,&nbsp;[1500 - 1600]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3142">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3142">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3143">Stuttgart, Württembergische Landesbibliothek, Theol. oct. 141</span>
-            <div class="ref">
-              <span class="ref">230</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3143" he="la">Stuttgart, Württembergische Landesbibliothek, Theol. oct. 141</span>
             <span prov="DOCUMENT.DOC:L3144">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3145">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3145">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3146">Trier, Stadtbibliothek, 1196</span>
-            <div class="ref">
-              <span class="ref">233</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3146" he="la">Trier, Stadtbibliothek, 1196</span>
             <span prov="DOCUMENT.DOC:L3147">,&nbsp;[1450 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3148">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3148">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3149">Weert, Minderbroeders 14</span>
-            <div class="ref">
-              <span class="ref">243</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3149" he="la">Weert, Minderbroeders 14</span>
             <span prov="DOCUMENT.DOC:L3150">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3151">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3151">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3152">Zwolle, Gemeente-archief, Emmanuelshuizen 13</span>
-            <div class="ref">
-              <span class="ref">251</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L3152" he="la">Zwolle, Gemeente-archief, Emmanuelshuizen 13</span>
             <span prov="DOCUMENT.DOC:L3153">,&nbsp;[1475 - 1525]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3154">, f. 305b-312a, e.a., zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L3154">, f. 305b-312a, e.a., zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3155">Axters 1932</span>
-            <div class="ref">
-              <span class="ref">Axters 1932</span>
-              <span class="title">S. Axters, 'Bijdragen tot een bibliographie'. In: <i>Ons geestelijk erf</i> 6 (1932), p. 5-39.</span>
+            <span prov="DOCUMENT.DOC:L3155" he="lo">Axters 1932</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L3156">, p. 34-36,&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L3157" he="lo">Axters 1940</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L3158"> en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L3159" he="lo">Axters 1970</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L3160">, p. 64-69 en 302.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L339">Brussel, Koninklijke Bibliotheek van België, 15.131</div>
+            <div class="pdtp" prov="PERDOC.DOC:L340">Post quem: 1300</div>
+            <div class="adtp" prov="PERDOC.DOC:L341">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L342">Datering: 14e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L343">45</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3156">, p. 34-36,</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3157">Axters 1940</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L763">Gent, Universiteitsbibliotheek, 1101 (1)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L764">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L765">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L766">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L767">45</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L773">Gent, Universiteitsbibliotheek, 1330</div>
+            <div class="mov" prov="PERDOC.DOC:L774">(<I>olim</I> 1121)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L775">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L776">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L777">Datering: 15e eeuw (BNM: ca. eind 15e eeuw)</div>
+            <span class="litp" prov="PERDOC.DOC:L778">Lieftinck 1936</span>
+            <span class="pps" prov="PERDOC.DOC:L779">,&nbsp;p. 86</span>
+            <div class="ref">
+              <span class="ref">Lieftinck 1936</span>
+              <span class="title">G.I. Lieftinck, <i>De Middelnederlandsche Tauler-handschriften</i>. Groningen (Wolters) 1936.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L780">45,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L781">178</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L787">Gent, Universiteitsbibliotheek, 1376</div>
+            <div class="pdtp" prov="PERDOC.DOC:L788">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L789">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L790">Datering: 17 juni 1497</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L791">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L792">45</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Scharpé 1893</span>
+            <span class="title">L. Scharpé (ed.), 'Anthonis de Rovere. Twee onuitgegeven gedichten'. In: <i>Biekorf</i> 4 (1893), p. 134-139, 169-174 en 225-232.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L871">'s-Gravenhage, Koninklijke Bibliotheek, 73 E 24</div>
+            <div class="mov" prov="PERDOC.DOC:L872">(<I>olim</I> V 53)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L873">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L874">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L875">Datering: 1455 en derde kwart 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L876">45</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1176">Heidelberg, Universitätsbibliothek, Salem VII 4d</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1177">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1178">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L1179">Datering: 1e helft 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1180">45,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1181">104,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1182">212</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1300">Leiden, Universiteitsbibliotheek, LTK 349</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1301">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1302">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1303">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1304">45</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1564">Parijs, Bibliothèque de l'Arsenal, 8221</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1565">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L1566">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1567">Datering: 16e eeuw (BNM: begin 16e eeuw)</div>
+            <span class="litp" prov="PERDOC.DOC:L1568">Axters 1940</span>
+            <span class="pps" prov="PERDOC.DOC:L1569">,&nbsp;p. 46</span>
             <div class="ref">
               <span class="ref">Axters 1940</span>
               <span class="title">S. Axters, 'De preek op den gulden berg door den leesmeester van Straatsburg'. In: <i>Tijdschrift voor taal- en letterkunde</i> 28 (1940), p. 5-58.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3158"> en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L3159">Axters 1970</span>
-            <div class="ref">
-              <span class="ref">Axters 1970</span>
-              <span class="title">S. Axters, <i>Bibliotheca Dominicana Neerlandica manuscripta 1224-1500</i>. Louvain (Bureaux de la RHE, Bibl. de l'Université) 1970, p. 64-69 en 302. Bibliothèque de la Revue d'Histoire Ecclésiastique Fasc. 49.</span>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1570">45</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L3160">, p. 64-69 en 302.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1649">Stuttgart, Württembergische Landesbibliothek, Theol. oct. 141</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1650">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1651">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1652">Datering: 1477</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1653">45</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1674">Trier, Stadtbibliothek, 1196</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1675">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L1676">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L1677">Datering: 1453-1454</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1678">45</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1742">Weert, Minderbroeders 14</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1743">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1744">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1745">Datering: 1482</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1746">45</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1796">Zwolle, Gemeente-archief, Emmanuelshuizen 13</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1797">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1798">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1799">Datering: begin 16e eeuw (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1800">De Vreese 1900-1902</span>
+            <span class="pps" prov="PERDOC.DOC:L1801">,&nbsp;p. 334-345 o (48)</span>
+            <div class="ref">
+              <span class="ref">De Vreese 1900-1902</span>
+              <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1802">45,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1803">59,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1804">213</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Axters 1932</span>
+            <span class="title">S. Axters, 'Bijdragen tot een bibliographie'. In: <i>Ons geestelijk erf</i> 6 (1932), p. 5-39.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Axters 1940</span>
+            <span class="title">S. Axters, 'De preek op den gulden berg door den leesmeester van Straatsburg'. In: <i>Tijdschrift voor taal- en letterkunde</i> 28 (1940), p. 5-58.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Axters 1970</span>
+            <span class="title">S. Axters, <i>Bibliotheca Dominicana Neerlandica manuscripta 1224-1500</i>. Louvain (Bureaux de la RHE, Bibl. de l'Université) 1970, p. 64-69 en 302. Bibliothèque de la Revue d'Histoire Ecclésiastique Fasc. 49.</span>
+          </div>
         </div>
       </div>
     </div>

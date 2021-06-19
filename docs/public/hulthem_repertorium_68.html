@@ -93,7 +93,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L4020">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -308,13 +319,13 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L1200">Post quem: 1550</div>
             <div class="adtp" prov="PERDOC.DOC:L1201">Ante quem: 1600</div>
             <div class="datp" prov="PERDOC.DOC:L1202">Datering: 1575 (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L1203">Ampe 1964A</span>
+            <span class="litp" prov="PERDOC.DOC:L1203">Ampe 1964A</span>
             <span class="pps" prov="PERDOC.DOC:L1204">,&nbsp;p. 31</span>
             <div class="ref">
               <span class="ref">Ampe 1964A</span>
               <span class="title">A. Ampe, 'Een oud Florilegium Eucharisticum'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 23-55.</span>
             </div>
-            <span prov="PERDOC.DOC:L1205">Menne 1937</span>
+            <span class="litp" prov="PERDOC.DOC:L1205">Menne 1937</span>
             <div class="ref">
               <span class="ref">Menne 1937</span>
               <span class="title">K. Menne, <i>Deutsche und niederländische Handschriften</i>. Köln (Neubner) 1937. Mitteilungen aus dem Stadtarchiv von Köln. Die Hss. des Archivs, Heft X, Abt. 365-368.</span>
@@ -413,128 +424,215 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L4075">Brussel, Koninklijke Bibliotheek van België, 8.609-20</span>
-          <div class="ref">
-            <span class="ref">38</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L4075" he="nou">Brussel, Koninklijke Bibliotheek van België, 8.609-20</span>
           <span prov="DOCUMENT.DOC:L4076">,&nbsp;[1250 - 1400]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L4077"> (2x Latijnse versie);</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4077"> (2x Latijnse versie);&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4078">'s-Gravenhage, Koninklijke Bibliotheek, 128 G 19</span>
-            <div class="ref">
-              <span class="ref">140</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L4078" he="la">'s-Gravenhage, Koninklijke Bibliotheek, 128 G 19</span>
             <span prov="DOCUMENT.DOC:L4079">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4080">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4080">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4081">Wenen, Österreichische Nationalbibliothek, 15419</span>
-            <div class="ref">
-              <span class="ref">246</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L4081" he="la">Wenen, Österreichische Nationalbibliothek, 15419</span>
             <span prov="DOCUMENT.DOC:L4082">,&nbsp;[1475 - 1525]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4083">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4083">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4084">Würzburg, Universitätsbibliothek, M.ch.q. 144</span>
-            <div class="ref">
-              <span class="ref">250</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L4084" he="la">Würzburg, Universitätsbibliothek, M.ch.q. 144</span>
             <span prov="DOCUMENT.DOC:L4085">,&nbsp;[1475 - 1525]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4086">;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4086">;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4087">Brussel, Koninklijke Bibliotheek van België, 3.026-30</span>
-            <div class="ref">
-              <span class="ref">35</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L4087" he="la">Brussel, Koninklijke Bibliotheek van België, 3.026-30</span>
             <span prov="DOCUMENT.DOC:L4088">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4089">, f. 164a-167a;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4089">, f. 164a-167a;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4090">Brussel, Koninklijke Bibliotheek van België, 10.763-64</span>
-            <div class="ref">
-              <span class="ref">40</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L4090" he="la">Brussel, Koninklijke Bibliotheek van België, 10.763-64</span>
             <span prov="DOCUMENT.DOC:L4091">,&nbsp;[1500 - 1600]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4092">, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4092">, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4093">Ampe 1964A</span>
+            <span prov="DOCUMENT.DOC:L4093" he="lo">Ampe 1964A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4094">;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4095" he="la">Tilburg, Universiteitsbibliotheek, KHS 20</span>
+            <span prov="DOCUMENT.DOC:L4096">,&nbsp;[1500 - 1550]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4097">, f. 52v-54r, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4098" he="lo">Ampe 1964C</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4099">, p. 231;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4100" he="la">Leiden, Universiteitsbibliotheek, LTK 222</span>
+            <span prov="DOCUMENT.DOC:L4101">,&nbsp;[1450 - 1500]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4102">;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4103" he="la">Brussel, Koninklijke Bibliotheek van België, 388</span>
+            <span prov="DOCUMENT.DOC:L4104">,&nbsp;[1400 - 1500]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4105"> en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4106" he="la">Brussel, Koninklijke Bibliotheek van België, 2.805-09</span>
+            <span prov="DOCUMENT.DOC:L4107">,&nbsp;[1450 - 1525]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4108">, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4109" he="lo">De Vreese 1900-1902</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4110">, resp. p. 502-508, 544-549 en 588-602. Zie ook&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4111" he="lo">BNM</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4112">, trefwoorden: Guyard de Laon, Sacrament en Vruchten.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L269">Brussel, Koninklijke Bibliotheek van België, 8.609-20</div>
+            <div class="pdtp" prov="PERDOC.DOC:L270">Post quem: 1250</div>
+            <div class="adtp" prov="PERDOC.DOC:L271">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L272">Datering: 2e helft 13e en 2e helft 14e eeuw (convoluut)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L273">60</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1004">'s-Gravenhage, Koninklijke Bibliotheek, 128 G 19</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1005">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1006">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1007">Datering: ca. 1480 (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1008">Ampe 1964A</span>
+            <span class="pps" prov="PERDOC.DOC:L1009">,&nbsp;p. 35</span>
             <div class="ref">
               <span class="ref">Ampe 1964A</span>
               <span class="title">A. Ampe, 'Een oud Florilegium Eucharisticum'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 23-55.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4094">;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4095">Tilburg, Universiteitsbibliotheek, KHS 20</span>
-            <div class="ref">
-              <span class="ref">231</span>
-              <span class="title">0</span>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1010">60</span>
             </div>
-            <span prov="DOCUMENT.DOC:L4096">,&nbsp;[1500 - 1550]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4097">, f. 52v-54r, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4098">Ampe 1964C</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1766">Wenen, Österreichische Nationalbibliothek, 15419</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1767">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1768">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1769">Datering: eind 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1770">60</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1790">Würzburg, Universitätsbibliothek, M.ch.q. 144</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1791">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1792">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L1793">Datering: eind 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1794">60,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1795">178</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L249">Brussel, Koninklijke Bibliotheek van België, 3.026-30</div>
+            <div class="pdtp" prov="PERDOC.DOC:L250">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L251">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L252">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L253">60,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L254">61,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L255">62</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L280">Brussel, Koninklijke Bibliotheek van België, 10.763-64</div>
+            <div class="pdtp" prov="PERDOC.DOC:L281">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L282">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L283">Datering: 16e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L284">60</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Ampe 1964A</span>
+            <span class="title">A. Ampe, 'Een oud Florilegium Eucharisticum'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 23-55.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1654">Tilburg, Universiteitsbibliotheek, KHS 20</div>
+            <div class="mov" prov="PERDOC.DOC:L1655">(<I>olim</I> 's-Hertogenbosch, BGNB 647)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1656">Post quem: 1500</div>
+            <div class="adtp" prov="PERDOC.DOC:L1657">Ante quem: 1550</div>
+            <div class="datp" prov="PERDOC.DOC:L1658">Datering: ca. 1525 (BNM: ongedateerd)</div>
+            <span class="litp" prov="PERDOC.DOC:L1659">Ampe 1964C</span>
             <div class="ref">
               <span class="ref">Ampe 1964C</span>
               <span class="title">A. Ampe, 'Kanttekeningen bij de <i>Evangelische Peerle</i> (vervolg)'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 225-319.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4099">, p. 231;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4100">Leiden, Universiteitsbibliotheek, LTK 222</span>
-            <div class="ref">
-              <span class="ref">175</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4101">,&nbsp;[1450 - 1500]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4102">;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4103">Brussel, Koninklijke Bibliotheek van België, 388</span>
-            <div class="ref">
-              <span class="ref">27</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4104">,&nbsp;[1400 - 1500]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4105"> en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4106">Brussel, Koninklijke Bibliotheek van België, 2.805-09</span>
-            <div class="ref">
-              <span class="ref">31</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4107">,&nbsp;[1450 - 1525]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4108">, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4109">De Vreese 1900-1902</span>
-            <div class="ref">
-              <span class="ref">De Vreese 1900-1902</span>
-              <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1660">10,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1661">15,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1662">46,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1663">60</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4110">, resp. p. 502-508, 544-549 en 588-602. Zie ook</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4111">BNM</span>
-            <div class="ref">
-              <span class="ref">BNM</span>
-              <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          <div class="ref">
+            <span class="ref">Ampe 1964C</span>
+            <span class="title">A. Ampe, 'Kanttekeningen bij de <i>Evangelische Peerle</i> (vervolg)'. In: <i>Ons geestelijk erf</i> 38 (1964), p. 225-319.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1269">Leiden, Universiteitsbibliotheek, LTK 222</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1270">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L1271">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1272">Datering: 2e helft 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1273">60</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4112">, trefwoorden: Guyard de Laon, Sacrament en Vruchten.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L184">Brussel, Koninklijke Bibliotheek van België, 388</div>
+            <div class="mov" prov="PERDOC.DOC:L185">(<I>olim</I> V 3425)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L186">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L187">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L188">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L189">60</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L220">Brussel, Koninklijke Bibliotheek van België, 2.805-09</div>
+            <div class="pdtp" prov="PERDOC.DOC:L221">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L222">Ante quem: 1525</div>
+            <div class="datp" prov="PERDOC.DOC:L223">Datering: ca. 1450-1510</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L224">60</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">De Vreese 1900-1902</span>
+            <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">BNM</span>
+            <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          </div>
         </div>
       </div>
     </div>

@@ -99,7 +99,20 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L10374">Willem van Hildegaersberch? (1)</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L399">Willem van Hildegaersberch? (1)</div>
+          <div class="data" prov="KUEDOC.DOC:L400">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L401">Nr. 166 toegeschreven door Oosterman aan Willem van Hildegaersberch. Niet weerlegd.</div>
+          <div class="lita_caption">Secundaire literatuur</div>
+          <div class="lita" prov="KUEDOC.DOC:L402">J.B. Oosterman, 'Om de grote kracht der woorden. Middelnederlandse gebeden en rubrieken in het Brugge van de vroege vijftiende eeuw'. In: Th. Mertens e.a., <I>Boeken voor de eeuwigheid. Middelnederlands geestelijk proza</I>. Amsterdam (Prometheus) 1993, p. 230-244 en 437-444. Nederlandse cultuur en literatuur in de Middeleeuwen 8.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">

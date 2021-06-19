@@ -91,7 +91,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L11396">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -287,7 +298,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L775">Post quem: 1400</div>
             <div class="adtp" prov="PERDOC.DOC:L776">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L777">Datering: 15e eeuw (BNM: ca. eind 15e eeuw)</div>
-            <span prov="PERDOC.DOC:L778">Lieftinck 1936</span>
+            <span class="litp" prov="PERDOC.DOC:L778">Lieftinck 1936</span>
             <span class="pps" prov="PERDOC.DOC:L779">,&nbsp;p. 86</span>
             <div class="ref">
               <span class="ref">Lieftinck 1936</span>
@@ -369,31 +380,46 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L11445">'s-Gravenhage, Koninklijke Bibliotheek, 73 H 16</span>
-          <div class="ref">
-            <span class="ref">130</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L11445" he="nou">'s-Gravenhage, Koninklijke Bibliotheek, 73 H 16</span>
           <span prov="DOCUMENT.DOC:L11446">,&nbsp;[1450 - 1475]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L11447">, f. 157b-163a, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L11447">, f. 157b-163a, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L11448">De Vreese 1900-1902</span>
-            <div class="ref">
-              <span class="ref">De Vreese 1900-1902</span>
-              <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+            <span prov="DOCUMENT.DOC:L11448" he="lo">De Vreese 1900-1902</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L11449">, p. 219. Aanvullingen in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L11450" he="lo">Deschamps 1960</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L11451">.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L905">'s-Gravenhage, Koninklijke Bibliotheek, 73 H 16</div>
+            <div class="mov" prov="PERDOC.DOC:L906">(<I>olim</I> K 35)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L907">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L908">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L909">Datering: 1471</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L910">178</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11449">, p. 219. Aanvullingen in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L11450">Deschamps 1960</span>
-            <div class="ref">
-              <span class="ref">Deschamps 1960</span>
-              <span class="title">J. Deschamps, [Recensie van] 'Lievens, <i>Jordanus van Quedlinburg in de Nederlanden: een onderzoek van de handschriften</i>. Antwerpen (Standaardboekhandel) 1958. Uitg. Kon. Vl. Ac. v. Taal- en Letterkunde, Reeks 6, nr. 82'. In: <i>Spiegel der letteren</i> 4 (1960), p. 295-300.</span>
-            </div>
+          <div class="ref">
+            <span class="ref">De Vreese 1900-1902</span>
+            <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L11451">.</span>
+          <div class="ref">
+            <span class="ref">Deschamps 1960</span>
+            <span class="title">J. Deschamps, [Recensie van] 'Lievens, <i>Jordanus van Quedlinburg in de Nederlanden: een onderzoek van de handschriften</i>. Antwerpen (Standaardboekhandel) 1958. Uitg. Kon. Vl. Ac. v. Taal- en Letterkunde, Reeks 6, nr. 82'. In: <i>Spiegel der letteren</i> 4 (1960), p. 295-300.</span>
+          </div>
         </div>
       </div>
     </div>

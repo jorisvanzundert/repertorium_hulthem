@@ -100,7 +100,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L741">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -407,95 +418,191 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L795">Boston (Mass.), Boston Public Library, q. Med. 160</span>
-          <div class="ref">
-            <span class="ref">24</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L795" he="nou">Boston (Mass.), Boston Public Library, q. Med. 160</span>
           <span prov="DOCUMENT.DOC:L796">,&nbsp;[1425 - 1475]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L797">, f. 73r-75r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L797">, f. 73r-75r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L798">Brussel, Koninklijke Bibliotheek van België, IV 93</span>
-            <div class="ref">
-              <span class="ref">75</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L798" he="la">Brussel, Koninklijke Bibliotheek van België, IV 93</span>
             <span prov="DOCUMENT.DOC:L799">,&nbsp;[1425 - 1450]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L800">, f. 107r-108v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L800">, f. 107r-108v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L801">Brussel, Koninklijke Bibliotheek van België, IV 386</span>
-            <div class="ref">
-              <span class="ref">78</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L801" he="la">Brussel, Koninklijke Bibliotheek van België, IV 386</span>
             <span prov="DOCUMENT.DOC:L802">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L803">, f. 76r-81r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L803">, f. 76r-81r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L804">Brussel, Koninklijke Bibliotheek van België, IV 1.096</span>
-            <div class="ref">
-              <span class="ref">88</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L804" he="la">Brussel, Koninklijke Bibliotheek van België, IV 1.096</span>
             <span prov="DOCUMENT.DOC:L805">,&nbsp;[1400 - 1425]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L806">, f. 13v-15v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L806">, f. 13v-15v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L807">Brussel, Koninklijke Bibliotheek van België, IV 1.248</span>
-            <div class="ref">
-              <span class="ref">91</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L807" he="la">Brussel, Koninklijke Bibliotheek van België, IV 1.248</span>
             <span prov="DOCUMENT.DOC:L808">,&nbsp;[1425 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L809">, f. 91r-92r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L809">, f. 91r-92r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L810">Gent, Universiteitsbibliotheek, 198</span>
-            <div class="ref">
-              <span class="ref">107</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L810" he="la">Gent, Universiteitsbibliotheek, 198</span>
             <span prov="DOCUMENT.DOC:L811">,&nbsp;[1450 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L812">, f. 126r-128v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L812">, f. 126r-128v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L813">Louvain-la-Neuve, Archive de l'Université, A 32</span>
-            <div class="ref">
-              <span class="ref">201</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L813" he="la">Louvain-la-Neuve, Archive de l'Université, A 32</span>
             <span prov="DOCUMENT.DOC:L814">,&nbsp;[1400 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L815">, f. 19v-21r;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L815">, f. 19v-21r;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L816">München, Bayerische Staatsbibliothek, Cgm. 5246</span>
-            <div class="ref">
-              <span class="ref">207</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L816" he="la">München, Bayerische Staatsbibliothek, Cgm. 5246</span>
             <span prov="DOCUMENT.DOC:L817">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L818">, f. 115v-117v;</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L818">, f. 115v-117v;&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L819">New York, Pierpont Morgan Library, M. 76</span>
-            <div class="ref">
-              <span class="ref">211</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L819" he="la">New York, Pierpont Morgan Library, M. 76</span>
             <span prov="DOCUMENT.DOC:L820">,&nbsp;[1425 - 1475]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L821">, f. 284r-286v, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L821">, f. 284r-286v, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L822">Oosterman 1995A</span>
+            <span prov="DOCUMENT.DOC:L822" he="lo">Oosterman 1995A</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L823">.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L159">Boston (Mass.), Boston Public Library, q. Med. 160</div>
+            <div class="pdtp" prov="PERDOC.DOC:L160">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L161">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L162">Datering: 1425-1475 (BNM: 1450-1475)</div>
+            <span class="litp" prov="PERDOC.DOC:L163">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L164">,&nbsp;p. 329 (16)</span>
             <div class="ref">
               <span class="ref">Oosterman 1995A</span>
               <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
             </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L165">7</span>
+            </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L823">.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L517">Brussel, Koninklijke Bibliotheek van België, IV 93</div>
+            <div class="mov" prov="PERDOC.DOC:L518">(<I>olim</I> Barmen, Bibl. Hinsberg)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L519">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L520">Ante quem: 1450</div>
+            <div class="datp" prov="PERDOC.DOC:L521">Datering: 1433</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L522">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L523">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L524">31,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L525">83</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L537">Brussel, Koninklijke Bibliotheek van België, IV 386</div>
+            <div class="pdtp" prov="PERDOC.DOC:L538">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L539">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L540">Datering: 15e eeuw (BNM: ca. 1425)</div>
+            <span class="litp" prov="PERDOC.DOC:L541">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L542">,&nbsp;p. 333-334 (45)</span>
+            <div class="ref">
+              <span class="ref">Oosterman 1995A</span>
+              <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L543">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L544">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L545">83</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L617">Brussel, Koninklijke Bibliotheek van België, IV 1.096</div>
+            <div class="pdtp" prov="PERDOC.DOC:L618">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L619">Ante quem: 1425</div>
+            <div class="datp" prov="PERDOC.DOC:L620">Datering: 1410-1420 (BNM: ca. 1420)</div>
+            <span class="litp" prov="PERDOC.DOC:L621">Oosterman 1995A</span>
+            <span class="pps" prov="PERDOC.DOC:L622">,&nbsp;p. 335 (52)</span>
+            <div class="ref">
+              <span class="ref">Oosterman 1995A</span>
+              <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+            </div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L623">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L624">39,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L625">85</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L641">Brussel, Koninklijke Bibliotheek van België, IV 1.248</div>
+            <div class="pdtp" prov="PERDOC.DOC:L642">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L643">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L644">Datering: 1450-1460</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L645">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L646">17,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L647">82,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L648">83</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L752">Gent, Universiteitsbibliotheek, 198</div>
+            <div class="pdtp" prov="PERDOC.DOC:L753">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L754">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L755">Datering: 3e kwart 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L756">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L757">104</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1442">Louvain-la-Neuve, Archive de l'Université, A 32</div>
+            <div class="mov" prov="PERDOC.DOC:L1443">(<I>olim</I> Antwerpen, De Bom)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1444">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L1445">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1446">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1447">7</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1479">München, Bayerische Staatsbibliothek, Cgm. 5246</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1480">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1481">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1482">Datering: 4e kwart 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1483">7,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1484">19A,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1485">19C,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L1486">40</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1511">New York, Pierpont Morgan Library, M. 76</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1512">Post quem: 1425</div>
+            <div class="adtp" prov="PERDOC.DOC:L1513">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L1514">Datering: ca. 1450</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1515">7</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">Oosterman 1995A</span>
+            <span class="title">J.B. Oosterman, <i>De gratie van het gebed. Overlevering en functie van Middelnederlandse berijmde gebeden</i>. Amsterdam (Prometheus) 1995. Nederlandse literatuur en cultuur in de Middeleeuwen 12. Diss. Leiden.</span>
+          </div>
         </div>
       </div>
     </div>

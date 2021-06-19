@@ -91,7 +91,18 @@
         <span class="label">Auteurs:&nbsp;</span>
       </div>
       <div class="column_right">
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.auta_container' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.expand_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
         <span class="aut" prov="DOCUMENT.DOC:L4123">Anoniem</span>
+        <div class="auta_container">
+          <div class="auta" prov="KUEDOC.DOC:L12">Anoniem</div>
+          <div class="data" prov="KUEDOC.DOC:L13">Datering:&nbsp;onbekend</div>
+          <div class="inf" prov="KUEDOC.DOC:L14">Over de auteurs van 119 teksteenheden en delen van nr. 108 en 148 is geen enkel gegeven bekend.</div>
+        </div>
       </div>
     </div>
     <div class="srt_container">
@@ -307,7 +318,7 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
             <div class="pdtp" prov="PERDOC.DOC:L885">Post quem: 1450</div>
             <div class="adtp" prov="PERDOC.DOC:L886">Ante quem: 1500</div>
             <div class="datp" prov="PERDOC.DOC:L887">Datering: 2e helft 15e eeuw (BNM: ongedateerd)</div>
-            <span prov="PERDOC.DOC:L888">Spaapen 1940</span>
+            <span class="litp" prov="PERDOC.DOC:L888">Spaapen 1940</span>
             <span class="pps" prov="PERDOC.DOC:L889">,&nbsp;p. 108</span>
             <div class="ref">
               <span class="ref">Spaapen 1940</span>
@@ -388,143 +399,224 @@ viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
         <span class="label">Aanvullende informatie bij parallellen en Variant:&nbsp;</span>
       </div>
       <div class="column_right">
-        <span class="ovt">Ook in:</span>
+        <div class="expand_container" onclick="elem_arr = document.querySelectorAll( '.ovt_container .refs' ); elem_arr.forEach( function( elem ){ elem.classList.toggle( 'expand' ) } );document.querySelector( '.ovt_container .expand_button' ).classList.toggle( 'collapse' );">
+          <svg version="1.1" class="expand_button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+            <polygon fill="#231F20" points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/>
+          </svg>
+        </div>
+        <span class="ovt">Ook in:&nbsp;</span>
         <div class="secundaire_lit">
-          <span prov="DOCUMENT.DOC:L4176">Gotha, Landesbibliothek, Cod. membr. II 82</span>
-          <div class="ref">
-            <span class="ref">119</span>
-            <span class="title">0</span>
-          </div>
+          <span prov="DOCUMENT.DOC:L4176" he="nou">Gotha, Landesbibliothek, Cod. membr. II 82</span>
           <span prov="DOCUMENT.DOC:L4177">,&nbsp;[1450 - 1475]</span>
-          <span class="ovt" prov="DOCUMENT.DOC:L4178"> en</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4178"> en&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4179">Gotha, Landesbibliothek, Cod. membr. II 83</span>
-            <div class="ref">
-              <span class="ref">120</span>
-              <span class="title">0</span>
-            </div>
+            <span prov="DOCUMENT.DOC:L4179" he="la">Gotha, Landesbibliothek, Cod. membr. II 83</span>
             <span prov="DOCUMENT.DOC:L4180">,&nbsp;[1475 - 1500]</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4181">, zie</span>
+          <span class="ovt" prov="DOCUMENT.DOC:L4181">, zie&nbsp;</span>
           <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4182">Regel 1864</span>
+            <span prov="DOCUMENT.DOC:L4182" he="lo">Regel 1864</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4183">;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4184" he="la">Rome, Bibliotheca Apostolica Vaticana, Ottob. Lat. 2916</span>
+            <span prov="DOCUMENT.DOC:L4185">,&nbsp;[1475 - 1500]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4186">, f. 176a-182b;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4187" he="la">Deventer, Stads- of Atheneumbibliotheek, I 64</span>
+            <span prov="DOCUMENT.DOC:L4188">,&nbsp;[1375 - 1400]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4189">, f. 192b-197a;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4190" he="la">Parijs, Bibliothèque Mazarine, 920</span>
+            <span prov="DOCUMENT.DOC:L4191">,&nbsp;[1350 - 1400]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4192">, f. 97a-101b, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4193" he="lo">Spaapen 1940</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4194">; in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4195" he="la">Brussel, Koninklijke Bibliotheek van België, 3.026-30</span>
+            <span prov="DOCUMENT.DOC:L4196">,&nbsp;[1400 - 1500]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4197">, f. 214a-220a en 257a-259a, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4198" he="lo">De Vreese 1900-1902</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4199">, nr. 78 p. 607-631; in&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4200" he="la">Wenen, Österreichische Nationalbibliothek, Series Nova 12870</span>
+            <span prov="DOCUMENT.DOC:L4201">,&nbsp;[1100 - 1600]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4202">, f. 5-7;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4203" he="la">Wenen, Österreichische Nationalbibliothek, 2725</span>
+            <span prov="DOCUMENT.DOC:L4204">,&nbsp;[1100 - 1600]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4205">, f. 49;&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4206" he="la">Gent, Universiteitsbibliotheek, 2422</span>
+            <span prov="DOCUMENT.DOC:L4207">,&nbsp;[1450 - 1475]</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4208">, zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4209" he="lo">De Vooys 1902</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4210">, p. 357-371. Voor berijmde versies zie&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4211" he="lo">Hogenelst 1997</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4212">, p. 22 (10), 111-112 (148) en 235 (337). Zie ook&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4213" he="lo">MNW Bouwstoffen</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4214"> art. 78 sub 1 en 2, 737, 1272, 1273 en&nbsp;</span>
+          <div class="secundaire_lit">
+            <span prov="DOCUMENT.DOC:L4215" he="lo">BNM</span>
+          </div>
+          <span class="ovt" prov="DOCUMENT.DOC:L4216"> , trefwoorden: Geboden en Sonden.&nbsp;</span>
+        </div>
+        <div class="refs">
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L827">Gotha, Landesbibliothek, Cod. membr. II 82</div>
+            <div class="pdtp" prov="PERDOC.DOC:L828">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L829">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L830">Datering: 1461</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L831">6,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L832">42,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L833">61</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L834">Gotha, Landesbibliothek, Cod. membr. II 83</div>
+            <div class="pdtp" prov="PERDOC.DOC:L835">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L836">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L837">Datering: ca. 1480 (BNM: midden 15e eeuw)</div>
+            <span class="litp" prov="PERDOC.DOC:L838">Lievens 1963</span>
+            <span class="pps" prov="PERDOC.DOC:L839">,&nbsp;p. 68-69</span>
+            <div class="ref">
+              <span class="ref">Lievens 1963</span>
+              <span class="title">R. Lievens, <i>Middelnederlandse handschriften in Oost-Europa</i>. Gent (Secr. der Acad.) 1963. Leonard Willemsfonds 1.</span>
+            </div>
+            <span class="litp" prov="PERDOC.DOC:L840">Regel 1864</span>
             <div class="ref">
               <span class="ref">Regel 1864</span>
               <span class="title">K. Regel, <i>Mittelniederländische Psalmen, Hymnen und Gebete aus zwei handschriftlichen Breviarien der herzogl. Bibliothek zu Gotha</i>. In Auswahl mitgetheilt und sprachlich beleuchtet von ─. Programm des Gymnasiums Ernestinum zu Gotha. Gotha (Engelhard-Reyhersche Hofbuchdr.) 1864.</span>
             </div>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4183">;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4184">Rome, Bibliotheca Apostolica Vaticana, Ottob. Lat. 2916</span>
-            <div class="ref">
-              <span class="ref">224</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4185">,&nbsp;[1475 - 1500]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4186">, f. 176a-182b;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4187">Deventer, Stads- of Atheneumbibliotheek, I 64</span>
-            <div class="ref">
-              <span class="ref">97</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4188">,&nbsp;[1375 - 1400]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4189">, f. 192b-197a;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4190">Parijs, Bibliothèque Mazarine, 920</span>
-            <div class="ref">
-              <span class="ref">220</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4191">,&nbsp;[1350 - 1400]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4192">, f. 97a-101b, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4193">Spaapen 1940</span>
-            <div class="ref">
-              <span class="ref">Spaapen 1940</span>
-              <span class="title">B. Spaapen S.J., 'Nieuwe stoffen voor de studie van het Middelnederlandsch gebodenonderricht'. In: <i>Ons geestelijk erf</i> 14 (1940), p. 89-108 en 135-172.</span>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L841">6,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L842">61</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4194">; in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4195">Brussel, Koninklijke Bibliotheek van België, 3.026-30</span>
-            <div class="ref">
-              <span class="ref">35</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4196">,&nbsp;[1400 - 1500]</span>
+          <div class="ref">
+            <span class="ref">Regel 1864</span>
+            <span class="title">K. Regel, <i>Mittelniederländische Psalmen, Hymnen und Gebete aus zwei handschriftlichen Breviarien der herzogl. Bibliothek zu Gotha</i>. In Auswahl mitgetheilt und sprachlich beleuchtet von ─. Programm des Gymnasiums Ernestinum zu Gotha. Gotha (Engelhard-Reyhersche Hofbuchdr.) 1864.</span>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4197">, f. 214a-220a en 257a-259a, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4198">De Vreese 1900-1902</span>
-            <div class="ref">
-              <span class="ref">De Vreese 1900-1902</span>
-              <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1595">Rome, Bibliotheca Apostolica Vaticana, Ottob. Lat. 2916</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1596">Post quem: 1475</div>
+            <div class="adtp" prov="PERDOC.DOC:L1597">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L1598">Datering: 1497</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1599">61</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4199">, nr. 78 p. 607-631; in</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4200">Wenen, Österreichische Nationalbibliothek, Series Nova 12870</span>
-            <div class="ref">
-              <span class="ref">247</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4201">,&nbsp;[1100 - 1600]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4202">, f. 5-7;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4203">Wenen, Österreichische Nationalbibliothek, 2725</span>
-            <div class="ref">
-              <span class="ref">244</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4204">,&nbsp;[1100 - 1600]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4205">, f. 49;</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4206">Gent, Universiteitsbibliotheek, 2422</span>
-            <div class="ref">
-              <span class="ref">117</span>
-              <span class="title">0</span>
-            </div>
-            <span prov="DOCUMENT.DOC:L4207">,&nbsp;[1450 - 1475]</span>
-          </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4208">, zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4209">De Vooys 1902</span>
-            <div class="ref">
-              <span class="ref">De Vooys 1902</span>
-              <span class="title">C.G.N. de Vooys, 'Bijdrage tot de kennis van het middeleeuwse volksgeloof'. In: <i>Ned. archief voor kerkgeschiedenis</i> N.S. dl. 1 (1902), p. 357-385.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L683">Deventer, Stads- of Atheneumbibliotheek, I 64</div>
+            <div class="mov" prov="PERDOC.DOC:L684">(<I>olim</I> 10 V 1)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L685">Post quem: 1375</div>
+            <div class="adtp" prov="PERDOC.DOC:L686">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L687">Datering: eind 14e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L688">61</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4210">, p. 357-371. Voor berijmde versies zie</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4211">Hogenelst 1997</span>
-            <div class="ref">
-              <span class="ref">Hogenelst 1997</span>
-              <span class="title">D. Hogenelst, <i>Sprekers en sproken. Inleiding op en repertorium van de Middelnederlandse sproke</i>. Amsterdam (Prometheus) 1997. 2 dln. Nederlandse literatuur en cultuur in de Middeleeuwen 15. Diss. Leiden.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1571">Parijs, Bibliothèque Mazarine, 920</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1572">Post quem: 1350</div>
+            <div class="adtp" prov="PERDOC.DOC:L1573">Ante quem: 1400</div>
+            <div class="datp" prov="PERDOC.DOC:L1574">Datering: 1360-1385</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1575">61</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4212">, p. 22 (10), 111-112 (148) en 235 (337). Zie ook</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4213">MNW Bouwstoffen</span>
-            <div class="ref">
-              <span class="ref">MNW Bouwstoffen</span>
-              <span class="title">E. Verwijs en J. Verdam, <i>Middelnederlandsch woordenboek</i>. 's-Gravenhage (Nijhoff) 1885-1952. 11 dln. Dl. 10 <i>Bouwstoffen</i>.</span>
+          <div class="ref">
+            <span class="ref">Spaapen 1940</span>
+            <span class="title">B. Spaapen S.J., 'Nieuwe stoffen voor de studie van het Middelnederlandsch gebodenonderricht'. In: <i>Ons geestelijk erf</i> 14 (1940), p. 89-108 en 135-172.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L249">Brussel, Koninklijke Bibliotheek van België, 3.026-30</div>
+            <div class="pdtp" prov="PERDOC.DOC:L250">Post quem: 1400</div>
+            <div class="adtp" prov="PERDOC.DOC:L251">Ante quem: 1500</div>
+            <div class="datp" prov="PERDOC.DOC:L252">Datering: 15e eeuw</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L253">60,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L254">61,&nbsp;</span>
+              <span class="var" prov="PERDOC.DOC:L255">62</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4214"> art. 78 sub 1 en 2, 737, 1272, 1273 en</span>
-          <div class="secundaire_lit">
-            <span prov="DOCUMENT.DOC:L4215">BNM</span>
-            <div class="ref">
-              <span class="ref">BNM</span>
-              <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          <div class="ref">
+            <span class="ref">De Vreese 1900-1902</span>
+            <span class="title">W.L. de Vreese, <i>De handschriften van Jan van Ruusbroec's werken</i>. Gent (s.n.) 1900-1902. 2 dln. Uitg. der Kon. Vl. Acad. voor taal- en letterkunde, reeks 6 nr. 23.</span>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1771">Wenen, Österreichische Nationalbibliothek, Series Nova 12870</div>
+            <div class="mov" prov="PERDOC.DOC:L1772">(<I>olim</I> Wenen FC 7959)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1773">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1774">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1775">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1776">61</span>
             </div>
           </div>
-          <span class="ovt" prov="DOCUMENT.DOC:L4216"> , trefwoorden: Geboden en Sonden.</span>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L1747">Wenen, Österreichische Nationalbibliothek, 2725</div>
+            <div class="pdtp" prov="PERDOC.DOC:L1748">Post quem: 1100</div>
+            <div class="adtp" prov="PERDOC.DOC:L1749">Ante quem: 1600</div>
+            <div class="datp" prov="PERDOC.DOC:L1750">Datering: datering onbekend (BNM: ongedateerd)</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L1751">61</span>
+            </div>
+          </div>
+          <div class="per">
+            <div class="pmsp" prov="PERDOC.DOC:L813">Gent, Universiteitsbibliotheek, 2422</div>
+            <div class="mov" prov="PERDOC.DOC:L814">(<I>olim</I> 11127)</div>
+            <div class="pdtp" prov="PERDOC.DOC:L815">Post quem: 1450</div>
+            <div class="adtp" prov="PERDOC.DOC:L816">Ante quem: 1475</div>
+            <div class="datp" prov="PERDOC.DOC:L817">Datering: 1463</div>
+            <div class="vars">
+              <span class="vars_label">Overeenkomst met Hulthem-nr(s):</span>
+              <span class="var" prov="PERDOC.DOC:L818">61</span>
+            </div>
+          </div>
+          <div class="ref">
+            <span class="ref">De Vooys 1902</span>
+            <span class="title">C.G.N. de Vooys, 'Bijdrage tot de kennis van het middeleeuwse volksgeloof'. In: <i>Ned. archief voor kerkgeschiedenis</i> N.S. dl. 1 (1902), p. 357-385.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">Hogenelst 1997</span>
+            <span class="title">D. Hogenelst, <i>Sprekers en sproken. Inleiding op en repertorium van de Middelnederlandse sproke</i>. Amsterdam (Prometheus) 1997. 2 dln. Nederlandse literatuur en cultuur in de Middeleeuwen 15. Diss. Leiden.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">MNW Bouwstoffen</span>
+            <span class="title">E. Verwijs en J. Verdam, <i>Middelnederlandsch woordenboek</i>. 's-Gravenhage (Nijhoff) 1885-1952. 11 dln. Dl. 10 <i>Bouwstoffen</i>.</span>
+          </div>
+          <div class="ref">
+            <span class="ref">BNM</span>
+            <span class="title"><i>Bibliotheca Manuscripta Neerlandica</i>: (gedeeltelijk electronisch) kaartsysteem, te raadplegen in Leiden, Universiteitsbibliotheek (DOUSA) via de Leidse On-line Publiekscatalogus (OPC). Electronisch toegankelijk via Gopher, Telnet en World Wide Web (http://lbs.leidenuniv.nl). In het Repertorium ook wel aangeduid als BNM-on-line.</span>
+          </div>
         </div>
       </div>
     </div>
