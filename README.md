@@ -20,7 +20,7 @@ Versie 0.1.0b is de eerste bèta-release van het project. De primaire migratie i
 2. Publicatie in de repository van de oorspronkelijke inhoud van de CD-ROM. 
 3. In verband met het punt hierboven en de gemigreerde data alswel de migratiecode: gepubliceerde open source/open access licenties voor alle bronnen op de site.
 
-### Secundaire eisen en wensen (Nice to haves)
+### Secundaire eisen en wensen (Nice to Haves)
 1. Accessibility conformance: checks en implementatie van verbeteringen waardoor de site toegankelijker wordt voor gebruikers met (bijv. visuele) beperkingen.
 2. Engels 'locale' (interface en opschriften van velden ook beschikbaar in het Engels. (Eventueel: Duits, Frans?)
 3. Zoekfunctionaliteit, over al het materiaal en per veld/categorie. (Faceted search?)
