@@ -668,7 +668,7 @@ html_boiler_plate = '''<!DOCTYPE html>
   <title>
     {}
   </title>
-  <link rel="stylesheet" href="/repertorium_hulthem/public/css/repertorium.css"">
+  <link rel="stylesheet" href="/repertorium_hulthem/public/css/repertorium.css">
 
   <body>
     <div class="header"><img id="logo" src="https://www.huygens.knaw.nl/wp-content/themes/huygens/img/logo-white.svg"></div>
@@ -725,7 +725,7 @@ contents_boiler_plate = '''<!DOCTYPE html>
   <title>
     Online Repertorium van teksten in het handschrift Hulthem
   </title>
-  <link rel="stylesheet" href="/repertorium_hulthem/public/css/repertorium.css"">
+  <link rel="stylesheet" href="/repertorium_hulthem/public/css/repertorium.css">
 
   <body>
     <div class="header"><img id="logo" src="https://www.huygens.knaw.nl/wp-content/themes/huygens/img/logo-white.svg"></div>
