@@ -210,10 +210,6 @@ h2 {
   margin-left: 3em;
 }
 
-.ovt_container .refs.expand .per .litp {
-  margin-left: 3em;
-}
-
 .ovt_container .refs.expand .per .litp::before {
   content: 'Zie: ';
 }
