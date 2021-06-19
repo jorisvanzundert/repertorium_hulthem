@@ -792,10 +792,16 @@ def save_as_pages( doc ):
     for idx,doc in enumerate( html_docs[1:] ):
         # I admit this is a terrible hack, but it's 30C and I'm lazy.
         ops = regex.search( '<span class="ops" prov="DOCUMENT.DOC:L\d+">(.*)</span>', doc ).groups()[0]
-        next_page = '<a href="hulthem_repertorium_{}.html"><div class="next_pag">&#x25BA;</div></a>'.format( idx+2 )
+        next_page_button = '''    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+      <polygon points="3,7 9.6,7 7.3,4.7 8.7,3.3 13.4,8 8.7,12.7 7.3,11.3 9.6,9 3,9 "/>
+    </svg>'''
+        next_page = '<a href="hulthem_repertorium_{}.html"><div class="next_pag">{}</div></a>'.format( idx+2, next_page_button )
         if( idx==max_idx-1 ):
             next_page = ''
-        previous_page = '<a href="hulthem_repertorium_{}.html"><div class="prev_pag">&#x25C4;</div></a>'.format( idx )
+        previous_page_button = '''    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+      <polygon points="13,7 6.4,7 8.7,4.7 7.3,3.3 2.6,8 7.3,12.7 8.7,11.3 6.4,9 13,9 "/>
+    </svg>'''
+        previous_page = '<a href="hulthem_repertorium_{}.html"><div class="prev_pag">{}</div></a>'.format( idx, previous_page_button )
         if( idx==0 ):
             previous_page = ''
         doc = html_boiler_plate.format( 'Repertorium Hulthem, tekst {}'.format( idx+1 ), ops, next_page, previous_page, doc[0:-1] )

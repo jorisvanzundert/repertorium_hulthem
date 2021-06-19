@@ -41,7 +41,6 @@ body {
   text-decoration: none;
 }
 
-
 h1 {
   font-family: "Asul", sans-serif;
   font-size: 24pt;
@@ -79,8 +78,8 @@ h2 {
 }
 
 /* Clear floats after the columns */
-.con_container, .nr_container, .ops_container, .inc_container, .exp_container,
-.afr_container, .afb_container,
+.landing_nav_container, .con_container, .nr_container, .ops_container,
+.inc_container, .exp_container, .afr_container, .afb_container,
 .sam_container, .nam_container, .aut_container, .srt_container, .vrm_container,
 .lng_container, .ain_container, .pet_container, .elt_container, .slt_container,
 .vss_container, .zie_container, .ovt_container {
@@ -108,17 +107,37 @@ h2 {
   font-size: 12pt;
 }
 
-.pag_container {
+.hint_container, .pag_container {
   height: 20pt;
   background-color: #ccc;
+  color: rgb(255, 253, 245);
   padding: 4pt 5pt 6pt 50pt;
   float: right;
+}
+
+.hint_container {
+  text-align: center;
+  padding: 4.7pt 30pt 4.7pt 30pt;
+  background-color: rgb(236, 133, 50);
+  margin-right: 1em;
+  font-size: 12pt;
+  font-weight: 400;
+  border: 0.75px solid #fff;
+}
+
+.hint_container:hover {
+  background-color: rgb(237, 255, 227);
+  /* rgb(255, 253, 245); */
+  color: #002048;
+  transition: 1s;
+  border: 0.75px solid #ccc;
 }
 
 .pag_container a, .pag_container a:hover, .pag_container a:visited,
 .pag_container a:active {
   color: #000;
 }
+
 .con_container a, .con_container a:hover, .con_container a:visited,
 .con_container a:active {
   color: #000;
