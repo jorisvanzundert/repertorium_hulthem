@@ -18,4 +18,4 @@ Het Repertorium is vervaardigd door Greet Jungman en Hans Voorbij en verscheen i
 
 Uitgeverij Verloren heeft het boek met inleidende teksten nog steeds in voorraad. [Klik hier voor meer informatie.](https://verloren.nl/boeken/2086/262/165/middeleeuwen/repertorium-van-teksten-in-het-handschrift-van-hulthem).
 
-<span id="version">(v0.0.7)</span>
+<span id="version">(v0.1.0b)</span>
