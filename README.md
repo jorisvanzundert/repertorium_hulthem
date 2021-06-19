@@ -11,7 +11,7 @@ Versie 0.1.0b is de eerste bèta-release van het project. De primaire migratie i
 ## Vervolgstappen
 
 ### Noodzakelijk eisen en wensen (Must Haves)
-1. Data [FAIR](https://www.go-fair.org/fair-principles/) toegankelijk maken. Op dit moment hebben de HTML-elementen die de eigenlijke data dragen geen unieke en persistente identifiers. Wel is in de meeste gevallen de 'provenance' aangegeven (verwijzend) naar het bestand en het regelnummer waar de informatie op de CD-ROM vandaan komt.
+1. Data [FAIR](https://www.go-fair.org/fair-principles/) toegankelijk maken. Op dit moment hebben de HTML-elementen die de eigenlijke data dragen geen unieke en persistente identifiers. Wel is in de meeste gevallen de 'provenance' aangegeven (verwijzend naar het bestand en het regelnummer waar de informatie op de CD-ROM vandaan komt).
 2. Alle infornatie moet beschikbaar komen in een generiek en open data-georiënteerd formaat (HTML is primair presentatie-georiënteerd), zoals JSON.
 3. Naast het aanbrengen van unieke IDs moet alle informatie ook downloadbaar gemaakt worden als deelbestanden, zowel via de grafische frontend als een computationele toegang (API).
 
