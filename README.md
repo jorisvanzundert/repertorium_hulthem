@@ -21,6 +21,8 @@ Versie 0.1.0b is de eerste bèta-release van het project. De primaire migratie i
 1. Alle data en pagina's zodanig technisch metadateren dat de informatie maximaal vindbaar wordt via zoekmachines op het internet.
 2. Publicatie in de repository van de oorspronkelijke inhoud van de CD-ROM. 
 3. In verband met het punt hierboven en de gemigreerde data alswel de migratiecode: gepubliceerde open source/open access licenties voor alle bronnen op de site.
+4. Link van elke tekst met het beginfolium in de [online facsimile van de Koninklijke Bibliotheek in Brussel](https://uurl.kbr.be/1737555).
+5. Links naar secundaire literatuur en edities voor zover houdbaar verschenen op het internet (bijv. [DBNL](https://www.dbnl.org)).
 
 ### Secundaire eisen en wensen (Nice to Haves)
 1. Accessibility conformance: checks en implementatie van verbeteringen waardoor de site toegankelijker wordt voor gebruikers met (bijv. visuele) beperkingen.
